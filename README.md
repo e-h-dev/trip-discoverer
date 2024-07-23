@@ -6,10 +6,10 @@
 
 ## Table of Contents
 
--[Third Milestone Project](#third-milestone-project)
--[Trip Discoverer](#trip-discoverer)
--[Table of Contents](#table-of-contents)
--[Project Rationale](#project-retionale)
+- [Third Milestone Project](#third-milestone-project)
+- [Trip Discoverer](#trip-discoverer)
+- [Table of Contents](#table-of-contents)
+- [Project Rationale](#project-retionale)
 - [User Experiance (UX)](#user-experience-ux)
   - [User stories](#user-stories)
 - [Design](#design)
