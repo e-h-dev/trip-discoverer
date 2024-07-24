@@ -28,10 +28,20 @@ clear information, for anyone looking for a nice day out. The options range from
 
 ### User Stories
 
-### Wireframes
+## Wireframes
 
 Wireframes were created for mobile, tablet and desktop using balsamiq.
 
-#### Home Page
+### Home Page
 
 ![Home Page](assets/wireframes/wireframe-home.png)
+
+* The next wireframes cover the same layout. The Register page and Login page share layout, and the New Trip and Edit trip pages share layout. I have therefore, provided one wireframe for each group.
+
+### Register / Login Page
+
+![Register / login Page](assets/wireframes/wireframe-login.png)
+
+### New / Edit Trip Page
+
+![New / Edit Trip Page](assets/wireframes/wireframe-new-trip.png)
