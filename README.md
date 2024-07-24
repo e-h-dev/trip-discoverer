@@ -17,3 +17,11 @@
   - [Typography](#typography)
   - [Imagery](#imagery)
   - [Wireframes](#wireframes)
+
+### Wireframes
+
+Wireframes were created for mobile, tablet and desktop using balsamiq.
+
+#### Home Page
+
+![Home Page](assets/wireframes/wireframe-home.png)
