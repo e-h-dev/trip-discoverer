@@ -28,6 +28,24 @@ clear information, for anyone looking for a nice day out. The options range from
 
 ### User Stories
 
+#### Website Owner Goals
+
+- We want the website to attract a new and wide range of users.
+- We want an attractive website, where the information is clear, and easy to access.
+- We want the users to have the ability of signing in, to add their own trip ideas.
+- We want to be able to collect data from all users, to find their preferential category of trips, and places they visit.
+- We want to be able to provide consumer habit information, to small local businesses, to promote their business to our users.
+- We want the website to be responsive to all devices.
+
+#### Site Visitor Goals
+
+- I want to have access to clear details regarding all the trips detailed by the website.
+- I want to be able to easily search for my preferred trip, by location and category.
+- I want to add my own trip ideas to the website's database.
+- I want to be able to edit my trip ideas on the website's database.
+- I want the site to be responsive to my device.
+- I want the site to be easy to navigate.
+
 ## Wireframes
 
 Wireframes were created for mobile, tablet and desktop using balsamiq.
