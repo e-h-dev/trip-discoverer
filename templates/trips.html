@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Discoverer</title>
+</head>
+<body>
+    {% for trip in trips %}
+        <span>Category: </span>{{ trip.category_name }}<br>
+        {{ trip.trip_name }}<br>
+        {{ trip.region }}<br>
+        {{ trip.city }}<br>
+        {{ trip.address }}<br>
+        {{ trip.post_code }}<br>
+    {% endfor %}
+</body>
+</html>
