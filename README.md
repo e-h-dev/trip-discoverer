@@ -18,7 +18,7 @@
   - [Typography](#typography)
   - [Imagery](#imagery)
   - [Wireframes](#wireframes)
-
+- [Bugs](#bugs)
 # About
 
 Trip Discoverer, is an easy to use website, designed for anyone to access. The website provides up to date and 
@@ -63,3 +63,8 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 ### New / Edit Trip Page
 
 ![New / Edit Trip Page](assets/wireframes/wireframe-new-trip.png)
+
+# Bugs
+
+When updating font-size in the navbar the size would not upate from the generic materialize font.
+After looking in devtools, I saw the new css fontsize was not working as the original fontsize was on the materalize css as 15px. after updating the class fonts to each of the nav list items the size largened.
