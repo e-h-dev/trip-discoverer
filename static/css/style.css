@@ -1,0 +1,9 @@
+:root{
+    --head-text:Poppins sans-serif;
+}
+
+.font{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
