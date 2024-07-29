@@ -5,6 +5,20 @@
     --light-color: #BACD92;
 }
 
+/* fonts */
+
+.header-font{
+  font-family: var(--head-text);
+  font-weight: 800;
+}
+
+.sub-header-font{
+
+}
+
+.text-font{
+
+}
 
 nav{
     background-color: var(--dark-opaque);
@@ -25,13 +39,11 @@ nav{
     margin-top: 1rem;
 }
 
-.font{
-    font-family: var(--head-text);
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 20px;
-    color: var(--light-color);
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+.nav-text{
+   text-transform: uppercase;
+   font-size: 20px;
+   color: var(--light-color);
+   text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
 .mob-menu{
@@ -62,4 +74,64 @@ nav{
     width: 100%;
     position: inherit;
     /* z-index: 1; */
+}
+
+
+/* register page */
+
+h3{
+  font-size: 3rem;
+  color:var(--dark-color)
+}
+
+.card-style{
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+
+/* overriding materialize generic form input colours */
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: rgb(26, 77, 46);;
+  -webkit-box-shadow: 0 1px 0 0 rgb(26, 77, 46);;
+  box-shadow: 0 1px 0 0 rgb(26, 77, 46);
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+  color: var(--dark-color);
+}
+
+.btn{
+  color:var(--light-color);
+  background-color: var(--dark-color);
+}
+
+.btn:hover{
+  color: var(--dark-color);
+  background-color: var(--light-color);
 }
