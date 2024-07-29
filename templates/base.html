@@ -22,7 +22,7 @@
         <!-- top navbar -->
         <nav>
             <div class="nav-wrapper">
-                <a href="#!">
+                <a href="{{ url_for('find_trips') }}">
                     <img class="logo"
                         src="{{ url_for('static', filename='images/icon.png') }}"
                         alt="trip discoverer">
@@ -42,7 +42,7 @@
         <!-- mobile collapsible navbar -->
         <ul class="sidenav" id="mobile-demo">
             <li class="h4 center-align font">Trip Discoverer</li>
-            <li><a href="#" class="font">home</a></li>
+            <li><a href="{{ url_for('find_trips') }}" class="font">home</a></li>
             <li><a href="#" class="font">add trip</a></li>
             <li><a href="#" class="font">log out</a></li>
             <li><a href="#" class="font">log in</a></li>
