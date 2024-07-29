@@ -82,7 +82,7 @@ nav{
 
 .align{
   position: relative;
-  top: -400px;
+  top: -370px;
 }
 
 h3{
@@ -152,4 +152,9 @@ i{
 .btn:hover{
   color: var(--dark-color);
   background-color: var(--light-color);
+}
+
+.connect{
+  position: relative;
+  top: -29px;
 }
