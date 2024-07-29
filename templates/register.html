@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <div class="row opaque">
     <h3 class="center-align header-font align">Register</h3>
 
     <div class="row align">
@@ -14,6 +15,14 @@
                         <label for="username">Username</label>
                       </div>
                 </div>
+                <!-- email -->
+                <div class="row">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="input-field col s12">
+                      <input id="email" name="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
                 <!-- password -->
                 <div class="row">
                     <div class="input-field col s12">
@@ -30,6 +39,7 @@
                 </div>
             </div>
         </form>
+    </div>
     </div>
 
 {% endblock %}
