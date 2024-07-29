@@ -2,7 +2,8 @@
     --head-text:"Poppins", sans-serif;
     --dark-color: rgb(26, 77, 46);
     --dark-opaque: rgba(26, 77, 46, 0.9);
-    --light-color: #BACD92;
+    --light-color: rgb(186, 205, 146);
+    --light-opaque: rgba(186, 205, 146, 0.5)
 }
 
 /* fonts */
@@ -79,13 +80,18 @@ nav{
 
 /* register page */
 
+.align{
+  position: relative;
+  top: -400px;
+}
+
 h3{
   font-size: 3rem;
   color:var(--dark-color)
 }
 
 .card-style{
-  background-color: var(--light-color);
+  background-color: var(--light-opaque);
   color: var(--dark-color);
 }
 
@@ -124,6 +130,18 @@ input[type=number]:not(.browser-default):focus:not([readonly])+label,
 input[type=search]:not(.browser-default):focus:not([readonly])+label,
 textarea.materialize-textarea:focus:not([readonly])+label {
   color: var(--dark-color);
+}
+
+.input-field>label{
+  color:var(--dark-color);
+  font-family:var(--head-text);
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 2rem;
+}
+
+i{
+  font-size: x-large;
 }
 
 .btn{
