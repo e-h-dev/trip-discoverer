@@ -30,4 +30,10 @@ nav{
     text-transform: uppercase;
     font-size: 20px;
     color: var(--light-color);
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.mob-menu{
+    color:var(--light-color);
+    margin-top: 1rem;
 }
