@@ -21,23 +21,25 @@
     <header>
         <!-- top navbar -->
         <nav>
-                <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo">Logo</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                            <li><a href="sass.html" class="font">Sass</a></li>
-                            <li><a href="badges.html" class="font">Components</a></li>
-                            <li><a href="collapsible.html" class="font">Javascript</a></li>
-                            <li><a href="mobile.html" class="font">Mobile</a></li>
-                    </ul>
-                </div>
+            <div class="nav-wrapper">
+                <a href="#!">
+                    <img class="logo" src="{{ url_for('static', filename='images/icon.png') }}" alt="trip discoverer">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down ul-margin">
+                    <li><a href="#" class="font">Sass</a></li>
+                    <li><a href="#" class="font">Components</a></li>
+                    <li><a href="#" class="font">Javascript</a></li>
+                    <li><a href="#" class="font">Mobile</a></li>
+                </ul>
+            </div>
         </nav>
         <!-- mobile collapsible navbar -->
         <ul class="sidenav" id="mobile-demo">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="#">Sass</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Mobile</a></li>
         </ul>
       </header>
     {% block content %}
