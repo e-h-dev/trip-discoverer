@@ -44,7 +44,8 @@ def register():
 
         #put user into session
         session["user"] = request.form.get("username")
-        flash("Registered")
+        user = register["username"]
+        flash("Welcome " + user + " to Trip Discoverer! You have Successfully Registered")
     return render_template("register.html")
 
 
