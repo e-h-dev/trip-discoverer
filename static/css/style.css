@@ -77,6 +77,25 @@ nav{
     /* z-index: 1; */
 }
 
+.flash-message{
+  position: relative;
+  font-family: var(--head-text);
+  color:var(--light-color);
+  background-color: var(--dark-color);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  z-index: 5;
+  animation: flash 5s;
+}
+@keyframes flash {
+  25%, 100% {
+    opacity: 0.5;
+  }
+  50%, 75% {
+    opacity: 0;
+  }
+}
+
+
 
 /* register page */
 
