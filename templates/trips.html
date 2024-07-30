@@ -2,12 +2,47 @@
 {% block content%}
 
     {% for trip in trips %}
-        <span>Category: </span>{{ trip.category_name }}<br>
+        {{ trip.category_name }}<br>
         {{ trip.trip_name }}<br>
         {{ trip.region }}<br>
         {{ trip.city }}<br>
         {{ trip.address }}<br>
         {{ trip.post_code }}<br>
     {% endfor %}
+    <div class="row">
+        <div class="col s6">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col s6">
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
 
 {% endblock %}
