@@ -25,6 +25,7 @@ nav{
     background-color: var(--dark-opaque);
     height: 6rem;
     position: fixed;
+    z-index: 1;
 }
 
 .logo{
@@ -100,10 +101,10 @@ nav{
 
 /* register page */
 
-.align{
+/* .align{
   position: relative;
   top: -370px;
-}
+} */
 
 h3{
   font-size: 3rem;
@@ -174,9 +175,15 @@ i{
   background-color: var(--light-color);
 }
 
-.connect{
+/* .connect{
   position: relative;
   top: -29px;
+} */
+
+.register-or-login{
+  position: relative;
+  bottom:400px;
+  font-size: xx-large;
 }
 
 
@@ -186,7 +193,7 @@ i{
   background-color: var(--dark-color);
   color: var(--light-color);
   font-family: var(--head-text);
-  height:200px;
+  height:150px;
 }
 
 .trip-header h4{
