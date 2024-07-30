@@ -79,6 +79,7 @@ nav{
 
 .flash-message{
   position: relative;
+  top:-300px;
   font-family: var(--head-text);
   color:var(--light-color);
   background-color: var(--dark-color);
@@ -87,10 +88,10 @@ nav{
   animation: flash 5s;
 }
 @keyframes flash {
-  25%, 100% {
+  25%{
     opacity: 0.5;
   }
-  50%, 75% {
+ 100%{
     opacity: 0;
   }
 }
