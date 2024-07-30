@@ -84,16 +84,11 @@ nav{
   background-color: rgba(186, 205, 146, 0.2);
   color:var(--dark-color);
   position:relative;
+  left:70px;
   bottom:350px;
   border-radius: 2px;
   border:outset 2px #000;
   box-shadow: 10px 10px 10px rgb(0 0 0 / 0.8);
-  animation:slide 5s;
-}
-
-@keyframes slide {
-  from{left:30px;}
-  to{left:100px;}
 }
 
 .hero-about h2{
