@@ -13,6 +13,21 @@
                     {% endif %}
                     <h4>{{ trip.category_name }}</h4>
                     <p>{{ trip.trip_name }}</p>
+                    <div class="review-stars">
+                        {% if trip.trip_rating == "4" %}
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        {% else %}
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        {% endif %}
+                    </div>
                 </div>
                 <div class="collapsible-body trip-content">
                     {{ trip.region }}<br>
