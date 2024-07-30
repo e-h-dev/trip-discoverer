@@ -75,7 +75,40 @@ nav{
     height: 500px;
     width: 100%;
     position: inherit;
-    /* z-index: 1; */
+}
+
+.hero-about{
+  height:70%;
+  width:30%;
+  font-family: var(--head-text);
+  background-color: rgba(186, 205, 146, 0.1);
+  color:var(--dark-color);
+  position:relative;
+  bottom:350px;
+  border-radius: 2px;
+  border:outset 2px #000;
+  box-shadow: 10px 10px 10px rgb(0 0 0 / 0.8);
+  animation:slide 5s;
+}
+
+@keyframes slide {
+  from{left:30px;}
+  to{left:100px;}
+}
+
+.hero-about h2{
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.2);
+}
+
+.hero-about p{
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: rgba(186, 205, 146, 0.3);
+  padding:20px;
+  text-align: justify;
 }
 
 .flash-message{
