@@ -33,10 +33,13 @@
                 </a>
                 <ul class="right hide-on-med-and-down ul-margin">
                     <li><a href="{{ url_for('find_trips') }}" class="nav-text header-font">home</a></li>
-                    <li><a href="#" class="nav-text header-font">add trip</a></li>
-                    <li><a href="#" class="nav-text header-font">log out</a></li>
-                    <li><a href="{{ url_for('login') }}" class="nav-text header-font">log in</a></li>
-                    <li><a href="{{ url_for('register') }}" class="nav-text header-font">register</a></li>
+                    {% if session.user %}
+                        <li><a href="#" class="nav-text header-font">add trip</a></li>
+                        <li><a href="{{ url_for('logout') }}" class="nav-text header-font">log out</a></li>
+                    {% else %}
+                        <li><a href="{{ url_for('login') }}" class="nav-text header-font">log in</a></li>
+                        <li><a href="{{ url_for('register') }}" class="nav-text header-font">register</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
@@ -44,10 +47,13 @@
         <ul class="sidenav" id="mobile-demo">
             <li class="h4 center-align font">Trip Discoverer</li>
             <li><a href="{{ url_for('find_trips') }}" class="nav-text header-font">home</a></li>
-            <li><a href="#" class="nav-text header-font">add trip</a></li>
-            <li><a href="#" class="nav-text header-font">log out</a></li>
-            <li><a href="{{ url_for('login') }}" class="nav-text header-font">log in</a></li>
-            <li><a href="{{ url_for('register') }}" class="nav-text header-font">register</a></li>
+            {% if session.user %}
+                <li><a href="#" class="nav-text header-font">add trip</a></li>
+                <li><a href="{{ url_for('logout') }}" class="nav-text header-font">log out</a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}" class="nav-text header-font">log in</a></li>
+                <li><a href="{{ url_for('register') }}" class="nav-text header-font">register</a></li>
+            {% endif %}
         </ul>
     </header>
     <div class="row">
