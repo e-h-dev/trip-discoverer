@@ -1,48 +1,30 @@
 {% extends "base.html" %}
 {% block content%}
 
-    {% for trip in trips %}
-        {{ trip.category_name }}<br>
-        {{ trip.trip_name }}<br>
-        {{ trip.region }}<br>
-        {{ trip.city }}<br>
-        {{ trip.address }}<br>
-        {{ trip.post_code }}<br>
-    {% endfor %}
+    
     <div class="row">
-        <div class="col s6">
+        <div class="col s10 m6 offset-m3 offset-s1">
           <ul class="collapsible">
+            {% for trip in trips %}
             <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-header trip-header">
+                    {% if trip.category_name == "Parks" %}
+                        <i class="fa-solid fa-tree"></i>
+                    {% endif %}
+                    <h4>{{ trip.category_name }}</h4>
+                    <p>{{ trip.trip_name }}</p>
+                </div>
+                <div class="collapsible-body trip-content">
+                    {{ trip.region }}<br>
+                    {{ trip.city }}<br>
+                    {{ trip.address }}<br>
+                    {{ trip.post_code }}<br>
+                </div>
             </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
+            {% endfor %}
           </ul>
         </div>
-        <div class="col s6">
-          <ul class="collapsible">
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-          </ul>
-        </div>
-      </div>
+        
     
 
 {% endblock %}

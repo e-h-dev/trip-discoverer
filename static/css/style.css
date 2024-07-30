@@ -178,3 +178,30 @@ i{
   position: relative;
   top: -29px;
 }
+
+
+/* trips.html */
+
+.trip-header{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-family: var(--head-text);
+  height:200px;
+}
+
+.trip-header h4{
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.trip-header p{
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
+
+.trip-content{
+  background-color: var(--light-color);
+  color:var(--dark-color)
+}
