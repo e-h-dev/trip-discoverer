@@ -82,8 +82,24 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_trip")
+@app.route("/add_trip", methods=["GET", "POST"])
 def add_trip():
+    if request.method == "POST":
+        trip = {
+            "category_name": request.form.get("category_name"),
+            "trip_name": request.form.get("trip_name"),
+            "region": request.form.get("region"),
+            "city": request.form.get("city"),
+            "address": request.form.get("address"),
+            "post_code": request.form.get("post_code"),
+            "trip_description": request.form.get("trip_description"),
+            "trip_review":request.form.get("trip_review"),
+            "created_by": session["user"]
+        }
+        mongo.db.trips.insert_one(trip)
+        flash("Trip Added")
+        return redirect(url_for("find_trips"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add-trip.html", categories=categories)
 

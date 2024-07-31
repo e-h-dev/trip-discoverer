@@ -44,6 +44,9 @@
                     {{ trip.city }}<br>
                     {{ trip.address }}<br>
                     {{ trip.post_code }}<br>
+                    {{ trip.trip_description }}<br>
+                    {{ trip.trip_review }}<br>
+                    <p><em>Trip added by: {{ trip.created_by }}</em></p>
                 </div>
             </li>
             {% endfor %}
