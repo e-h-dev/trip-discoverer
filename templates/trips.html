@@ -20,16 +20,18 @@
                 <div class="collapsible-header trip-header">
                     {% if trip.category_name == "Parks" %}
                         <i class="fa-solid fa-tree"></i>
+                    {% elif trip.category_name == "Walks" %}
+                        <i class="fa-solid fa-person-walking"></i>
                     {% endif %}
                     <h4>{{ trip.category_name }}</h4>
-                    <p>{{ trip.trip_name }}</p>
+                    <p style="width:30%">{{ trip.trip_name }}</p>
                     <div class="review-stars">
                         {% if trip.trip_rating == "4" %}
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
                         {% else %}
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>

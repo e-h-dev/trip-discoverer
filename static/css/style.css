@@ -128,7 +128,6 @@ nav{
 }
 
 
-
 /* register page */
 
 .register-login{
@@ -263,6 +262,16 @@ i{
   color:var(--dark-color)
 }
 
+.review-stars{
+  position: relative;
+  left:30px;
+  height:20px;
+}
+
+.review-stars i{
+  font-size: 1rem;
+  margin: 1px;
+}
 /* add-trips */
 
 /* override materialize styles */
