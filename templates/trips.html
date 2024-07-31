@@ -41,7 +41,25 @@
                         <p>{{ trip.region }}</p>
                     </div>
                     <div class="review-stars">
-                        {% if trip.trip_rating == "4" %}
+                        {% if trip.trip_rating == "1" %}
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
+                        {% elif trip.trip_rating == "2" %}
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
+                        {% elif trip.trip_rating == "3" %}
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-solid fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
+                            <i class="fa-regular fa-star star-size"></i>
+                        {% elif trip.trip_rating == "4" %}
                             <i class="fa-solid fa-star star-size"></i>
                             <i class="fa-solid fa-star star-size"></i>
                             <i class="fa-solid fa-star star-size"></i>

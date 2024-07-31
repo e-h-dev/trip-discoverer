@@ -94,6 +94,7 @@ def add_trip():
             "address": request.form.get("address"),
             "post_code": request.form.get("post_code"),
             "trip_description": request.form.get("trip_description"),
+            "trip_rating": request.form.get("trip_rating"),
             "trip_review":request.form.get("trip_review"),
             "created_by": session["user"]
         }
