@@ -108,8 +108,9 @@ nav{
 
 .flash-message{
   position: relative;
-  top:-400px;
+  top:100px;
   font-family: var(--head-text);
+  font-weight: 800;
   color:var(--light-color);
   background-color: var(--dark-color);
   box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
