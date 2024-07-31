@@ -84,7 +84,8 @@ def logout():
 
 @app.route("/add_trip")
 def add_trip():
-    return render_template("add-trip.html")
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("add-trip.html", categories=categories)
 
 
 
