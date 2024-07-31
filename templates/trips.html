@@ -22,6 +22,14 @@
                         <i class="fa-solid fa-tree"></i>
                     {% elif trip.category_name == "Walks" %}
                         <i class="fa-solid fa-person-walking"></i>
+                    {% elif trip.category_name == "Beach" %}
+                     <i class="fa-solid fa-umbrella-beach"></i>
+                    {% elif trip.category_name == "Museums" %}
+                        <i class="fa-solid fa-building-columns"></i>
+                    {% elif trip.category_name == "Theme Parks" %}
+                        <i class="fa-solid fa-truck-monster"></i>
+                    {% else %}
+                        <i class="fa-solid fa-futbol"></i>
                     {% endif %}
                     <h4>{{ trip.category_name }}</h4>
                     <p style="width:30%">{{ trip.trip_name }}</p>
