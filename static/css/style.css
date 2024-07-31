@@ -262,3 +262,33 @@ i{
   background-color: var(--light-color);
   color:var(--dark-color)
 }
+
+/* add-trips */
+
+/* override materialize styles */
+
+.dropdown-content {
+  background-color: var(--dark-color);
+}
+
+.select-dropdown{
+  color:var(--dark-color);
+  font-family: var(--head-text);
+  font-weight: 700;
+}
+
+.select-wrapper input.select-dropdown:focus {
+  border-bottom: 1px solid var(--dark-color)
+}
+
+.select-dropdown li.disabled,.select-dropdown li.disabled>span,.select-dropdown li.optgroup {
+  color: var(--light-color);
+  background-color: transparent
+}
+
+.dropdown-content li>a,.dropdown-content li>span {
+  color: var(--light-color);
+  font-family: var(--head-text);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
