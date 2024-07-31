@@ -1,48 +1,54 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <h3 class="center-align header-font align">Register</h3>
-
-    <div class="row align">
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
-            <div class="card-panel card-style">
-                <!-- username -->
+    <div class="row">
+        <div class="hero" style="height:100vh">
+            <div class="opaque" style="height:100vh"></div>
+            <div class="register-login">
+                <h3 class="center-align header-font">Register</h3>
                 <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-circle-user"></i>
-                        <input id="username" name="username" type="text" 
-                            pattern="^[a-zA-Z0-9]{5,15}$" class="validate focus-color" required>
-                        <label for="username">Username</label>
-                      </div>
-                </div>
-                <!-- email -->
-                <div class="row">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div class="input-field col s12">
-                      <input id="email" name="email" type="email" class="validate" required>
-                      <label for="email">Email</label>
-                    </div>
-                  </div>
-                <!-- password -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-key"></i>
-                      <input id="password" name="password" type="password" minlength="5" 
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
-                      <label for="password">Password</label>
-                    </div>
-                </div>
-                <!-- submit button -->
-                <div class="row">
-                    <button type="submit" class="col s12 btn-large btn header-font nav-text">
-                        Register <i class="fa-solid fa-right-to-bracket"></i> 
-                    </button>
+                    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+                        <div class="card-panel card-style">
+                            <!-- username -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fas fa-circle-user"></i>
+                                    <input id="username" name="username" type="text" 
+                                        pattern="^[a-zA-Z0-9]{5,15}$" class="validate focus-color" required>
+                                    <label for="username">Username</label>
+                                </div>
+                            </div>
+                            <!-- email -->
+                            <div class="row">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div class="input-field col s12">
+                                <input id="email" name="email" type="email" class="validate" required>
+                                <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <!-- password -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fas fa-key"></i>
+                                <input id="password" name="password" type="password" minlength="5" 
+                                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                                <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <!-- submit button -->
+                            <div class="row">
+                                <button type="submit" class="col s12 btn-large btn header-font nav-text">
+                                    Register <i class="fa-solid fa-right-to-bracket"></i> 
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 
-    <div class="row register-or-login">
+
+    <div class="row account-confirm">
         <div class="col s12">
             <p class="center-align">
                 Are you already a user? <a href="{{ url_for('login') }}">Log in to your Account!</a>

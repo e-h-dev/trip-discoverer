@@ -129,9 +129,15 @@ nav{
 
 /* register page */
 
+.register-login{
+  position:absolute;
+  top:100px;
+  width:100%;
+}
+
 /* .align{
   position: relative;
-  top: -370px;
+  top:100px;
 } */
 
 h3{
@@ -203,15 +209,24 @@ i{
   background-color: var(--light-color);
 }
 
-/* .connect{
-  position: relative;
-  top: -29px;
-} */
+.account-confirm{
+  position: absolute;
+  bottom:10px;
+  left:35%;
+  color: var(--dark-color);
+  font-family: var(--head-text);
+  font-weight: 700;
+  background-color: var(--light-color);
+}
 
-.register-or-login{
-  position: relative;
-  bottom:400px;
-  font-size: xx-large;
+.account-confirm a{
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+
+.account-confirm a:hover{
+  color: var(--dark-color);
+  background-color: var(--light-color);
 }
 
 
