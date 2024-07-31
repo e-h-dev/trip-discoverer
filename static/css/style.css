@@ -242,7 +242,7 @@ i{
   background-color: var(--dark-color);
   color: var(--light-color);
   font-family: var(--head-text);
-  height:150px;
+  height:250px;
 }
 
 .trip-header h4{
@@ -251,7 +251,13 @@ i{
   text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
-.trip-header p{
+/* override materilaize */
+
+.collapsible-header {
+  display:block;
+}
+
+.trip-header h5{
   padding-top: 10px;
   padding-left: 10px;
   font-size: 1.3rem;

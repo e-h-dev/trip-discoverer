@@ -32,7 +32,10 @@
                         <i class="fa-solid fa-futbol"></i>
                     {% endif %}
                     <h4>{{ trip.category_name }}</h4>
-                    <p style="width:30%">{{ trip.trip_name }}</p>
+                    <div class="paragraphs">
+                        <p style="width:30%">{{ trip.trip_name }}</p>
+                        <p>{{ trip.region }}</p>
+                    </div>
                     <div class="review-stars">
                         {% if trip.trip_rating == "4" %}
                             <i class="fa-solid fa-star star-size"></i>
@@ -50,7 +53,7 @@
                     </div>
                 </div>
                 <div class="collapsible-body trip-content">
-                    {{ trip.region }}<br>
+                    <!-- {{ trip.region }}<br> -->
                     {{ trip.city }}<br>
                     {{ trip.address }}<br>
                     {{ trip.post_code }}<br>
