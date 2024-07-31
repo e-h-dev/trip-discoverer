@@ -82,6 +82,11 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/add_trip")
+def add_trip():
+    return render_template("add-trip.html")
+
+
 
 
 if __name__ == "__main__":
