@@ -278,6 +278,16 @@ i{
   font-size: 1rem;
   margin: 1px;
 }
+
+
+.description-block{
+  height:100px;
+  width:700px;
+  font-family: var(--head-text);
+  font-weight: 700;
+  border: solid 2px var(--dark-color)
+}
+
 /* add-trips */
 
 /* override materialize styles */
