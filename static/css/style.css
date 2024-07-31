@@ -292,3 +292,26 @@ i{
   font-weight: 600;
   font-size: 1.2rem;
 }
+
+/* checkbox styles */
+
+[type="checkbox"]:checked+span:not(.lever):before {
+  top: -4px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 0px solid var(--dark-color);
+  border-bottom: 0px solid var(--dark-color);
+}
+
+.blank{
+  background-color: var(--light-opaque);
+  height:30px;
+  width:30px;
+  position: relative;
+  left:3%;
+  top:10px;
+  z-index: 2;
+}
