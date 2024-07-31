@@ -18,20 +18,22 @@
             {% for trip in trips %}
             <li>
                 <div class="collapsible-header trip-header">
-                    {% if trip.category_name == "Parks" %}
-                        <i class="fa-solid fa-tree"></i>
-                    {% elif trip.category_name == "Walks" %}
-                        <i class="fa-solid fa-person-walking"></i>
-                    {% elif trip.category_name == "Beach" %}
-                     <i class="fa-solid fa-umbrella-beach"></i>
-                    {% elif trip.category_name == "Museums" %}
-                        <i class="fa-solid fa-building-columns"></i>
-                    {% elif trip.category_name == "Theme Parks" %}
-                        <i class="fa-solid fa-truck-monster"></i>
-                    {% else %}
-                        <i class="fa-solid fa-futbol"></i>
-                    {% endif %}
                     <h4>{{ trip.category_name }}</h4>
+                    <span>
+                        {% if trip.category_name == "Parks" %}
+                            <i class="fa-solid fa-tree"></i>
+                        {% elif trip.category_name == "Walks" %}
+                            <i class="fa-solid fa-person-walking"></i>
+                        {% elif trip.category_name == "Beach" %}
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        {% elif trip.category_name == "Museums" %}
+                            <i class="fa-solid fa-building-columns"></i>
+                        {% elif trip.category_name == "Theme Parks" %}
+                            <i class="fa-solid fa-truck-monster"></i>
+                        {% else %}
+                            <i class="fa-solid fa-futbol"></i>
+                        {% endif %}
+                    </span>
                     <div class="paragraphs">
                         <p style="width:30%">{{ trip.trip_name }}</p>
                         <p>{{ trip.region }}</p>
