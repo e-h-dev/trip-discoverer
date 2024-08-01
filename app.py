@@ -129,6 +129,11 @@ def edit_trip(trip_id):
     return render_template("edit-trip.html", trip=trip, categories=categories)
 
 
+@app.route("/delete_trip/<trip_id>")
+def delete_trip(trip_id):
+    mongo.db.trips.delete_one({"_id": ObjectId(trip_id)})
+    flash("Task Successfully Deleted")
+    return redirect(url_for("find_trips"))
 
 
 if __name__ == "__main__":
