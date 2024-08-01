@@ -360,3 +360,18 @@ i{
   top:10px;
   z-index: 2;
 }
+
+/* edit trips */
+
+.cancel-btn{
+  background-color: rgb(250, 85, 0);
+  color:var(--light-color);
+  font-family: var(--head-text);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.cancel-btn:hover{
+  background-color: var(--light-color);
+  color:rgb(250, 85, 0);
+}
