@@ -203,6 +203,9 @@ i{
 .btn{
   color:var(--light-color);
   background-color: var(--dark-color);
+  font-family: var(--head-text);
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
 .btn:hover{
