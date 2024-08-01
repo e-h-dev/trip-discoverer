@@ -141,7 +141,8 @@ def delete_trip(trip_id):
 @app.route("/user_list")
 def user_list():
     users = mongo.db.users.find()
-    return render_template("users.html", users=users)
+    trips = mongo.db.trips.find()
+    return render_template("users.html", users=users, trips=trips)
 
 
 if __name__ == "__main__":

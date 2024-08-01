@@ -1,26 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <div class="row push">
-        {% for user in users %}
-            <div class="col s6 m4">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">{{ user.username }}</span>
-                    <p>{{ user.email }}</p>
-                </div>
-                <div class="card-action">
-                    <a href="#" class="btn">Edit User</a>
-                    <a href="#" class="cancel-btn">Delete User</a>
-                </div>
+<div class="row push">
+    {% for user in users %}
+        <div class="col s6 m4">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">{{ user.username }}</span>
+                <p>{{ user.email }}</p>
+                {% for trip in trips %}
+                    {% if user.username|lower == trip.created_by|lower %}
+                        <p>{{ trip.trip_name}}</p>
+                    {% endif %}
+                {% endfor %}
             </div>
+            <div class="card-action">
+                <a href="#" class="btn">Edit User</a>
+                <a href="#" class="cancel-btn">Delete User</a>
             </div>
-        {% endfor %}
-    </div>
-    
-    
-
-    
-    
-
+        </div>
+        </div>
+    {% endfor %}
+</div>
 {% endblock %}
