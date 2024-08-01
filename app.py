@@ -108,8 +108,23 @@ def add_trip():
 
 @app.route("/edit_trip/<trip_id>", methods=["GET", "POST"])
 def edit_trip(trip_id):
+    if request.method == "POST":
+        edit = {
+            "category_name": request.form.get("category_name"),
+            "trip_name": request.form.get("trip_name"),
+            "region": request.form.get("region"),
+            "city": request.form.get("city"),
+            "address": request.form.get("address"),
+            "post_code": request.form.get("post_code"),
+            "trip_description": request.form.get("trip_description"),
+            "trip_rating": request.form.get("trip_rating"),
+            "trip_review":request.form.get("trip_review"),
+            "created_by": session["user"]
+        }
+        mongo.db.trips.update_one({"_id": ObjectId(trip_id)}, {"$set": edit})
+        flash("Trip successfully updated")
+        return redirect(url_for("find_trips"))
     trip = mongo.db.trips.find_one({"_id": ObjectId(trip_id)})
-
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit-trip.html", trip=trip, categories=categories)
 
