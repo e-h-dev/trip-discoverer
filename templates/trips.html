@@ -88,7 +88,7 @@
                     {% endif %}
                     {{ trip.trip_review }}<br>
                     <p><em>Trip added by: {{ trip.created_by }}</em></p>
-                    <button>Edit Trip</button>
+                    <a href="{{ url_for('edit_trip', trip_id=trip._id)}}">Edit Trip</a>
                 </div>
             </li>
             {% endfor %}

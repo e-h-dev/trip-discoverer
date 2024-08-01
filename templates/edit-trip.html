@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row">
+        <div class="hero" style="height:100vh">
+            <div class="opaque" style="height:100vh"></div>
+            <div class="register-login">
+                <h3 class="center-align header-font">Edit Trip</h3>
+                <div class="row">
+                    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('edit_trip', trip_id=trip._id) }}">
+                        <div class="card-panel card-style">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fa-solid fa-list"></i>
+                                    <select id="category_name" name="category_name" class="validate" required>
+                                      <option value="" disabled selected>Choose Category</option>
+                                      {% for category in categories %}
+                                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                                      {% endfor %}
+                                    </select>
+                                    <label for="category_name">Trip Category</label>
+                                  </div>
+                            </div>
+                            <!-- trip_name -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fa-solid fa-car"></i>
+                                    <input id="trip_name" name="trip_name" type="text" 
+                                        class="validate focus-color" required>
+                                    <label for="trip_name">Trip Name</label>
+                                </div>
+                            </div>
+                            <!-- region -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <input id="region" name="region" type="text" 
+                                        class="validate focus-color" required>
+                                    <label for="region">Region</label>
+                                </div>
+                            </div>
+                            <!-- city -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fa-solid fa-tree-city"></i>
+                                    <input id="city" name="city" type="text" 
+                                         class="validate focus-color" required>
+                                    <label for="city">Nearest City / Town</label>
+                                </div>
+                            </div>
+                            <!-- address -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                    <input id="address" name="address" type="text" 
+                                         class="validate focus-color" required>
+                                    <label for="address">Address</label>
+                                </div>
+                            </div>
+                            <!-- post_code -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fa-solid fa-signs-post"></i>
+                                    <input id="post_code" name="post_code" type="text" 
+                                         class="validate focus-color" required>
+                                    <label for="post_code">Post Code</label>
+                                </div>
+                            </div>
+                            <!-- description -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fa-solid fa-pen-nib"></i>
+                                    <textarea id="trip_description" name="trip_description"
+                                        class="materialize-textarea validate focus-color" 
+                                        minlength="5" maxlength="200"></textarea>
+                                    <label for="trip_description">Description</label>
+                                </div>
+                            </div>
+                            <!-- rating -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fa-solid fa-star"></i>
+                                    <input type="number" id="trip_rating" name="trip_rating" min="1" max="5" value="1"/>
+                                    <label for="trip_rating">Rate your trip from 1 - 5</label>
+                                </div>
+                            </div>
+                            <!-- review -->
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="fa-solid fa-magnifying-glass-location"></i>
+                                    <textarea id="trip_review" name="trip_review"
+                                        class="materialize-textarea validate focus-color" 
+                                        minlength="5" maxlength="200"></textarea>
+                                    <label for="trip_review">Review</label>
+                                </div>
+                            </div>
+                            <!-- submit button -->
+                            <div class="row">
+                                <button type="submit" class="col s12 btn-large btn header-font nav-text">
+                                    Submit <i class="fa-solid fa-share-from-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock %}

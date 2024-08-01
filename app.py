@@ -106,6 +106,14 @@ def add_trip():
     return render_template("add-trip.html", categories=categories)
 
 
+@app.route("/edit_trip/<trip_id>", methods=["GET", "POST"])
+def edit_trip(trip_id):
+    trip = mongo.db.trips.find_one({"_id": ObjectId(trip_id)})
+
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit-trip.html", trip=trip, categories=categories)
+
+
 
 
 if __name__ == "__main__":
