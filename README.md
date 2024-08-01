@@ -66,5 +66,9 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 # Bugs
 
-When updating font-size in the navbar the size would not upate from the generic materialize font.
+- When updating font-size in the navbar the size would not upate from the generic materialize font.
 After looking in devtools, I saw the new css fontsize was not working as the original fontsize was on the materalize css as 15px. after updating the class fonts to each of the nav list items the size largened.
+- The register form was not running the app it rendered a flask error.
+I realised that I had put in the wrong name for the password input.
+- I tried to create a function, that a separate user can add a review to any trip.
+Since this app is working with mongo and is a non-relrional database there was an id key error.
