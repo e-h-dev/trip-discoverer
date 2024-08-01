@@ -378,3 +378,11 @@ i{
   background-color: var(--light-color);
   color:rgb(250, 85, 0);
 }
+
+
+/* users page */
+
+.push{
+  position: relative;
+  top:200px;
+}
