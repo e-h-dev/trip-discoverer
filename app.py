@@ -138,6 +138,12 @@ def delete_trip(trip_id):
     return redirect(url_for("find_trips"))
 
 
+@app.route("/user_list")
+def user_list():
+    users = mongo.db.users.find()
+    return render_template("users.html", users=users)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

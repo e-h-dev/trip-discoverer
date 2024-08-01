@@ -93,10 +93,6 @@
                             class="btn-large btn">Edit Trip <i class="fa-regular fa-keyboard"></i></a>
                         <a href="{{ url_for('delete_trip', trip_id=trip._id)}}"
                             class="btn-large cancel-btn">Delete Trip <i class="fa-solid fa-trash"></i></a>
-                    {% else %}
-                        {% if session.user %}
-                            <a href="" class="btn-large btn">Add Review<i class="fa-regular fa-keyboard"></i></a>
-                        {% endif %}
                     {% endif %}
                 </div>
             </li>
