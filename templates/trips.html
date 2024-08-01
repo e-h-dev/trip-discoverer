@@ -37,7 +37,7 @@
                         {% endif %}
                     </span>
                     <div class="paragraphs">
-                        <p style="width:30%">{{ trip.trip_name }}</p>
+                        <p class="trip-header-region">{{ trip.trip_name }}</p>
                         <p>{{ trip.region }}</p>
                     </div>
                     <div class="review-stars">
@@ -76,6 +76,7 @@
                 </div>
                 <div class="collapsible-body trip-content">
                     <!-- {{ trip.region }}<br> -->
+                    <h4 class="trip-body">{{ trip.trip_name }}</h4>
                     {{ trip.city }}<br>
                     {{ trip.address }}<br>
                     {{ trip.post_code }}<br>
@@ -87,6 +88,7 @@
                     {% endif %}
                     {{ trip.trip_review }}<br>
                     <p><em>Trip added by: {{ trip.created_by }}</em></p>
+                    <button>Edit Trip</button>
                 </div>
             </li>
             {% endfor %}

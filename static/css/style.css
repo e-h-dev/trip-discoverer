@@ -243,6 +243,7 @@ i{
   color: var(--light-color);
   font-family: var(--head-text);
   height:250px;
+  text-align: center;
 }
 
 .trip-header h4{
@@ -257,15 +258,35 @@ i{
   display:block;
 }
 
-.trip-header h5{
+/* .trip-header h5{
   padding-top: 10px;
   padding-left: 10px;
   font-size: 1.3rem;
+} */
+
+.trip-header p{
+  font-family: var(--head-text);
+  font-weight: 600;
+  text-transform: capitalize;
 }
+
+.trip-header-region{
+  font-size: 1.3rem;
+}
+
 
 .trip-content{
   background-color: var(--light-color);
-  color:var(--dark-color)
+  color:var(--dark-color);
+  text-align: center;
+}
+
+.trip-content-head{
+  color: var(--dark-color);
+  font-family: var(--head-text);
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
 .review-stars{
@@ -276,7 +297,6 @@ i{
 
 .review-stars i{
   font-size: 1rem;
-  margin: 1px;
 }
 
 
