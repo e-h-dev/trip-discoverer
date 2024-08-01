@@ -30,6 +30,7 @@ def register():
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
+        
 
         if existing_user:
             flash("Username used!")
@@ -46,6 +47,7 @@ def register():
         session["user"] = request.form.get("username")
         user = register["username"]
         flash("Welcome " + user + " to Trip Discoverer! You have Successfully Registered")
+        return redirect(url_for('find_trips'))
     return render_template("register.html")
 
 
@@ -80,7 +82,7 @@ def logout():
     #logs out user by clearing session cookie
     flash("You have logged out!")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for('find_trips'))
 
 
 @app.route("/add_trip", methods=["GET", "POST"])
