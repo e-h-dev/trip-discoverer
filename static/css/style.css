@@ -1,8 +1,10 @@
 :root{
     --head-text:"Poppins", sans-serif;
-    --dark-color: rgb(26, 77, 46);
-    --dark-opaque: rgba(26, 77, 46, 0.9);
-    --light-color: rgb(186, 205, 146);
+    /* --dark-color: rgb(26, 77, 46); */
+    --dark-color:#fff;
+    /* --dark-opaque: rgba(26, 77, 46, 0.9); */
+    --dark-opaque:rgba(255, 255, 255, 0.9);
+    --light-color:  rgb(26, 77, 46);;
     --light-opaque: rgba(186, 205, 146, 0.5)
 }
 
