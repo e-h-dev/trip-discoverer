@@ -8,7 +8,7 @@
                 <p>
                     Trip Discoverer is an easy-to-use app. 
                     You can discover trip ideas from any of our categories. 
-                    Why not sign up, then add and edit your own trip ideas 
+                    Why not <a href="{{ url_for('register') }}"> sign up,</a> then add and edit your own trip ideas 
                     for others to discover.
             </div>
         </div>
@@ -88,7 +88,7 @@
                     {% endif %}
                     {{ trip.trip_review }}<br>
                     {% if trip.website %}
-                        <a href="{{ trip.website }}" target="_blank">Website</a>
+                        <a href="{{ trip.website }}" class="btn-large web-btn" target="_blank">Website</a>
                     {% endif %}
                     <p><em>Trip added by: {{ trip.created_by }}</em></p>
                     {% if session.user|lower == trip.created_by|lower %}

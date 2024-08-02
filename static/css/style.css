@@ -4,7 +4,7 @@
     --dark-color:#fff;
     /* --dark-opaque: rgba(26, 77, 46, 0.9); */
     --dark-opaque:rgba(255, 255, 255, 0.9);
-    --light-color:  rgb(26, 77, 46);;
+    --light-color:  rgb(26, 77, 46);
     --light-opaque: rgba(186, 205, 146, 0.5)
 }
 
@@ -103,7 +103,8 @@ nav{
 .hero-about p{
   font-weight: 600;
   font-size: 1.2rem;
-  background-color: rgba(186, 205, 146, 0.3);
+  color:var(--light-color);
+  background-color: rgba(186, 205, 146, 0.2);
   padding:20px;
   text-align: justify;
 }
@@ -128,6 +129,14 @@ nav{
     opacity: 0;
   }
 }
+
+/* trips page */
+
+.web-btn{
+  background-color: var(--dark-color);
+  color:var(--light-color)
+}
+
 
 
 /* register page */
@@ -249,6 +258,10 @@ i{
   font-family: var(--head-text);
   height:250px;
   text-align: center;
+  border:solid var(--dark-color) 3px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(26, 77, 46, 0.8);
 }
 
 .trip-header h4{
@@ -284,6 +297,10 @@ i{
   background-color: var(--light-color);
   color:var(--dark-color);
   text-align: center;
+  border:solid var(--dark-color) 3px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(26, 77, 46, 0.8);
 }
 
 .trip-content-head{
