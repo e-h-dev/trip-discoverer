@@ -21,14 +21,14 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/find_trips")
 def find_trips():
-    trips = mongo.db.trips.find()
+    trips = list(mongo.db.trips.find())
     return render_template("trips.html", trips=trips)
 
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
-    trips = mongo.db.trips.find({"$text": {"$search": query}})
+    trips = list(mongo.db.trips.find({"$text": {"$search": query}}))
     return render_template("trips.html", trips=trips)
 
 

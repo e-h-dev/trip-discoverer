@@ -197,6 +197,10 @@ nav{
   color:var(--light-color)
 }
 
+.empty-search{
+  background-color: brown;
+}
+
 
 
 /* register page */
