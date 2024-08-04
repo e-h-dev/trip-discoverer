@@ -23,10 +23,17 @@
             <div class="hero-about">
                 <h2>Trip Discoverer</h2>
                 <p>
-                    Trip Discoverer is an easy-to-use app. 
-                    You can discover trip ideas from any of our categories. 
-                    Why not <a href="{{ url_for('register') }}"> sign up,</a> then add and edit your own trip ideas 
-                    for others to discover.
+                    {% if session.user %}
+                        Welcome to Trip Discoverer! 
+                        Discover, and search for trip ideas, from any of our categories.
+                        You can add or edit your own trip ideas 
+                        for others to discover.
+                    {% else %}
+                        Trip Discoverer is an easy-to-use app. 
+                        Discover, and search for trip ideas, from any of our categories. 
+                        Why not <a href="{{ url_for('register') }}"> sign up,</a> then add and edit your own trip ideas 
+                        for others to discover.
+                    {% endif %}
             </div>
         </div>
     </div>
