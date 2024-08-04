@@ -135,7 +135,7 @@ def edit_trip(trip_id):
 @app.route("/delete_trip/<trip_id>")
 def delete_trip(trip_id):
     mongo.db.trips.delete_one({"_id": ObjectId(trip_id)})
-    flash("Task Successfully Deleted")
+    flash("Trip Successfully Deleted")
     return redirect(url_for("find_trips"))
 
 
@@ -144,6 +144,13 @@ def user_list():
     users = mongo.db.users.find()
     trips = mongo.db.trips.find()
     return render_template("users.html", users=users, trips=trips)
+
+
+@app.route("/delete_user/<user_id>")
+def delete_user(user_id):
+    mongo.db.users.delete_one({"_id": ObjectId(user_id)})
+    flash("User Successfully Deleted")
+    return redirect(url_for("user_list"))
 
 
 if __name__ == "__main__":
