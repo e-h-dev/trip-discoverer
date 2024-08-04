@@ -25,6 +25,13 @@ def find_trips():
     return render_template("trips.html", trips=trips)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    trips = mongo.db.trips.find({"$text": {"$search": query}})
+    return render_template("trips.html", trips=trips)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
