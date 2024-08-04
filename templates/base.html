@@ -35,7 +35,9 @@
                     <li><a href="{{ url_for('find_trips') }}" class="nav-text header-font">home</a></li>
                     {% if session.user %}
                         <li><a href="{{ url_for('add_trip') }}" class="nav-text header-font">add trip</a></li>
-                        <li><a href="{{ url_for('user_list') }}" class="nav-text header-font">users</a></li>
+                        {% if session.user|lower == "admin"|lower %}
+                            <li><a href="{{ url_for('user_list') }}" class="nav-text header-font">users</a></li>
+                        {% endif %}
                         <li><a href="{{ url_for('logout') }}" class="nav-text header-font">log out</a></li>
                     {% else %}
                         <li><a href="{{ url_for('login') }}" class="nav-text header-font">sign in</a></li>
@@ -50,7 +52,9 @@
             <li><a href="{{ url_for('find_trips') }}" class="nav-text header-font">home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('add_trip') }}" class="nav-text header-font">add trip</a></li>
-                <li><a href="{{ url_for('user_list') }}" class="nav-text header-font">users</a></li>
+                {% if session.user|lower == "admin"|lower %}
+                    <li><a href="{{ url_for('user_list') }}" class="nav-text header-font">users</a></li>
+                {% endif %}
                 <li><a href="{{ url_for('logout') }}" class="nav-text header-font">log out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}" class="nav-text header-font">sign in</a></li>
