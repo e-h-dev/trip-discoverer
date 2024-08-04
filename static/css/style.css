@@ -401,7 +401,34 @@ i{
 
 /* users page */
 
+.card-style{
+  background-color: var(--light-color);
+  border:solid 2px rgba(186, 205, 146, 0.7);
+  box-shadow: 0 30px 40px rgba(26, 77, 46, 0.6);
+}
+
+.card .card-title{
+  font-family: var(--head-text);
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.card p{
+  font-family: var(--head-text);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.card .card-action{
+  background-color: rgb(186, 205, 146);
+}
+
 .push{
   position: relative;
   top:200px;
+}
+
+.card-btn{
+  font-size: 1rem;
 }
