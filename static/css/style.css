@@ -31,12 +31,13 @@ nav{
 }
 
 .logo{
-    height:6rem;
-    width:6rem;
+    height:5rem;
+    width:5rem;
     margin-left: 1rem;
     box-shadow: 0 30px 40px rgba(0,0,0,.1);
     position: relative;
-    top:0px;
+    border-radius: 10px;
+    top:9%;
   }
 
 .ul-margin{
