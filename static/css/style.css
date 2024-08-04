@@ -110,6 +110,14 @@ nav{
   text-align: justify;
 }
 
+.par-sign-in{
+  color:var(--light-color)
+}
+
+.par-sign-in:hover{
+  color:var(--dark-color)
+}
+
 
 .flash-message{
   position: absolute;
