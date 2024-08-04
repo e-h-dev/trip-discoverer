@@ -137,11 +137,64 @@ nav{
   color:var(--light-color)
 }
 
+.dark{
+  color:var(--light-color)
+}
+
+/* override materilize styles */
+.input-field .prefix.active {
+  color: var(--dark-color)
+}
+
+
 .search-box{
   position: absolute;
   top:100px;
+  left:20px;
+  border-radius: 10px;
   width:55%;
-  height:100px;
+  height:60px;
+  background-color: var(--light-opaque);
+}
+
+.input-search{
+  color: var(--light-color);
+  position: relative;
+  top:-30px;
+}
+
+.search-btn{
+  background-color: var(--light-color);
+  height:40px;
+  width:40px;
+  border-radius: 10px;
+  color:var(--dark-color);
+  position: relative;
+  top:-15px;
+}
+
+.search-btn:hover{
+  background-color: var(--dark-color);
+  color:var(--light-color)
+}
+
+.reset-btn{
+  display: block;
+  background-color: var(--light-color);
+  height:40px;
+  padding: 6px;
+  font-size: 1.3rem;
+  width:100px;
+  color:var(--dark-color);
+  position: relative;
+  top:-57px;
+  left:120px;
+  border-radius: 10px;
+}
+
+.reset-btn:hover{
+  background-color: var(--dark-color);
+  color:var(--light-color)
 }
 
 
