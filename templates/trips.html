@@ -101,20 +101,48 @@
                         </div>
                     </div>
                     <div class="collapsible-body trip-content">
-                        <!-- {{ trip.region }}<br> -->
-                        <h4 class="trip-body">{{ trip.trip_name }}</h4>
-                        {{ trip.city }}<br>
-                        {{ trip.address }}<br>
-                        {{ trip.post_code }}<br>
+                        
+                        <div class="trip-body dark">
+                            {{ trip.trip_name }}<br>
+                            {{ trip.city }}<br>
+                        </div>
+
+                        <div class="location light">
+                            <div class="sub-header">Address</div>
+                            <hr>
+                            <br>
+                            <div class="address">
+                                {{ trip.address }}<br>
+                                {{ trip.city }}<br>
+                                {{ trip.post_code }}<br>
+                            </div>
+                        </div>
                         {% if trip.trip_description %}
-                            <div class="description-block">
-                                <h4>Description</h4>
-                                {{ trip.trip_description }}
+                            <div class="description-block dark">
+                                <div class="sub-header">Description</div>
+                                <hr>
+                                <br>
+                                <div class="description">
+                                    {{ trip.trip_description }}
+                                </div>
                             </div>
                         {% endif %}
-                        {{ trip.trip_review }}<br>
+                        <div class="description-block light">
+                            <div class="sub-header">Review</div>
+                            <hr>
+                            <br>
+                            <div class="description">
+                                {% if trip.trip_description %}
+                                {{ trip.trip_review }}
+                                {% else %}
+                                <p>No reviews on this trip yet</p>
+                                {% endif %}
+                            </div>
+                        </div>
                         {% if trip.website %}
-                            <a href="{{ trip.website }}" class="btn-large web-btn" target="_blank">Website</a>
+                            <a href="{{ trip.website }}" class="btn-large web-btn dark" target="_blank">
+                                Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         {% endif %}
                         <p><em>Trip added by: {{ trip.created_by }}</em></p>
                         {% if session.user|lower == trip.created_by|lower %}
@@ -148,7 +176,7 @@
                                 </div>
                             </div>
                            
-
+                        <!-- delete and edit permission for admin -->
                         {% elif session.user|lower == "admin"|lower%}
                             <!-- edit trip button -->
                             <a href="{{ url_for('edit_trip', trip_id=trip._id)}}" 

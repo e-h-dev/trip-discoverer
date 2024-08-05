@@ -144,11 +144,6 @@ nav{
 
 /* trips page */
 
-.web-btn{
-  background-color: var(--dark-color);
-  color:var(--light-color)
-}
-
 .dark{
   color:var(--light-color)
 }
@@ -374,7 +369,7 @@ i{
 
 
 .trip-content{
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
   color:var(--dark-color);
   text-align: center;
   border:solid var(--dark-color) 3px;
@@ -401,13 +396,76 @@ i{
   font-size: 1rem;
 }
 
+.dark{
+  background-color: var(--light-color);
+  color:var(--dark-color)
+}
+
+.light{
+  background-color: var(--dark-color);
+  color: var(--light-color)
+}
+
+.trip-body, .location{
+  height:50%;
+  padding:30px;
+  margin-bottom: 10px;
+  position: relative;
+  left:15%;
+  width:70%;
+  border-radius: 10px;
+  font-family: var(--head-text);
+  box-shadow:5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.trip-body{
+  font-weight: 800;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.sub-header{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.address{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
 
 .description-block{
-  height:100px;
-  width:700px;
+  height:50%;
+  padding:30px;
+  margin-bottom: 10px;
+  position: relative;
+  left:5%;
+  width:90%;
   font-family: var(--head-text);
   font-weight: 700;
-  border: solid 2px var(--dark-color)
+  border-radius: 10px;
+  box-shadow:5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.description{
+  font-size: 1.2rem;
+  font-family: var(--head-text);
+  text-align: justify;
+}
+
+.web-btn{
+  margin-top: 20px;
+  font-family: var(--head-text);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.web-btn:hover{
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
 
 /* add-trips */
