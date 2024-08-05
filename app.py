@@ -32,6 +32,8 @@ def search():
     return render_template("trips.html", trips=trips)
 
 
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
