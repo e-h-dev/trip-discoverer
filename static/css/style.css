@@ -144,10 +144,6 @@ nav{
 
 /* trips page */
 
-.dark{
-  color:var(--light-color)
-}
-
 /* override materilize styles */
 .input-field .prefix.active {
   color: var(--dark-color)
@@ -413,7 +409,7 @@ i{
   position: relative;
   left:15%;
   width:70%;
-  border-radius: 10px;
+  border-radius: 5px;
   font-family: var(--head-text);
   box-shadow:5px 5px 5px rgba(0,0,0,0.2);
 }
@@ -446,7 +442,7 @@ i{
   width:90%;
   font-family: var(--head-text);
   font-weight: 700;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow:5px 5px 5px rgba(0,0,0,0.2);
 }
 
