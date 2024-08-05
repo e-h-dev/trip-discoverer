@@ -222,7 +222,7 @@ nav{
   color: #fff;
 }
 
-#delete-confirm{
+.delete-confirm{
   display: none;
 }
 

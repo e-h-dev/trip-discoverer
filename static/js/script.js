@@ -35,12 +35,16 @@ $(document).ready(function(){
 
 
 
-let deleteBtn = document.getElementById("delete-confirm")
-let confirmBtn = document.getElementById("confirm-btn")
+let deleteBtn = document.getElementsByClassName("delete-confirm")
+let confirmBtn = document.getElementsByClassName("confirm-btn")
 
 function myDelete(){
-    deleteBtn.style.display='block'
-    confirmBtn.style.display='none'
+    for (let del =0; del < confirmBtn.length; del++){
+        confirmBtn[del].style.display='none'
+    };
+    for (let con=0; con < deleteBtn.length; con++){
+        deleteBtn[con].style.display='block'
+    }
+
 }
 
-confirmBtn.addEventListener("click", myDelete)

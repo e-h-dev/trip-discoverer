@@ -152,12 +152,12 @@
 
 
                                 <!-- button to activate delete confirmation -->
-                            <div class="delete-confirm btn-large cancel-btn" id="confirm-btn">
+                            <div class="btn-large cancel-btn confirm-btn" onclick="myDelete()">
                                 Delete Trip <i class="fa-solid fa-trash"></i>
                             </div>
 
                             <!-- delete confirmation box using javascript -->
-                            <div class="delete dark" id="delete-confirm">
+                            <div class="delete dark delete-confirm">
                                 
                                 <p>Are you sure you want to delete this trip?</p>
 
@@ -214,6 +214,14 @@
                 </h3>
             {% endif %}
         </div>
+
+        <!-- <form action="{{ url_for('search') }}" method="POST">
+            <input type="text" name="request" id="request" value="parks">
+            <button type="submit">
+                Parks
+            </button>
+
+        </form> -->
     
 
 {% endblock %}
