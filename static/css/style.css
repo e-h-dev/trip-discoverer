@@ -5,7 +5,7 @@
     /* --dark-opaque: rgba(26, 77, 46, 0.9); */
     --dark-opaque:rgba(255, 255, 255, 0.9);
     --light-color:  rgb(26, 77, 46);
-    --light-opaque: rgba(186, 205, 146, 0.5)
+    --light-opaque: rgba(186, 205, 146, 0.5);
 }
 
 /* fonts */
@@ -13,6 +13,7 @@
 .header-font{
   font-family: var(--head-text);
   font-weight: 800;
+  color:var(--light-color);
 }
 
 /* .sub-header-font{
@@ -230,7 +231,7 @@ h3{
 
 .card-style{
   background-color: var(--light-opaque);
-  color: var(--dark-color);
+  color: var(--light-color);
 }
 
 
@@ -271,10 +272,10 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 .input-field>label{
-  color:var(--dark-color);
+  color:var(--light-color);
   font-family:var(--head-text);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.2rem;
   margin-left: 2rem;
 }
 
@@ -535,7 +536,7 @@ i{
 
 /* users page */
 
-.card-style{
+.users-card-style{
   background-color: var(--light-color);
   border:solid 2px rgba(186, 205, 146, 0.7);
   box-shadow: 0 30px 40px rgba(26, 77, 46, 0.6);
