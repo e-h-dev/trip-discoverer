@@ -202,7 +202,24 @@ nav{
 }
 
 .empty-search{
-  background-color: brown;
+  background-color:rgb(250, 85, 0);
+  color: var(--light-color);
+  height:120px;
+  width:700px;
+  font-family: var(--head-text);
+  font-weight: 600;
+  padding:30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);;
+}
+
+.empty-search a{
+  color: var(--light-color);
+  text-decoration: underline;
+}
+
+.empty-search a:hover{
+  color: #fff;
 }
 
 #delete-confirm{
@@ -463,6 +480,12 @@ i{
 .web-btn:hover{
   background-color: var(--dark-color);
   color: var(--light-color);
+}
+
+.delete{
+  font-family: var(--head-text);
+  font-size: 1.3rem;
+  padding:10px;
 }
 
 /* add-trips */

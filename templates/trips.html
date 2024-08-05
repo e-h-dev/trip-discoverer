@@ -157,23 +157,20 @@
                             </div>
 
                             <!-- delete confirmation box using javascript -->
-                            <div class="" id="delete-confirm">
-                                <div class="container">
-                                <h1>Delete Account</h1>
-                                <p>Are you sure you want to delete your account?</p>
+                            <div class="delete dark" id="delete-confirm">
+                                
+                                <p>Are you sure you want to delete this trip?</p>
 
-                                <div class="clearfix">
-                                    <!-- cancel delete button -->
-                                    <a href="{{ url_for('delete_trip', trip_id=trip._id)}}" 
-                                        class="btn-large btn">
-                                        Cancel <i class="fa-regular fa-keyboard"></i>
-                                    <!-- final delete button -->
-                                    <a href="{{ url_for('find_trips') }}" 
-                                        class="btn-large btn">
-                                        Delete Trip <i class="fa-regular fa-keyboard"></i>
-                                    </a>
-                                </div>
-                                </div>
+                                <!-- cancel delete button -->
+                                <a href="{{ url_for('find_trips') }}" 
+                                    class="btn-large cancel-btn">
+                                    Cancel <i class="fa-regular fa-keyboard"></i>
+                                <!-- final delete button -->
+                                <a href="{{ url_for('delete_trip', trip_id=trip._id)}}" 
+                                    class="btn-large cancel-btn">
+                                    Delete Trip <i class="fa-regular fa-keyboard"></i>
+                                </a>
+                                
                             </div>
                            
                         <!-- delete and edit permission for admin -->
@@ -189,19 +186,17 @@
                             </div>
 
                             <!-- delete confirmation box using javascript -->
-                            <div class="" id="delete-confirm">
-                                <div class="container">
-                                <h1>Delete Account</h1>
-                                <p>Are you sure you want to delete your account?</p>
+                            <div class="delete dark" id="delete-confirm">
+                                <p>Are you sure you want to delete this trip?</p>
 
-                                <div class="clearfix">
+                                <div class="delete-buttons">
                                     <!-- cancel delete button -->
-                                    <a href="{{ url_for('delete_trip', trip_id=trip._id)}}" 
-                                        class="btn-large btn">
+                                    <a href="{{ url_for('find_trips') }}" 
+                                        class="btn-large cancel-btn">
                                         Cancel <i class="fa-regular fa-keyboard"></i>
                                     <!-- final delete button -->
-                                    <a href="{{ url_for('find_trips') }}" 
-                                        class="btn-large btn">
+                                    <a href="{{ url_for('delete_trip', trip_id=trip._id)}}" 
+                                        class="btn-large cancel-btn">
                                         Delete Trip <i class="fa-regular fa-keyboard"></i>
                                     </a>
                                 </div>
