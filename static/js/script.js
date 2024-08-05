@@ -1,11 +1,3 @@
-let deleteBtn = document.getElementById("delete-confirm")
-
-function myDelete(){
-    deleteBtn.innerHTML = `<div class="confirm-delete">Are you sure you want to delete this trip?<a href="/delete_trip/66aa303b94372872d10700e3"
-                                class="btn-large cancel-btn">Delete Trip <i class="fa-solid fa-trash"></i></a></div>`
-}
-
-deleteBtn.addEventListener("click", myDelete)
 $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"});
     $('.collapsible').collapsible();
@@ -39,3 +31,16 @@ $(document).ready(function(){
         });
     }
   });
+
+
+
+
+let deleteBtn = document.getElementById("delete-confirm")
+let confirmBtn = document.getElementById("confirm-btn")
+
+function myDelete(){
+    deleteBtn.style.display='block'
+    confirmBtn.style.display='none'
+}
+
+confirmBtn.addEventListener("click", myDelete)

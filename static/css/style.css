@@ -213,6 +213,10 @@ nav{
   background-color: brown;
 }
 
+#delete-confirm{
+  display: none;
+}
+
 
 
 /* register page */

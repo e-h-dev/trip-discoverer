@@ -121,14 +121,64 @@
                             <!-- edit trip button -->
                             <a href="{{ url_for('edit_trip', trip_id=trip._id)}}" 
                                 class="btn-large btn">Edit Trip <i class="fa-regular fa-keyboard"></i></a>
-                            <!-- delete trip div -->
-                            <div class="delete-confirm btn-large cancel-btn" id="delete-confirm">
+
+
+                                <!-- button to activate delete confirmation -->
+                            <div class="delete-confirm btn-large cancel-btn" id="confirm-btn">
                                 Delete Trip <i class="fa-solid fa-trash"></i>
                             </div>
+
+                            <!-- delete confirmation box using javascript -->
+                            <div class="" id="delete-confirm">
+                                <div class="container">
+                                <h1>Delete Account</h1>
+                                <p>Are you sure you want to delete your account?</p>
+
+                                <div class="clearfix">
+                                    <!-- cancel delete button -->
+                                    <a href="{{ url_for('delete_trip', trip_id=trip._id)}}" 
+                                        class="btn-large btn">
+                                        Cancel <i class="fa-regular fa-keyboard"></i>
+                                    <!-- final delete button -->
+                                    <a href="{{ url_for('find_trips') }}" 
+                                        class="btn-large btn">
+                                        Delete Trip <i class="fa-regular fa-keyboard"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                           
+
                         {% elif session.user|lower == "admin"|lower%}
+                            <!-- edit trip button -->
                             <a href="{{ url_for('edit_trip', trip_id=trip._id)}}" 
                                 class="btn-large btn">Edit Trip <i class="fa-regular fa-keyboard"></i></a>
-                            <div class="delete-confirm btn-large cancel-btn">Delete Trip <i class="fa-solid fa-trash"></i></div>
+
+
+                                <!-- button to activate delete confirmation -->
+                            <div class="delete-confirm btn-large cancel-btn" id="confirm-btn">
+                                Delete Trip <i class="fa-solid fa-trash"></i>
+                            </div>
+
+                            <!-- delete confirmation box using javascript -->
+                            <div class="" id="delete-confirm">
+                                <div class="container">
+                                <h1>Delete Account</h1>
+                                <p>Are you sure you want to delete your account?</p>
+
+                                <div class="clearfix">
+                                    <!-- cancel delete button -->
+                                    <a href="{{ url_for('delete_trip', trip_id=trip._id)}}" 
+                                        class="btn-large btn">
+                                        Cancel <i class="fa-regular fa-keyboard"></i>
+                                    <!-- final delete button -->
+                                    <a href="{{ url_for('find_trips') }}" 
+                                        class="btn-large btn">
+                                        Delete Trip <i class="fa-regular fa-keyboard"></i>
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
                             
                         {% endif %}
                     </div>
@@ -141,7 +191,6 @@
                 </h3>
             {% endif %}
         </div>
-        
     
 
 {% endblock %}
