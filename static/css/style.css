@@ -63,16 +63,16 @@ nav{
     height:500px;
     background-size: 100% 100%;
     background-position: center center;
-    animation: shrink 5s;
+    /* animation: shrink 5s; */
 }
-@keyframes shrink {
+/* @keyframes shrink {
   0% {
     background-size: 100% 100%;
   }
   100% {
     background-size: 110% 110%;
   }
-}
+} */
 
 .opaque{
     background-color: rgba(26, 77, 46, 0.5);;
