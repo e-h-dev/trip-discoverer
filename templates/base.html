@@ -62,15 +62,13 @@
             {% endif %}
         </ul>
     </header>
-    <section>
+    <section id="flashes">
         <!-- flash messages -->
          {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
-                    <div class="row" id="flashes">
-                        <div class="flash-message">
-                            <h4 class="center-align">{{ message }}</h4>
-                        </div>
+                    <div>
+                        <h4 class="center-align">{{ message }}</h4>
                     </div>
                 {% endfor %}
             {% endif %}
