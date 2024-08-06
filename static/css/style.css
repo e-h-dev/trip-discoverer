@@ -148,7 +148,7 @@ nav{
   top:100px;
   left:20px;
   border-radius: 10px;
-  width:55%;
+  width:50%;
   height:60px;
   background-color: var(--light-opaque);
 }
@@ -160,32 +160,36 @@ nav{
 }
 
 .search-btn{
-  background-color: var(--light-color);
-  height:40px;
-  width:40px;
-  border-radius: 10px;
-  color:var(--dark-color);
+  background-color: transparent;
+  height:45px;
+  width:45px;
+  border-radius: 5px;
+  border:none;
+  color:var(--light-color);
   position: relative;
   top:-15px;
 }
 
+
 .search-btn:hover{
-  background-color: var(--dark-color);
-  color:var(--light-color)
+  color:var(--dark-color)
 }
+
 
 .reset-btn{
   display: block;
   background-color: var(--light-color);
-  height:40px;
-  padding: 6px;
-  font-size: 1.3rem;
-  width:100px;
+  height:45px;
+  padding: 8px;
+  font-size: 1.5rem;
+  font-family: var(--head-text);
+  font-weight: 600;
+  width:45px;
   color:var(--dark-color);
   position: relative;
-  top:-57px;
-  left:120px;
-  border-radius: 10px;
+  top:-65px;
+  left:70%;
+  border-radius: 5px;
 }
 
 .reset-btn:hover{
@@ -277,16 +281,9 @@ h3{
 
 /* overriding materialize generic form input colours */
 
-input:not([type]):focus:not([readonly]),
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=password]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]),
-input[type=url]:not(.browser-default):focus:not([readonly]),
-input[type=time]:not(.browser-default):focus:not([readonly]),
-input[type=date]:not(.browser-default):focus:not([readonly]),
-input[type=datetime]:not(.browser-default):focus:not([readonly]),
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
-input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
@@ -295,20 +292,15 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: 0 1px 0 0 rgb(26, 77, 46);
 }
 
-input:not([type]):focus:not([readonly])+label,
+
 input[type=text]:not(.browser-default):focus:not([readonly])+label,
 input[type=password]:not(.browser-default):focus:not([readonly])+label,
 input[type=email]:not(.browser-default):focus:not([readonly])+label,
-input[type=url]:not(.browser-default):focus:not([readonly])+label,
-input[type=time]:not(.browser-default):focus:not([readonly])+label,
-input[type=date]:not(.browser-default):focus:not([readonly])+label,
-input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
-input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
-input[type=tel]:not(.browser-default):focus:not([readonly])+label,
 input[type=number]:not(.browser-default):focus:not([readonly])+label,
 input[type=search]:not(.browser-default):focus:not([readonly])+label,
 textarea.materialize-textarea:focus:not([readonly])+label {
-  color: var(--dark-color);
+  color: var(--light-color);
+  
 }
 
 .input-field>label{
@@ -522,7 +514,7 @@ i{
 }
 
 .select-dropdown{
-  color:var(--dark-color);
+  color:var(--light-color);
   font-family: var(--head-text);
   font-weight: 700;
 }
