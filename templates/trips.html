@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row display-section">
         <div class="col s10 m6 offset-m3 offset-s1">
 
             {% if trips|length > 0 %}
@@ -144,7 +144,7 @@
                                 Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
                         {% endif %}
-                        <p><em>Trip added by: {{ trip.created_by }}</em></p>
+                        <p class="dark"><em>Trip added by: {{ trip.created_by }}</em></p>
                         {% if session.user|lower == trip.created_by|lower %}
                             <!-- edit trip button -->
                             <a href="{{ url_for('edit_trip', trip_id=trip._id)}}" 

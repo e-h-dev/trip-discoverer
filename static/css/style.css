@@ -621,3 +621,132 @@ i{
 .card-btn{
   font-size: 1rem;
 }
+
+/* media queries for trips page tablet */
+
+@media (max-width:900px){
+  .hero-about{
+    height:45%;
+    width:40%;
+  }
+  
+  .hero-about h2{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    font-size: 1.8rem;
+  }
+  
+  .hero-about p{
+    font-weight: 600;
+    font-size: 1rem;
+    color:var(--light-color);
+    background-color: rgba(186, 205, 146, 0.1);
+    padding:10px;
+    text-align: justify;
+  }
+
+  .trip-body, .location, .description-block{
+    left:5%;
+    width:90%;
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  
+  .filters-section .sub-header{
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+  
+
+  
+  .filter-btn{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin:6px;
+  }
+  
+  
+}
+
+
+/* media queries for trips page mobile */
+
+@media (max-width:430px) {
+
+  .hero{
+    height:30vh;
+  }
+
+  .opaque{
+    height: 30vh;
+  }
+
+  .hero-about{
+    top:10px;
+    left:15%;
+    height:100%;
+    width:70%;
+    background-color: rgba(186, 205, 146, 0.5);
+  }
+  
+  .hero-about h2{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    color:var(--light-color);
+    font-size: 1.5rem;
+  }
+  
+  .hero-about p{
+    font-weight: 600;
+    font-size: 1rem;
+    color:var(--light-color);
+    padding:10px;
+    text-align: justify;
+  }
+
+  .display-section{
+    position: relative;
+    top:300px;
+  }
+
+  .filters-section{
+    display: none;
+  }
+
+  .search-box{
+    position: absolute;
+    width:90%;
+    top:130px;
+  }
+
+  .search-btn{
+    position: absolute;
+    top:12px;
+    left:75%;
+  }
+  
+  .reset-btn{
+    height:30px;
+    padding: 5px;
+    font-size: 1.3rem;
+    width:30px;
+    position: absolute;
+    top:15px;
+    left:85%;
+  }
+
+  .trip-body, .location, .description-block{
+    left:5%;
+    width:90%;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+}
+
