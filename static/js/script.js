@@ -44,7 +44,13 @@ function myDelete(){
     };
     for (let con=0; con < deleteBtn.length; con++){
         deleteBtn[con].style.display='block'
-    }
+    };
 
+};
+
+const flashOut = setTimeout(removeFlash, 5000);
+
+function removeFlash(){
+    document.getElementById("flashes").innerHTML = ""
 }
 
