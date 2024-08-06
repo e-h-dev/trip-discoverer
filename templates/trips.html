@@ -214,14 +214,57 @@
                 </h3>
             {% endif %}
         </div>
+        <div class="filters-section">
+            <h4 class="sub-header">Filter Categories <i class="fa-solid fa-filter"></i></h4>
+            <a href="{{ url_for('find_trips') }}" class="btn">Reset</a>
+            <hr>
+            <form action="{{ url_for('search') }}" method="POST">
+                <input type="text" name="query" class="hide" value="beach">
+                <button type="submit" class="btn">
+                    Beaches
+                </button>
+                <span class="tick"></span>
+            </form>
 
-        <!-- <form action="{{ url_for('search') }}" method="POST">
-            <input type="text" name="request" id="request" value="parks">
-            <button type="submit">
-                Parks
-            </button>
+            <form action="{{ url_for('search') }}" method="POST">
+                <input type="text" name="query" class="hide" value="museums">
+                <button type="submit" class="btn" onclick="searchFilter()">
+                    Museums
+                </button>
+                <span class="tick"></span>
+            </form>
 
-        </form> -->
+            <form action="{{ url_for('search') }}" method="POST">
+                <input type="text" name="query" class="hide" value="parks">
+                <button type="submit" class="btn" onclick="searchFilter()">
+                    Parks
+                </button>
+                <span class="tick"></span>
+            </form>
+            <form action="{{ url_for('search') }}" method="POST">
+                <input type="text" name="query" class="hide" value="sport">
+                <button type="submit" class="btn" onclick="searchFilter()">
+                    Sport
+                </button>
+                <span class="tick"></span>
+            </form>
+
+            <form action="{{ url_for('search') }}" method="POST">
+                <input type="text" name="query" class="hide" value="theme">
+                <button type="submit" class="btn" onclick="searchFilter()">
+                    Theme parks
+                </button>
+                <span class="tick"></span>
+            </form>
+
+            <form action="{{ url_for('search') }}" method="POST">
+                <input type="text" name="query" class="hide" value="walks">
+                <button type="submit" class="btn" onclick="searchFilter()">
+                    Walks
+                </button>
+                <span class="tick"></span>
+            </form>
+        </div>
     
 
 {% endblock %}

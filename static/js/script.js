@@ -54,3 +54,10 @@ function removeFlash(){
     document.getElementById("flashes").innerHTML = ""
 }
 
+let checked = document.getElementsByClassName("tick")
+
+function searchFilter(){
+    for (let filt =0; filt < confirmBtn.length; filt++){
+        checked[filt].innerHTML = `<i class="fa-solid fa-circle-check"></i>`
+    };
+}

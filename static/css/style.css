@@ -63,16 +63,16 @@ nav{
     height:500px;
     background-size: 100% 100%;
     background-position: center center;
-    /* animation: shrink 5s; */
+    animation: shrink 5s;
 }
-/* @keyframes shrink {
+@keyframes shrink {
   0% {
     background-size: 100% 100%;
   }
   100% {
     background-size: 110% 110%;
   }
-} */
+}
 
 .opaque{
     background-color: rgba(26, 77, 46, 0.5);;
@@ -132,16 +132,8 @@ nav{
   background-color: var(--dark-color);
   box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
   z-index: 5;
-  animation: flash 5s;
 }
-@keyframes flash {
-  25%{
-    opacity: 0.5;
-  }
- 100%{
-    opacity: 0;
-  }
-}
+
 
 /* trips page */
 
@@ -226,6 +218,20 @@ nav{
   display: none;
 }
 
+/* filter section */
+
+.hide{
+  display: none;
+}
+
+.filters-section{
+  position: absolute;
+  left:2%;
+}
+
+.filters-section button{
+  margin:5px;
+}
 
 
 /* register page */
@@ -312,6 +318,7 @@ i{
   color: var(--dark-color);
   background-color: var(--light-color);
 }
+
 
 .account-confirm{
   position: absolute;
@@ -442,6 +449,7 @@ i{
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
+  color:var(--light-color)
 }
 
 .address{
