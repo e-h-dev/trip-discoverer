@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 {% block content%}
     <div class="row">
+        <!-- hero image -->
         <div class="hero">
+            <!-- opaque cover for hero image -->
             <div class="opaque"></div>
+            <!-- search box -->
             <div class="row card-panel search-box">
                 <form action="{{ url_for('search') }}" method="POST" class="col s12">
                     <div class="center-align">
@@ -12,14 +15,17 @@
                             <label for="query">Search Trips</label>
                         </div>
                         <div class="col s12 m4">
+                            <!-- button to activate search -->
                             <button type="submit" class="search-btn">
                                 <i class="fas fa-search left"></i>
                             </button>
+                            <!-- resets search -->
                             <a href="{{ url_for('find_trips') }}" class="reset-btn"><i class="fa-solid fa-xmark"></i></a>
                         </div>
                     </div>
                 </form>
             </div>
+            <!-- information paragraph -->
             <div class="hero-about">
                 <h2>Trip Discoverer</h2>
                 <p>
@@ -38,9 +44,11 @@
             </div>
         </div>
     </div>
+    <!-- dispalyed trips section -->
     <div class="row display-section">
         <div class="col s10 m6 offset-m3 offset-s1">
-
+            
+            <!-- logic to dispaly all trips save in data base -->
             {% if trips|length > 0 %}
             <ul class="collapsible">
                 {% for trip in trips %}
@@ -48,6 +56,7 @@
                     <div class="collapsible-header trip-header">
                         <h4>{{ trip.category_name }}</h4>
                         <span>
+                            <!-- logic to display relavant icon for category -->
                             {% if trip.category_name == "Parks" %}
                                 <i class="fa-solid fa-tree"></i>
                             {% elif trip.category_name == "Walks" %}
@@ -66,7 +75,9 @@
                             <p class="trip-header-region">{{ trip.trip_name }}</p>
                             <p>{{ trip.region }}</p>
                         </div>
+
                         <div class="review-stars">
+                            <!-- logic to display relavant number of rating stars -->
                             {% if trip.trip_rating == "1" %}
                                 <i class="fa-solid fa-star star-size"></i>
                                 <i class="fa-regular fa-star star-size"></i>
