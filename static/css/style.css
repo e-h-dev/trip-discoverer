@@ -194,10 +194,10 @@ nav{
 }
 
 .empty-search{
-  background-color:rgb(250, 85, 0);
+  background-color:#f0f0f0;
   color: var(--light-color);
   height:120px;
-  width:700px;
+  width:720px;
   font-family: var(--head-text);
   font-weight: 600;
   padding:30px;
@@ -211,7 +211,7 @@ nav{
 }
 
 .empty-search a:hover{
-  color: #fff;
+  font-size: 3.2rem;
 }
 
 .delete-confirm{
@@ -229,8 +229,25 @@ nav{
   left:2%;
 }
 
-.filters-section button{
-  margin:5px;
+
+.filter-btn{
+  color:var(--light-color);
+  background-color: var(--dark-color);
+  font-family: var(--head-text);
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin:7px;
+  border:none;
+  cursor: pointer;
+}
+
+.filter-btn:hover{
+  color:#000;
+  text-decoration: underline;
+}
+
+button:focus {
+  background-color: #fff;
 }
 
 
