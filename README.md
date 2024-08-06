@@ -78,4 +78,5 @@ To fix this issue I cchejed the href in devtools
 To fix this bug I wrote the html for the confirmaton and hid it with dispaly none in css. The javascript funciton changes the display prperties of both buttins hiding the first delete buttoon and reveaing the confirmation button. 
 - This above fix was not good enough as this caused a second bug. The javascript funciton only worked on the first trip of th elist the rest of the items on display the delete button was inactive.
 The reason for this bug is that I targeted the HTML elemnts woth javascript via the ids. In javascript only one identical id could be used. I changer the funciton to target the HTML class created a for loop to iteraete over all instanses of the class, this way the delete confirmation was active on all trips dispalyed.
+- After logging into admin account the page layout was distorted and most of the trip displays would not open.
 
