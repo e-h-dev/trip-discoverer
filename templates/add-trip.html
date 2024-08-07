@@ -11,7 +11,7 @@
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-list"></i>
-                                    <select id="category_name" name="category_name" class="validate" required>
+                                    <select id="category_name" name="category_name" pattern=".*\S+.*" class="validate" required>
                                       <option value="" disabled selected>Choose Category</option>
                                       {% for category in categories %}
                                             <option value="{{ category.category_name }}">{{ category.category_name }}</option>
@@ -25,7 +25,7 @@
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-car"></i>
                                     <input id="trip_name" name="trip_name" type="text" 
-                                        class="validate focus-color" required>
+                                        pattern=".*\S+.*" class="validate focus-color" required>
                                     <label for="trip_name">Trip Name</label>
                                 </div>
                             </div>
@@ -34,7 +34,7 @@
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-location-dot"></i>
                                     <input id="region" name="region" type="text" 
-                                        class="validate focus-color" required>
+                                        pattern=".*\S+.*" class="validate focus-color" required>
                                     <label for="region">Region</label>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-tree-city"></i>
                                     <input id="city" name="city" type="text" 
-                                         class="validate focus-color" required>
+                                         pattern=".*\S+.*" class="validate focus-color" required>
                                     <label for="city">Nearest City / Town</label>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-map-location-dot"></i>
                                     <input id="address" name="address" type="text" 
-                                         class="validate focus-color" required>
+                                         pattern=".*\S+.*" class="validate focus-color" required>
                                     <label for="address">Address</label>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-signs-post"></i>
                                     <input id="post_code" name="post_code" type="text" 
-                                         class="validate focus-color" required>
+                                         pattern=".*\S+.*" class="validate focus-color" required>
                                     <label for="post_code">Post Code</label>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-globe"></i>
                                     <input id="website" name="website" type="text" 
-                                         class="validate focus-color">
+                                         pattern=".*\S+.*" class="validate focus-color">
                                     <label for="website">Copy the link to your trip's website</label>
                                 </div>
                             </div>
