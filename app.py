@@ -48,7 +48,7 @@ def register():
         
         #logic to stop duplicate usernames
         if existing_user:
-            flash("Username used!")
+            flash("Username already used!")
             return redirect(url_for("register"))
 
         #dictioary for user data
@@ -79,7 +79,7 @@ def login():
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
                 session["user"] = request.form.get("username").lower()
-                flash("Welcome, {}".format(request.form.get("username")))
+                flash("Welcome back, {}".format(request.form.get("username")))
                 #directs user to trips page if successfully signed in
                 return redirect(url_for('find_trips'))
             else:
@@ -100,7 +100,7 @@ def login():
 @app.route("/logout")
 def logout():
     #logs out user by clearing session cookie
-    flash("You have logged out!")
+    flash("You have signed out!")
     session.pop("user")
     return redirect(url_for('find_trips'))
 
@@ -132,7 +132,7 @@ def add_trip():
         }
         #adds trip to database
         mongo.db.trips.insert_one(trip)
-        flash("Trip Added")
+        flash("Trip Successfully Added")
         #directs ser to trips page after trip added
         return redirect(url_for("find_trips"))
     #variable to render list of categories in database on add trip temaplte form
@@ -159,7 +159,7 @@ def edit_trip(trip_id):
         }
         #updates edited informaiton to database
         mongo.db.trips.update_one({"_id": ObjectId(trip_id)}, {"$set": edit})
-        flash("Trip successfully updated")
+        flash("Trip Successfully Updated")
         return redirect(url_for("find_trips"))
     trip = mongo.db.trips.find_one({"_id": ObjectId(trip_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
