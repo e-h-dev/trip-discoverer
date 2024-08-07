@@ -1,11 +1,11 @@
 :root{
     --head-text:"Poppins", sans-serif;
-    /* --dark-color: rgb(26, 77, 46); */
-    --dark-color:#fff;
-    /* --dark-opaque: rgba(26, 77, 46, 0.9); */
-    --dark-opaque:rgba(255, 255, 255, 0.9);
-    --light-color:  rgb(26, 77, 46);
+    --white-color:#fff;
+    --white-opaque:rgba(255, 255, 255, 0.9);
+    --dark-color:  rgb(26, 77, 46);
     --light-opaque: rgba(186, 205, 146, 0.5);
+    --light-color: rgb(186, 205, 146);
+    --cancel-color:rgb(21, 48, 25);
 }
 
 /* fonts */
@@ -13,19 +13,49 @@
 .header-font{
   font-family: var(--head-text);
   font-weight: 800;
+  color:var(--dark-color);
+}
+
+/* sizing for icons */
+i{
+  font-size: x-large;
+}
+
+
+/* -------------------------------------------main buttons styling */
+.btn{
+  color:var(--dark-color);
+  background-color: var(--white-color);
+  font-family: var(--head-text);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.btn:hover{
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
+.cancel-btn{
+  background-color: var(--cancel-color);
   color:var(--light-color);
+  font-family: var(--head-text);
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
-/* .sub-header-font{
-
+.cancel-btn:hover{
+  background-color: var(--light-color);
+  color:var(--cancel-color);
 }
 
-.text-font{
 
-} */
+/*------------------------------------------------- navbar styles ----------------------------------------*/
 
 nav{
-    background-color: var(--dark-opaque);
+    background-color: var(--white-opaque);
     height: 6rem;
     position: fixed;
     z-index: 1;
@@ -41,6 +71,8 @@ nav{
     top:9%;
   }
 
+  /* navbar links positioning */
+
 .ul-margin{
     margin-top: 1rem;
 }
@@ -48,12 +80,12 @@ nav{
 .nav-text{
    text-transform: uppercase;
    font-size: 20px;
-   color: var(--light-color);
+   color: var(--dark-color);
    text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
 .mob-menu{
-    color:var(--light-color);
+    color:var(--dark-color);
     margin-top: 1rem;
 }
 
@@ -65,6 +97,8 @@ nav{
     background-position: center center;
     animation: shrink 5s;
 }
+
+/* animation for hero image on load */
 @keyframes shrink {
   0% {
     background-size: 100% 100%;
@@ -73,6 +107,8 @@ nav{
     background-size: 110% 110%;
   }
 }
+
+/* covers hero image with theme color */
 
 .opaque{
     background-color: rgba(26, 77, 46, 0.5);;
@@ -86,7 +122,7 @@ nav{
   width:45%;
   font-family: var(--head-text);
   background-color: rgba(186, 205, 146, 0.2);
-  color:var(--dark-color);
+  color:var(--white-color);
   position:relative;
   left:20px;
   bottom:280px;
@@ -105,20 +141,14 @@ nav{
 .hero-about p{
   font-weight: 600;
   font-size: 1.2rem;
-  color:var(--light-color);
+  color:var(--dark-color);
   background-color: rgba(186, 205, 146, 0.2);
   padding:20px;
   text-align: justify;
 }
 
-.par-sign-in{
-  color:var(--light-color)
-}
 
-.par-sign-in:hover{
-  color:var(--dark-color)
-}
-
+/* styles for flash messages */
 #flashes{
   position: absolute;
   top:20px;
@@ -128,32 +158,20 @@ nav{
   font-family: var(--head-text);
   font-weight: 800;
   text-transform: capitalize;
-  color:var(--light-color);
-  /* background-color: var(--dark-color); */
-  /* box-shadow: 5px 5px 5px rgba(0,0,0,0.2); */
+  color:var(--dark-color);
   z-index: 5;
 }
 
-/* .flash-message{
-  position: absolute;
-  top:20px;
-  left:33%;
-  height:60px;
-  width:33%;
-  font-family: var(--head-text);
-  font-weight: 800;
-  color:var(--light-color);
-  background-color: var(--dark-color);
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-  z-index: 5;
-} */
 
+/*------------------------------------------------------- trips page ----------------------------------------------------*/
 
-/* trips page */
+/* styles for href link for sign in on hero paragraph */
+.par-sign-in{
+  color:var(--dark-color)
+}
 
-/* override materilize styles */
-.input-field .prefix.active {
-  color: var(--dark-color)
+.par-sign-in:hover{
+  color:var(--white-color)
 }
 
 
@@ -168,7 +186,7 @@ nav{
 }
 
 .input-search{
-  color: var(--light-color);
+  color: var(--dark-color);
   position: relative;
   top:-30px;
 }
@@ -179,27 +197,27 @@ nav{
   width:45px;
   border-radius: 5px;
   border:none;
-  color:var(--light-color);
+  color:var(--dark-color);
   position: relative;
   top:-15px;
 }
 
 
 .search-btn:hover{
-  color:var(--dark-color)
+  color:var(--white-color)
 }
 
 
 .reset-btn{
   display: block;
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
   height:45px;
   padding: 8px;
   font-size: 1.5rem;
   font-family: var(--head-text);
   font-weight: 600;
   width:45px;
-  color:var(--dark-color);
+  color:var(--white-color);
   position: relative;
   top:-65px;
   left:70%;
@@ -207,177 +225,19 @@ nav{
 }
 
 .reset-btn:hover{
-  background-color: var(--dark-color);
-  color:var(--light-color)
-}
-
-.empty-search{
-  background-color:#f0f0f0;
-  color: var(--light-color);
-  height:120px;
-  width:720px;
-  font-family: var(--head-text);
-  font-weight: 600;
-  padding:30px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);;
-}
-
-.empty-search a{
-  color: var(--light-color);
-  text-decoration: underline;
-}
-
-.empty-search a:hover{
-  font-size: 3.2rem;
-}
-
-.delete-confirm{
-  display: none;
-}
-
-/* filter section */
-
-.hide{
-  display: none;
-}
-
-.filters-section{
-  position: absolute;
-  left:2%;
-}
-
-
-.filter-btn{
-  color:var(--light-color);
-  background-color: var(--dark-color);
-  font-family: var(--head-text);
-  font-size: 1.3rem;
-  font-weight: 800;
-  margin:7px;
-  border:none;
-  cursor: pointer;
-}
-
-.filter-btn:hover{
-  color:#000;
-  text-decoration: underline;
-}
-
-button:focus {
-  background-color: #fff;
-}
-
-
-/* register page */
-
-.register-login{
-  position:absolute;
-  top:13%;
-  width:100%;
-}
-
-/* .align{
-  position: relative;
-  top:100px;
-} */
-
-h3{
-  font-size: 3rem;
+  background-color: var(--white-color);
   color:var(--dark-color)
 }
 
-.card-style{
-  background-color: var(--light-opaque);
-  color: var(--light-color);
-}
-
-
-/* overriding materialize generic form input colours */
-
-input[type=text]:not(.browser-default):focus:not([readonly]),
-input[type=password]:not(.browser-default):focus:not([readonly]),
-input[type=email]:not(.browser-default):focus:not([readonly]),
-input[type=number]:not(.browser-default):focus:not([readonly]),
-input[type=search]:not(.browser-default):focus:not([readonly]),
-textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: rgb(26, 77, 46);;
-  -webkit-box-shadow: 0 1px 0 0 rgb(26, 77, 46);;
-  box-shadow: 0 1px 0 0 rgb(26, 77, 46);
-}
-
-
-input[type=text]:not(.browser-default):focus:not([readonly])+label,
-input[type=password]:not(.browser-default):focus:not([readonly])+label,
-input[type=email]:not(.browser-default):focus:not([readonly])+label,
-input[type=number]:not(.browser-default):focus:not([readonly])+label,
-input[type=search]:not(.browser-default):focus:not([readonly])+label,
-textarea.materialize-textarea:focus:not([readonly])+label {
-  color: var(--light-color);
-  
-}
-
-.input-field>label{
-  color:var(--light-color);
-  font-family:var(--head-text);
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-left: 2rem;
-}
-
-i{
-  font-size: x-large;
-}
-
-.btn{
-  color:var(--light-color);
-  background-color: var(--dark-color);
-  font-family: var(--head-text);
-  font-size: 1.3rem;
-  font-weight: 800;
-}
-
-.btn:hover{
-  color: var(--dark-color);
-  background-color: var(--light-color);
-}
-
-
-.account-confirm{
-  position: absolute;
-  top:95%;
-  left:35%;
-  color: var(--dark-color);
-  font-family: var(--head-text);
-  font-weight: 700;
-  background-color: var(--light-color);
-}
-
-.account-confirm a{
-  color: var(--light-color);
-  background-color: var(--dark-color);
-}
-
-.account-confirm a:hover{
-  color: var(--dark-color);
-  background-color: var(--light-color);
-}
-
-.register{
-  top:3%;
-  z-index: 2;
-}
-
-
-/* trips.html */
+/* -----------------------------------------styles for trip display boxes */
 
 .trip-header{
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  background-color: var(--white-color);
+  color: var(--dark-color);
   font-family: var(--head-text);
   height:250px;
   text-align: center;
-  border:solid var(--dark-color) 3px;
+  border:solid var(--white-color) 3px;
   margin-bottom: 12px;
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(26, 77, 46, 0.8);
@@ -395,11 +255,7 @@ i{
   display:block;
 }
 
-/* .trip-header h5{
-  padding-top: 10px;
-  padding-left: 10px;
-  font-size: 1.3rem;
-} */
+
 
 .trip-header p{
   font-family: var(--head-text);
@@ -411,19 +267,18 @@ i{
   font-size: 1.3rem;
 }
 
-
 .trip-content{
-  background-color: var(--dark-color);
-  color:var(--dark-color);
+  background-color: var(--white-color);
+  color:var(--white-color);
   text-align: center;
-  border:solid var(--dark-color) 3px;
+  border:solid var(--white-color) 3px;
   margin-bottom: 12px;
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(26, 77, 46, 0.8);
 }
 
 .trip-content-head{
-  color: var(--dark-color);
+  color: var(--white-color);
   font-family: var(--head-text);
   font-weight: 800;
   text-transform: uppercase;
@@ -441,13 +296,13 @@ i{
 }
 
 .dark{
-  background-color: var(--light-color);
-  color:var(--dark-color)
+  background-color: var(--dark-color);
+  color:var(--white-color)
 }
 
 .light{
-  background-color: var(--dark-color);
-  color: var(--light-color)
+  background-color: var(--white-color);
+  color: var(--dark-color)
 }
 
 .date-stamp{
@@ -476,18 +331,27 @@ i{
   text-transform: uppercase;
 }
 
+/* sub headers */
+
 .sub-header{
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
-  color:var(--light-color)
 }
+
+.sub-header .dark{
+  color:var(--white-color)
+}
+
+.sub-header .light{
+  color:var(--dark-color)
+}
+
 
 .address{
   font-weight: 600;
   font-size: 1.2rem;
 }
-
 
 
 .description-block{
@@ -497,8 +361,6 @@ i{
   position: relative;
   left:5%;
   width:90%;
-  font-family: var(--head-text);
-  font-weight: 700;
   border-radius: 5px;
   box-shadow:5px 5px 5px rgba(0,0,0,0.2);
 }
@@ -506,9 +368,12 @@ i{
 .description{
   font-size: 1.2rem;
   font-family: var(--head-text);
+  font-weight: 700;
   text-align: justify;
 }
 
+
+/* styles for trip website links */
 .web-btn{
   margin-top: 20px;
   font-family: var(--head-text);
@@ -517,41 +382,183 @@ i{
 }
 
 .web-btn:hover{
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  background-color: var(--white-color);
+  color: var(--dark-color);
 }
 
+
+/* styles for delete conformation message (activated with javascript) */
 .delete{
   font-family: var(--head-text);
   font-size: 1.3rem;
   padding:10px;
 }
 
-/* add-trips */
 
-/* override materialize styles */
+/* styles for message displayed for no results search */
+.empty-search{
+  background-color:#f0f0f0;
+  color: var(--dark-color);
+  height:120px;
+  width:720px;
+  font-family: var(--head-text);
+  font-weight: 600;
+  padding:30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);;
+}
 
-.dropdown-content {
+.empty-search a{
+  color: var(--dark-color);
+  text-decoration: underline;
+}
+
+.empty-search a:hover{
+  font-size: 3.2rem;
+}
+
+
+/* hides main delete function (becomes visible with javascript) */
+.delete-confirm{
+  display: none;
+}
+
+/*---------------------------------------------------------- filter section */
+
+/* hides search bar for filter search */
+.hide{
+  display: none;
+}
+
+.filters-section{
+  position: absolute;
+  left:2%;
+}
+
+
+.filter-btn{
+  color:var(--dark-color);
+  background-color: var(--white-color);
+  font-family: var(--head-text);
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin:7px;
+  border:none;
+  cursor: pointer;
+}
+
+.filter-btn:hover{
+  color:#000;
+  text-decoration: underline;
+}
+
+/* overrides materialize default blue button color */
+button:focus {
+  background-color:var(--white-color);
+}
+
+
+/* ---------------------------------------------Sign up and sign in pages---------------------------------------- */
+
+.register-login{
+  position:absolute;
+  top:13%;
+  width:100%;
+}
+
+h3{
+  font-size: 3rem;
+  color:var(--white-color)
+}
+
+
+/* styles for main sign in / sign up form */
+.card-style{
+  background-color: var(--light-opaque);
+  color: var(--dark-color);
+}
+
+
+/* overriding materialize generic form input colours */
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: rgb(26, 77, 46);;
+  -webkit-box-shadow: 0 1px 0 0 rgb(26, 77, 46);;
+  box-shadow: 0 1px 0 0 rgb(26, 77, 46);
+}
+
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+  color: var(--dark-color);
+  
+}
+
+.input-field>label{
+  color:var(--dark-color);
+  font-family:var(--head-text);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+
+.account-confirm{
+  position: absolute;
+  top:90%;
+  left:35%;
+  color: var(--white-color);
+  font-family: var(--head-text);
+  font-weight: 700;
   background-color: var(--dark-color);
 }
 
+.account-confirm a{
+  color: var(--dark-color);
+  background-color: var(--white-color);
+}
+
+.account-confirm a:hover{
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
+
+
+/* -------------------------------------------------------add-trips page ---------------------------------- */
+
+/*  ---------------------------------------override materialize styles */
+
+.dropdown-content {
+  background-color: var(--white-color);
+}
+
 .select-dropdown{
-  color:var(--light-color);
+  color:var(--dark-color);
   font-family: var(--head-text);
   font-weight: 700;
 }
 
 .select-wrapper input.select-dropdown:focus {
-  border-bottom: 1px solid var(--dark-color)
+  border-bottom: 1px solid var(--white-color)
 }
 
 .select-dropdown li.disabled,.select-dropdown li.disabled>span,.select-dropdown li.optgroup {
-  color: var(--light-color);
+  color: var(--dark-color);
   background-color: transparent
 }
 
 .dropdown-content li>a,.dropdown-content li>span {
-  color: var(--light-color);
+  color: var(--dark-color);
   font-family: var(--head-text);
   font-weight: 600;
   font-size: 1.2rem;
@@ -566,40 +573,16 @@ i{
   height: 0;
   border-top: 0px solid transparent;
   border-left: 0px solid transparent;
-  border-right: 0px solid var(--dark-color);
-  border-bottom: 0px solid var(--dark-color);
-}
-
-.blank{
-  background-color: var(--light-opaque);
-  height:30px;
-  width:30px;
-  position: relative;
-  left:3%;
-  top:10px;
-  z-index: 2;
-}
-
-/* edit trips */
-
-.cancel-btn{
-  background-color: rgb(250, 85, 0);
-  color:var(--light-color);
-  font-family: var(--head-text);
-  font-size: 1.3rem;
-  font-weight: 800;
-}
-
-.cancel-btn:hover{
-  background-color: var(--light-color);
-  color:rgb(250, 85, 0);
+  border-right: 0px solid var(--white-color);
+  border-bottom: 0px solid var(--white-color);
 }
 
 
-/* users page */
+
+/* ------------------------------------------------------------users page---------------------- */
 
 .users-card-style{
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
   border:solid 2px rgba(186, 205, 146, 0.7);
   box-shadow: 0 30px 40px rgba(26, 77, 46, 0.6);
 }
@@ -630,6 +613,8 @@ i{
   font-size: 1rem;
 }
 
+/* --------------------------------------------------------media queries -------------------------------------*/
+
 /* media queries for trips page tablet */
 
 @media (max-width:900px){
@@ -649,7 +634,7 @@ i{
   .hero-about p{
     font-weight: 600;
     font-size: 1rem;
-    color:var(--light-color);
+    color:var(--dark-color);
     background-color: rgba(186, 205, 146, 0.1);
     padding:10px;
     text-align: justify;
@@ -705,14 +690,14 @@ i{
     text-transform: uppercase;
     text-align: center;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.4);
-    color:var(--light-color);
+    color:var(--dark-color);
     font-size: 1.5rem;
   }
   
   .hero-about p{
     font-weight: 600;
     font-size: 1rem;
-    color:var(--light-color);
+    color:var(--dark-color);
     padding:10px;
     text-align: justify;
   }
