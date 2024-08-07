@@ -652,6 +652,11 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 /* media queries for trips page tablet */
 
 @media (max-width:900px){
+
+  #flashes h4{
+    font-size: 1.3rem;
+  }
+
   .hero-about{
     height:45%;
     width:40%;
@@ -713,8 +718,8 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 @media (max-width:430px) {
 
-  #flashes{
-    font-size: xx-small;
+  #flashes h4{
+    font-size: 1rem;
   }
 
   .hero{
