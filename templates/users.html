@@ -14,7 +14,14 @@
                 {% endfor %} -->
             </div>
             <div class="card-action">
-                <a href="#" class="btn card-btn">Edit User</a>
+                <form action="{{ url_for('search') }}" method="POST">
+                    <input type="text" name="query" class="hide" value="{{ user.username }}">
+                    <button type="submit" class="btn card-btn user-search">
+                        Search User
+                    </button>
+                    <span class="tick"></span>
+                </form>
+                <!-- <a href="#" class="btn card-btn">Edit User</a> -->
                 <a href="{{ url_for('delete_user', user_id=user._id)}}" class=" btn cancel-btn card-btn">Delete User</a>
             </div>
         </div>

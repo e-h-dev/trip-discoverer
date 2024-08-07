@@ -613,6 +613,12 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   font-size: 1rem;
 }
 
+.user-search{
+  position: relative;
+  left:50%;
+  top:35px;
+}
+
 /* --------------------------------------------------------media queries -------------------------------------*/
 
 /* media queries for trips page tablet */
