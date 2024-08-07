@@ -2,6 +2,7 @@ import os
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
+from datetime import datetime
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -96,6 +97,11 @@ def logout():
 
 @app.route("/add_trip", methods=["GET", "POST"])
 def add_trip():
+    date = datetime.now()
+    day = date.day
+    month = date.month
+    year = date.year
+    date_stamp = [day, month, year]
     if request.method == "POST":
         trip = {
             "category_name": request.form.get("category_name"),
@@ -108,7 +114,8 @@ def add_trip():
             "website": request.form.get("website"),
             "trip_rating": request.form.get("trip_rating"),
             "trip_review":request.form.get("trip_review"),
-            "created_by": session["user"]
+            "created_by": session["user"],
+            "added":date_stamp
         }
         mongo.db.trips.insert_one(trip)
         flash("Trip Added")
