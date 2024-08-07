@@ -460,6 +460,33 @@ button:focus {
 
 /* ---------------------------------------------Sign up and sign in pages---------------------------------------- */
 
+/* alternitive styles for sign in and sign up and add trip pages hero and opaque classes */
+.small-hero{
+  background-image: url("../images/hero-image.jpg");
+  width:100%;
+  height:100vh;
+  background-size: 100% 100%;
+  background-position: center center;
+  animation: shrink 5s;
+}
+
+.small-opaque{
+  background-color: rgba(26, 77, 46, 0.5);;
+  height: 100vh;
+  width: 100%;
+  position: inherit;
+}
+
+/* animation for hero image on load */
+@keyframes shrink {
+0% {
+  background-size: 100% 100%;
+}
+100% {
+  background-size: 110% 110%;
+}
+}
+
 .register-login{
   position:absolute;
   top:13%;
@@ -513,9 +540,10 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 
 .account-confirm{
-  position: absolute;
-  top:90%;
-  left:35%;
+  position: relative;
+  bottom:10px;
+  width:50%;
+  right:20px;
   color: var(--white-color);
   font-family: var(--head-text);
   font-weight: 700;
@@ -667,6 +695,16 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     margin:6px;
   }
   
+  /* sign up and sign in pages */
+
+  .small-hero{
+    height:50vh;
+  }
+
+  .small-opaque{
+    height:50vh;
+  }
+  
   
 }
 
@@ -674,6 +712,10 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 /* media queries for trips page mobile */
 
 @media (max-width:430px) {
+
+  #flashes{
+    font-size: xx-small;
+  }
 
   .hero{
     height:30vh;
@@ -745,6 +787,13 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
+  }
+
+  /* sign up and sign in pages */
+
+  .account-confirm{
+    bottom:-250px;
+    right:10px;
   }
   
 }
