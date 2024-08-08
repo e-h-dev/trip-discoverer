@@ -2,7 +2,7 @@
 
 # Trip Discoverer
 
-![Trip Discoverer Theme Image]()
+![Trip Discoverer Theme Image](/static/images/hero-image.jpg)
 
 ## Table of Contents
 
@@ -76,6 +76,8 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 | 4 | This above fix was not good enough as this caused a second bug. The javascript function only worked on the first trip of the list, for the rest of the items on display the delete button was inactive. | N/A | The reason for this bug was, I targeted the HTML elements with javascript via the ids. In javascript only one identical id could be used. I changed the funciton to target the HTML class created a for loop to iteraete over all instanses of the class, this way the delete confirmation was active on all trips dispalyed. |
 | 5 | When logging into admin account, the page layout was distorted and most of the trip displays would not open. | N/A | After studying the code I realised the classes to connect the javascript were not in the correct palce in the admin section of the jinja if statement. By reseting the classes in html the page loades correctly. |
 | 6 | Date stamp format was not clear looking like this Added on: [7, 8, 2024] |
+| 7 | White spaces |
+| 8 | Active nav link |
 
 
 
