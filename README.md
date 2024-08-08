@@ -1,6 +1,6 @@
 # Third Milestone Project
 
-![Trip Doscoverer Logo](/static/images/icon.png)
+![Trip Discoverer Logo](/static/images/icon.png)
 
 # Trip Discoverer
 
@@ -13,7 +13,7 @@
 - [Table of Contents](#table-of-contents)
 - [Project Rationale](#project-retionale)
 - [About](#about)
-- [User Experiance (UX)](#user-experience-ux)
+- [User Experience (UX)](#user-experience-ux)
   - [User stories](#user-stories)
 - [Design](#design)
   - [Colour Scheme](#colour-scheme)
@@ -24,7 +24,7 @@
 - [Bugs](#bugs)
 # About
 
-Trip Discoverer, is an easy to use website, designed for anyone to access. The website provides up to date and 
+Trip Discoverer is an easy to use website, designed for anyone to access. The website provides up to date and 
 clear information, for anyone looking for a nice day out. The options range from family to adult to kid friendly places. Users can also sign in and add their own Trips for the benefit of others.
 
 ## User Experience (UX)
@@ -69,7 +69,7 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 ## Flowcharts
 
-- The flowcharts below, show how the app is designed, to allow users easy navigaiton across all sections, and functions of the app. I ahve also colur coded the for functions CRUD (create, read, update and delete), each of the funtions are colured in the flowchart showoing how the app follows these four criteria.
+- The flowcharts below, show how the app is designed, to allow users easy navigation across all sections, and functions of the app. I have also colour coded the for functions CRUD (create, read, update, and delete), each of the functions are coloured in the flowchart showing how the app follows these four criteria.
 
 ### Admin flowchart
 
@@ -83,13 +83,13 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 ## Solved Bugs
 
-| Number | Bug | Failed Atempt to fix | How I fixed the bug |
+| Number | Bug | Failed Attempt to fix | How I fixed the bug |
 | :--- | :--- | :--- | :--- |
-| 1 | When updating font-size in the navbar the size would not upate from the generic materialize font. | N/A | Looking in devtools, I saw fontsize in style.css was not working, since the original fontsize was on the materalize css as 15px. I updated the class 'fonts' on each of the nav list items rendering the larger font. |
-| 2 | The register form was not running, the app rendered a flask error. | N/A | I had put the wrong name attribute for the password input. |
-| 3 | To create a delete confirmation message, I tried to create a button which activates a javascript funtion creating a new button to the Dom with href link to the python delete function. This did not work. | I realised that the python route which the delete funtion activates is a backend function connectiing the app to the mongo data base, the javascript function will only speak to the DOM as a front end html builder rendering the url_for to the python function useless. To fix this issue I checkeded the href in devtools and an id number was rendered by the python funciton via the ulr_for. I copied this id based link ans updated the href which javascript was creating for the DOM, this fixed the bug, an the delete button created by javascript deleted the trip. The bug fix failed however, because it only wirked for the trip with that id, no other trip could be deeted. | To fix this bug I wrote the html for the confirmaton and hid it with display none in css. The javascript funciton changes the display prperties of both buttins hiding the first delete button and reveaing the confirmation button. This fixed the main problem but I created another bug. (see bug 4) |
-| 4 | This above fix was not good enough as this caused a second bug. The javascript function only worked on the first trip of the list, for the rest of the items on display the delete button was inactive. | N/A | The reason for this bug was, I targeted the HTML elements with javascript via the ids. In javascript only one identical id could be used. I changed the funciton to target the HTML class created a for loop to iteraete over all instanses of the class, this way the delete confirmation was active on all trips dispalyed. |
-| 5 | When logging into admin account, the page layout was distorted and most of the trip displays would not open. | N/A | After studying the code I realised the classes to connect the javascript were not in the correct palce in the admin section of the jinja if statement. By reseting the classes in html the page loades correctly. |
+| 1 | When updating font-size in the navbar the size would not update from the generic materialize font. | N/A | Looking in devtools, I saw font-size in style.css was not working, since the original font-size was on the materalize css as 15px. I updated the class 'fonts' on each of the nav list items rendering the larger font. |
+| 2 | The register form was not working; rendering a flask error. | N/A | I had put the wrong name attribute for the password input. |
+| 3 | To create a delete confirmation message, I tried to create a button which activates a JavaScript function creating a new button to the DOM with a `href` link to the python delete function. This did not work. | I realised, since the python route which the delete function activates is a backend function connecting the app to the mongo data base. However, the JavaScript function will only speak to the DOM as a front-end html builder rendering the `url_for` to the python function useless. To fix this issue I checked the `href` in devtools, where an id number was rendered by the python function via the `url_for`. I copied this id based link, and updated the `href` which JavaScript was creating for the DOM, this fixed the bug, and the delete button created by JavaScript deleted the trip. The fix failed, because it only worked for the trip with that id, no other trip could be deleted. | To fix this bug I wrote the html for the confirmation and hid it with display none in css. The JavaScript function changes the display properties of both buttons hiding the first delete button and revealing the confirmation button. This fixed the main problem, but it created another bug. (see bug 4) |
+| 4 | The fix in bug 3 caused a second bug. The JavaScript function only worked on the first trip of the list, for the rest of the items on display the delete button was inactive. | N/A | The reason for this bug was, I targeted the HTML elements with JavaScript via the ids. In JavaScript only one identical id could be used. I changed the JavaScript function to target the HTML `class`, then created a for loop to iterate over all instances of the class, this way the delete confirmation is active on all trips displayed. |
+| 5 | When logging into the admin account, the page layout was distorted and most of the trip displays would not open. | N/A | After studying the code I realised the classes to connect the JavaScript were not in the correct place in the admin section of the jinja `if` statement. By resetting the classes in html the page loads correctly. |
 | 6 | Date stamp format was not clear looking like this Added on: [7, 8, 2024] |
 | 7 | White spaces |
 | 8 | Active nav link |
