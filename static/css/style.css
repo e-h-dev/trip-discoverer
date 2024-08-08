@@ -16,6 +16,14 @@
   color:var(--dark-color);
 }
 
+.upper{
+  text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
 /* sizing for icons */
 i{
   font-size: x-large;
@@ -313,7 +321,7 @@ nav{
   font-weight: 800;
 }
 
-.trip-body, .location{
+.trip-body{
   height:50%;
   padding:30px;
   margin-bottom: 10px;
@@ -328,7 +336,6 @@ nav{
 .trip-body{
   font-weight: 800;
   font-size: 36px;
-  text-transform: uppercase;
 }
 
 /* sub headers */
@@ -354,7 +361,7 @@ nav{
 }
 
 
-.description-block{
+.display-block{
   height:50%;
   padding:30px;
   margin-bottom: 10px;
@@ -372,7 +379,9 @@ nav{
   text-align: justify;
 }
 
-
+.post-code{
+  text-transform: uppercase;
+}
 /* styles for trip website links */
 .web-btn{
   margin-top: 20px;
@@ -538,6 +547,13 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   margin-left: 2rem;
 }
 
+input:focus{
+  color:var(--dark-color);
+  font-family: var(--head-text);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
 
 .account-confirm{
   position: relative;
@@ -679,7 +695,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     text-align: justify;
   }
 
-  .trip-body, .location, .description-block{
+  .trip-body, .display-block{
     left:5%;
     width:90%;
     font-weight: 700;
@@ -786,7 +802,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
     left:85%;
   }
 
-  .trip-body, .location, .description-block{
+  .trip-body, .display-block{
     left:5%;
     width:90%;
     font-weight: 600;

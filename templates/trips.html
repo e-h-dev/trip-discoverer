@@ -115,31 +115,32 @@
                     <div class="collapsible-body trip-content">
                         
                         <div class="trip-body dark">
-                            {{ trip.trip_name }}<br>
-                            {{ trip.city }}<br>
+                            <span class="upper">{{ trip.trip_name }}</span><br>
+                            <hr>
+                            <span class="capitalize">{{ trip.city }}</span><br>
                         </div>
 
-                        <div class="location light">
+                        <div class="light display-block">
                             <div class="sub-header">Address</div>
                             <hr>
                             <br>
                             <div class="address">
-                                {{ trip.address }}<br>
-                                {{ trip.city }}<br>
-                                {{ trip.post_code }}<br>
+                                <span class="capitalize">{{ trip.address }}</span><br>
+                                <span class="capitalize">{{ trip.city }}</span><br>
+                                <span class="post-code">{{ trip.post_code }}</span><br>
                             </div>
                         </div>
                         {% if trip.trip_description %}
-                            <div class="description-block dark">
+                            <div class="display-block dark">
                                 <div class="sub-header">Description</div>
                                 <hr>
                                 <br>
-                                <div class="description">
+                                <div class="display-block">
                                     {{ trip.trip_description }}
                                 </div>
                             </div>
                         {% endif %}
-                        <div class="description-block light">
+                        <div class="display-block light">
                             <div class="sub-header">Review</div>
                             <hr>
                             <br>
