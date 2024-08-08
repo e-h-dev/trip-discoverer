@@ -113,7 +113,7 @@ def add_trip():
     day = date.day
     month = date.month
     year = date.year
-    date_stamp = [day, month, year]
+    date_stamp = str(day)+"-"+str(month)+"-"+str(year)
     if request.method == "POST":
         #dictionary to pass added trip data to database
         trip = {
