@@ -296,12 +296,13 @@ nav{
 
 .review-stars{
   position: relative;
-  left:30px;
+  left:0%;
   height:20px;
 }
 
 .review-stars i{
-  font-size: 1rem;
+  font-size: 1.2rem;
+  margin-right: 0px;
 }
 
 .dark{
@@ -316,10 +317,11 @@ nav{
 
 .date-stamp{
   position: relative;
-  bottom:20px;
-  left:38%;
+  bottom:15px;
+  left:33%;
+  font-size: 0.8rem;
   font-family: var(--head-text);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .trip-body{
@@ -703,19 +705,12 @@ input:focus{
   
   .hero-about h2{
     font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.4);
     font-size: 1.8rem;
   }
   
   .hero-about p{
-    font-weight: 600;
     font-size: 1rem;
-    color:var(--dark-color);
-    background-color: rgba(186, 205, 146, 0.1);
     padding:10px;
-    text-align: justify;
   }
 
   .trip-body, .display-block{
@@ -774,24 +769,10 @@ input:focus{
     left:15%;
     height:100%;
     width:70%;
-    background-color: rgba(186, 205, 146, 0.5);
   }
   
   .hero-about h2{
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.4);
-    color:var(--dark-color);
     font-size: 1.5rem;
-  }
-  
-  .hero-about p{
-    font-weight: 600;
-    font-size: 1rem;
-    color:var(--dark-color);
-    padding:10px;
-    text-align: justify;
   }
 
   .display-section{
