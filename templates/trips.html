@@ -277,5 +277,13 @@
             </form>
         </div>
     
+{% endblock %}
 
+{% block activeScript %}
+<script>
+    $('#add_trip').removeClass('active');
+    $('#sign_in').removeClass('active');
+    $('#user_list').removeClass('active');
+    $('#sign_up').removeClass('active');
+</script>
 {% endblock %}

@@ -29,3 +29,10 @@
     {% endfor %}
 </div>
 {% endblock %}
+
+{% block activeScript %}
+<script>
+    $('#home_page').removeClass('active');
+    $('#add_trip').removeClass('active');
+</script>
+{% endblock %}

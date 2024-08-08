@@ -122,3 +122,11 @@
     
 
 {% endblock %}
+
+{% block activeScript %}
+<script>
+    $('#home_page').removeClass('active');
+    $('#user_list').removeClass('active');
+    $('#add_trip').removeClass('active');
+</script>
+{% endblock %}
