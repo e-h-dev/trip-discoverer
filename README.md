@@ -66,19 +66,22 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 # Bugs
 
-- When updating font-size in the navbar the size would not upate from the generic materialize font.
-After looking in devtools, I saw the new css fontsize was not working as the original fontsize was on the materalize css as 15px. after updating the class fonts to each of the nav list items the size largened.
-- The register form was not running the app it rendered a flask error.
-I realised that I had put in the wrong name for the password input.
+## Solved Bugs
+
+| Number | Bug | Failed Atempt to fix | How I fixed the bug |
+| :--- | :--- | :--- | :--- |
+| 1 | When updating font-size in the navbar the size would not upate from the generic materialize font. | N/A | Looking in devtools, I saw fontsize in style.css was not working, since the original fontsize was on the materalize css as 15px. I updated the class 'fonts' on each of the nav list items rendering the larger font. |
+| 2 | The register form was not running, the app rendered a flask error. | N/A | I had put the wrong name attribute for the password input. |
+| 3 | To create a delete confirmation message, I tried to create a button which activates a javascript funtion creating a new button to the Dom with href link to the python delete function. This did not work. | I realised that the python route which the delete funtion activates is a backend function connectiing the app to the mongo data base, the javascript function will only speak to the DOM as a front end html builder rendering the url_for to the python function useless. To fix this issue I checkeded the href in devtools and an id number was rendered by the python funciton via the ulr_for. I copied this id based link ans updated the href which javascript was creating for the DOM, this fixed the bug, an the delete button created by javascript deleted the trip. The bug fix failed however, because it only wirked for the trip with that id, no other trip could be deeted. | To fix this bug I wrote the html for the confirmaton and hid it with display none in css. The javascript funciton changes the display prperties of both buttins hiding the first delete button and reveaing the confirmation button. This fixed the main problem but I created another bug. (see bug 4) |
+| 4 | This above fix was not good enough as this caused a second bug. The javascript function only worked on the first trip of the list, for the rest of the items on display the delete button was inactive. | N/A | The reason for this bug was, I targeted the HTML elements with javascript via the ids. In javascript only one identical id could be used. I changed the funciton to target the HTML class created a for loop to iteraete over all instanses of the class, this way the delete confirmation was active on all trips dispalyed. |
+| 5 | When logging into admin account, the page layout was distorted and most of the trip displays would not open. | N/A | After studying the code I realised the classes to connect the javascript were not in the correct palce in the admin section of the jinja if statement. By reseting the classes in html the page loades correctly. |
+| 6 | Date stamp format was not clear looking like this Added on: [7, 8, 2024] |
+
+
+
+
 - I tried to create a function, that a separate user can add a review to any trip.
 Since this app is working with mongo and is a non-relrional database there was an id key error.
-- to create a delete confirmation i tried to create a button which activates a javascript funtion creating a new button to the Dom with href link to the python delete funciton. This did not work.
-I realised that the python route which the delte funtion activates is a backend function connectiing the app to the mongo data base, the javascript function will only speak to the DOM as a front end html builder rendering the url_for to the python function useless.
-To fix this issue I cchejed the href in devtools
-To fix this bug I wrote the html for the confirmaton and hid it with dispaly none in css. The javascript funciton changes the display prperties of both buttins hiding the first delete buttoon and reveaing the confirmation button. 
-- This above fix was not good enough as this caused a second bug. The javascript funciton only worked on the first trip of th elist the rest of the items on display the delete button was inactive.
-The reason for this bug is that I targeted the HTML elemnts woth javascript via the ids. In javascript only one identical id could be used. I changer the funciton to target the HTML class created a for loop to iteraete over all instanses of the class, this way the delete confirmation was active on all trips dispalyed.
-- After logging into admin account the page layout was distorted and most of the trip displays would not open.
-After studying the code I realised the classes to connect the javascript were not in the correct palce in the admin section of the jinja if statement.
-By reseting the classes in html the page loades correctly.
+
+- Date stamp format was not clear looking like this Added on: [7, 8, 2024] 
 
