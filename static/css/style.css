@@ -188,7 +188,7 @@ nav{
   top:100px;
   left:20px;
   border-radius: 10px;
-  width:50%;
+  width:45%;
   height:60px;
   background-color: var(--light-opaque);
 }
@@ -208,6 +208,7 @@ nav{
   color:var(--dark-color);
   position: relative;
   top:-15px;
+  left:25%;
 }
 
 
@@ -228,7 +229,7 @@ nav{
   color:var(--white-color);
   position: relative;
   top:-65px;
-  left:70%;
+  left:90%;
   border-radius: 5px;
 }
 
@@ -666,6 +667,28 @@ input:focus{
 /* --------------------------------------------------------media queries -------------------------------------*/
 
 /* media queries for trips page tablet */
+
+/* resize for tablets in landscape */
+@media (max-width:1200px){
+  .hero-about h2{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    font-size: 1.9rem;
+  }
+  
+  .hero-about p{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color:var(--dark-color);
+    background-color: rgba(186, 205, 146, 0.1);
+    padding:10px;
+    text-align: justify;
+  }
+}
+
+/* resize for tablets in portrait */
 
 @media (max-width:900px){
 
