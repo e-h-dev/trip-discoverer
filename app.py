@@ -42,6 +42,11 @@ def search():
 #sign up function
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    date = datetime.now()
+    day = date.day
+    month = date.month
+    year = date.year
+    date_stamp = str(day)+"-"+str(month)+"-"+str(year)
     if request.method == "POST":
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -55,7 +60,8 @@ def register():
         register = {
             "username": request.form.get("username").lower(),
             "email": request.form.get("email").lower(),
-            "password": generate_password_hash(request.form.get("password"))
+            "password": generate_password_hash(request.form.get("password")),
+            "joined":date_stamp
         }
         #creates user database
         mongo.db.users.insert_one(register)

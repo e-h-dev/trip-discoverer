@@ -7,12 +7,8 @@
             <div class="card-content white-text">
                 <span class="card-title">{{ user.username }}</span>
                 <p>{{ user.email }}</p>
-                <!-- {% for trip in trips %}
-                    {% if user.username|lower == trip.created_by|lower %}
-                        <p>{{ trip.trip_name}}</p>
-                    {% endif %}
-                {% endfor %} -->
             </div>
+                <div class="date-stamp-user light"><em>Joined: {{ user.joined }}</em></div>
             <div class="card-action">
                 <form action="{{ url_for('search') }}" method="POST">
                     <input type="text" name="query" class="hide" value="{{ user.username }}">
@@ -21,7 +17,6 @@
                     </button>
                     <span class="tick"></span>
                 </form>
-                <!-- <a href="#" class="btn card-btn">Edit User</a> -->
                 <a href="{{ url_for('delete_user', user_id=user._id)}}" class=" btn cancel-btn card-btn">Delete User</a>
             </div>
         </div>

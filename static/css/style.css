@@ -315,13 +315,20 @@ nav{
   color: var(--dark-color)
 }
 
-.date-stamp{
+.date-stamp, .date-stamp-user{
   position: relative;
   bottom:15px;
   left:33%;
   font-size: 0.8rem;
   font-family: var(--head-text);
   font-weight: 600;
+}
+
+.date-stamp-user{
+  width:130px;
+  height:25px;
+  padding:5px;
+  border-radius: 2px;
 }
 
 .trip-body{
