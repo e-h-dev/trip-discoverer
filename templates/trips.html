@@ -130,8 +130,7 @@
                                 <span class="post-code">{{ trip.post_code }}</span><br>
                             </div>
                         </div>
-                        {% if trip.trip_description %}
-                            <div class="display-block dark">
+                            <div class="display-block dark description">
                                 <div class="sub-header">Description</div>
                                 <hr>
                                 <br>
@@ -139,13 +138,12 @@
                                     {{ trip.trip_description }}
                                 </div>
                             </div>
-                        {% endif %}
                         <div class="display-block light">
                             <div class="sub-header">Review</div>
                             <hr>
                             <br>
                             <div class="description">
-                                {% if trip.trip_description %}
+                                {% if trip.trip_review %}
                                 {{ trip.trip_review }}
                                 {% else %}
                                 <p>No reviews on this trip yet</p>

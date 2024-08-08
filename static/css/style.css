@@ -160,9 +160,9 @@ nav{
 #flashes{
   position: absolute;
   top:20px;
-  left:33%;
+  left:15%;
   height:60px;
-  width:33%;
+  width:50%;
   font-family: var(--head-text);
   font-weight: 800;
   text-transform: capitalize;
