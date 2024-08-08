@@ -1,5 +1,7 @@
 # Third Milestone Project
 
+![Trip Doscoverer Logo](/static/images/icon.png)
+
 # Trip Discoverer
 
 ![Trip Discoverer Theme Image](/static/images/hero-image.jpg)
