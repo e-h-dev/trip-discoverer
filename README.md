@@ -20,6 +20,7 @@
   - [Typography](#typography)
   - [Imagery](#imagery)
   - [Wireframes](#wireframes)
+  - [Flowcharts](#flowcharts)
 - [Bugs](#bugs)
 # About
 
@@ -65,6 +66,18 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 ### New / Edit Trip Page
 
 ![New / Edit Trip Page](assets/wireframes/wireframe-new-trip.png)
+
+## Flowcharts
+
+- The flowcharts below, show how the app is designed, to allow users easy navigaiton across all sections, and functions of the app. I ahve also colur coded the for functions CRUD (create, read, update and delete), each of the funtions are colured in the flowchart showoing how the app follows these four criteria.
+
+### Admin flowchart
+
+![Admin flowchart](/assets/flowcharts/admin-flowchart.jpg)
+
+### User flowchart
+
+![User flowchart](/assets/flowcharts/user-flowchart.jpg)
 
 # Bugs
 
