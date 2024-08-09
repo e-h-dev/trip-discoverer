@@ -165,3 +165,23 @@ HTML, CSS, JavaScript, Python, Jinja
 ### Known bugs
 
 - I had tried to create a search bar on the users page for admin to search users by name, I created a new python `@route` and connected the search to the template. When searching for users the search came up empty. I am still trying to resolve this issue, and in the future, I would like to add this feature to the app.
+
+## Credits
+
+### Media
+
+All the pictures through the pages of the website are downloaded with a license, from [Pixabay](https://pixabay.com/). Follow this [link](https://pixabay.com/service/terms/) to see the terms and conditions of downloads from pixabay.
+
+### Acknowledgments
+
+I would like to acknowledge the following people:
+
+* Jabril Akolade - My Code Institute Mentor.
+
+* Jessica Bessey - Of Newcastle College for helping in facilitating the course.
+
+* Code institute - For all the help and well-structured lessons making this project possible after only three months of learning HTML.
+
+* Customer support at Heroku - For helping me get back into my Heroku account after I had difficulties verifying my account.
+
+* Dan Adiletta - For his [YouTube tutorial](https://www.youtube.com/watch?v=sIGPwvd-nTk).
