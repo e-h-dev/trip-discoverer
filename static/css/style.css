@@ -4,7 +4,7 @@
     --white-opaque:rgba(255, 255, 255, 0.9);
     --dark-color:  rgb(26, 77, 46);
     --light-opaque: rgba(186, 205, 146, 0.5);
-    --light-color: rgb(186, 205, 146);
+    --light-color: #bacd92;
     --cancel-color:rgb(21, 48, 25);
 }
 
@@ -130,7 +130,7 @@ nav{
 }
 
 .hero-about{
-  height:48%;
+  height:52%;
   width:45%;
   font-family: var(--head-text);
   background-color: rgba(186, 205, 146, 0.2);
@@ -155,7 +155,7 @@ nav{
   font-size: 1.2rem;
   color:var(--dark-color);
   background-color: rgba(186, 205, 146, 0.2);
-  padding:20px;
+  padding:20px 20px 10px;
   text-align: justify;
 }
 
