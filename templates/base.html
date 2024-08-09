@@ -41,7 +41,7 @@
                         <!-- users page for adminm only -->
                             <li id="user_list" class="active"><a href="{{ url_for('user_list') }}" class="nav-text header-font">users</a></li>
                         {% endif %}
-                        <li><a href="{{ url_for('logout') }}" class="nav-text header-font">log out</a></li>
+                        <li><a href="{{ url_for('logout') }}" class="nav-text header-font">sign out</a></li>
                     {% else %}
                     <!-- only appears if no user logged in -->
                         <li id="sign_in" class="active"><a href="{{ url_for('login') }}" class="nav-text header-font">sign in</a></li>
@@ -59,7 +59,7 @@
                 {% if session.user|lower == "admin"|lower %}
                     <li><a href="{{ url_for('user_list') }}" class="nav-text header-font">users</a></li>
                 {% endif %}
-                <li><a href="{{ url_for('logout') }}" class="nav-text header-font">log out</a></li>
+                <li><a href="{{ url_for('logout') }}" class="nav-text header-font">sign out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}" class="nav-text header-font">sign in</a></li>
                 <li><a href="{{ url_for('register') }}" class="nav-text header-font">sign up</a></li>
