@@ -103,6 +103,49 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 ![User flowchart](/assets/flowcharts/user-flowchart.jpg)
 
+### Accessibility
+
+I have been mindful during coding, to ensure that the website is as accessible friendly as possible. This has been achieved by:
+
+* Using semantic HTML.
+* Using a hover state on all buttons on the site, to make it clear to the user that they are hovering over a button.
+* Using an active class to show the user which page is currently being used,, by a highlighted nav link.
+* Ensuring that there is a sufficient colour contrasts throughout the site.
+
+- - -
+
+## Technologies Used
+
+### Languages Used
+
+HTML, CSS, JavaScript, Python, Jinja
+
+### Frameworks, Libraries & Programs Used
+
+* [MongoDB](https://www.mongodb.com/products/platform/cloud) - Used to save, read, update, and delete all the app's data
+
+* [JQUERY](https://jquery.com/) - 1. To create sliding navbar for mobile. 2. to open and close collapsible displays. 3. To validate user input for categories. 4. To assgn active class to open page.
+
+* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+* [Git](https://git-scm.com/) - For version control.
+
+* [Github](https://github.com/) - To save and store the files for the website.
+
+* [GitPod](https://gitpod.io/) - IDE used to create the site.
+
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+* [Heroku](https://id.heroku.com) For deployment.
+
+* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+* [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - A google chrome extension that allows you to view your site as people with accessibility needs would see it.
+
+* [Online Converter](https://www.online-convert.com/) To convert test imagery into gif files.
+
 # Bugs
 
 ## Solved Bugs
