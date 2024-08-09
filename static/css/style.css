@@ -97,6 +97,10 @@ nav{
     margin-top: 1rem;
 }
 
+.active{
+  background-color: var(--light-color);
+}
+
 .hero{
     background-image: url("../images/hero-image.jpg");
     width:100%;

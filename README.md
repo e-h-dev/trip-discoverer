@@ -71,7 +71,7 @@ The fonts are imported from google fonts [Poppins](https://fonts.google.com/?que
 
 ### Imagery
 
-I have used a beautiful image of a car speeding off on a trip. This image as all the images on the website, is downloaded with a full license from [piaxabay](https://pixabay.com/photos/country-countryside-dales-england-21460/). The hero image of the hotel page is from [pixabay](https://pixabay.com/photos/hotel-country-hotel-house-896569/) this is a typical British Manor house converted into a hotel. The hero image for the restaurant page is also downloaded from [pixabay](https://pixabay.com/photos/table-bar-restaurant-drink-food-3084384/).
+I have used a beautiful image of a car speeding off on a trip, for the hero image. This image, is downloaded with a full license from [piaxabay](https://pixabay.com/photos/car-transportation-travel-road-trip-6603726/).
 
 ## Wireframes
 
