@@ -21,7 +21,13 @@
   - [Imagery](#imagery)
   - [Wireframes](#wireframes)
   - [Flowcharts](#flowcharts)
+- [Accessibility](#accessibility)
+- [Technologies used](#technologies-used)
+- [Deployment](#deployment--local-development)
+- [Testing](#testing)
 - [Bugs](#bugs)
+- [Credits](#credits)
+
 # About
 
 Trip Discoverer is an easy to use website, designed for anyone to access. The website provides up to date and 
@@ -136,6 +142,8 @@ HTML, CSS, JavaScript, Python, Jinja
 
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
+* [Font Awesome](https://fontawesome.com/) - For all icons displayed
+
 * [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 * [Heroku](https://id.heroku.com) For deployment.
@@ -145,6 +153,69 @@ HTML, CSS, JavaScript, Python, Jinja
 * [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - A google chrome extension that allows you to view your site as people with accessibility needs would see it.
 
 * [Online Converter](https://www.online-convert.com/) To convert test imagery into gif files.
+- - -
+
+## Deployment & Local Development
+
+### Deployment
+
+### Github Deployment
+
+The website was stored using GitHub for storage of data and version control. To do this I did the following;
+
+After each addition, change or removal of code, in the terminal within your IDE (I used gitpod for this project) type:
+
+- git add .
+- git commit -m "meaningful commit message"
+- git push
+
+The files are now available to view within your github repository.
+
+### Local Development
+
+#### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [e-h-dev/trip-discoverer](https://github.com/e-h-dev/trip-discoverer)
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, [e-h-dev/trip-discoverer](https://github.com/e-h-dev/trip-discoverer)
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+### Repository deployment via Heroku
+
+- On the [Heroku Dashboard](https://dashboard.heroku.com) page, click New and then select Create New App from the drop-down menu.
+- When the next page loads insert the App name and Choose a region. Then click 'Create app'
+- In the settings tab click on Reveal Config Vars and add the key IP and the value 0.0.0.0. The key Port and the value 5000. The credentials for this app were:
+
+1. IP (0.0.0.0)
+2. MONGO_URI
+3. Port (5000)
+
+### Deployment of the app
+
+- Click on the Deploy tab and select Github-Connect to Github.
+- Enter the repository name and click Search.
+- Choose the repository that holds the correct files and click Connect.
+- A choice is offered between manual or automatic deployment whereby the app is updated when changes are pushed to GitHub.
+- Once the deployment method has been chosen the app will be built and can be launched by clicking the Open app button which should appear below the build information window, alternatively, there is another button located in the top right of the page.
+
+- - -
+
+## Testing
+
+Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
+
+- - -
 
 # Bugs
 
