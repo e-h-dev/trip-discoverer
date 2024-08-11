@@ -109,6 +109,38 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 ![User flowchart](/assets/flowcharts/user-flowchart.jpg)
 
+ - - -
+
+ # Trip Doscoverer Pages
+
+![responsive image](assets/page-image/responsive-image.png)
+
+## Features
+
+The app is comprised of a Home (trips) page, a sign up page, a sign in page, an add trip page & a users page for admin only.
+
+All Pages on the website are responsive and have:
+
+* A favicon in the browser tab.
+
+<img src="/static/images/favicon.png" alt="favicon" width="100"/>
+
+
+* The app's logo is at the top of every page. The logo, is also a link to the home page.
+  ![Trip Discoverer Logo](/static/images/icon.png)
+
+### The Home (Trips) Page
+
+The home page of Trip iscoverer displays the sites name/logo as a title and then a nav bar shows the links to the other pages, on mobile the links are in the side toggle. Below the navbar is the hero image at he top of the image is the search bar, usesrs can search for a trip using any word from the country to the city to word sfound in description or the reviews of the trips. Below this is a small box of information text, describing what the app does. There is a Sign up button in the information box, the button is only there if no user is in session. The button takes the user to the sign in page. Below the hero image all the trips are displayed in dispaly boxes, the boxes open - revealing all the relavant information for he trip -  when cliced on. On the left of the page is a filter by category section [see below](#filter-section).
+
+![image of trips page](/assets/page-images/home-page.png)
+
+#### Filter section
+
+The filter by Category section is designed for users to filter out any trip category they ae not looking for.
+
+![image of filter section](/assets/page-images/filter-image.png)
+
 ### Accessibility
 
 I have been mindful during coding, to ensure that the website is as accessible friendly as possible. This has been achieved by:
