@@ -16,7 +16,7 @@
                                 <div class="input-field col s12">
                                     <i class="fas fa-circle-user"></i>
                                     <input id="username" name="username" type="text" 
-                                        pattern="^[a-zA-Z0-9]{5,15}$" class="validate focus-color" required>
+                                        pattern=".*\S+.*" class="validate focus-color" required autocomplete="off">
                                     <label for="username">Username</label>
                                 </div>
                             </div>
@@ -25,7 +25,7 @@
                                 <div class="input-field col s12">
                                     <i class="fas fa-key"></i>
                                 <input id="password" name="password" type="password" minlength="5" 
-                                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                                        maxlength="15" pattern=".*\S+.*" class="validate" required>
                                 <label for="password">Password</label>
                                 </div>
                             </div>
