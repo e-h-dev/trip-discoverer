@@ -737,12 +737,20 @@ input:focus{
     font-weight: 800;
   }
   
-
   
   .filter-btn{
     font-size: 1.1rem;
     font-weight: 700;
     margin:6px;
+  }
+  
+  .date-stamp{
+    position: relative;
+    bottom:-6px;
+    left:0;
+    font-size: 0.6rem;
+    font-family: var(--head-text);
+    font-weight: 600;
   }
   
   /* sign up and sign in pages */
