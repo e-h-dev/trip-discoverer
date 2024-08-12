@@ -21,6 +21,9 @@
   - [Imagery](#imagery)
   - [Wireframes](#wireframes)
   - [Flowcharts](#flowcharts)
+- [Trip Discoverer Pages](#trip-discoverer-pages)
+  - [Home Page](#home-page)
+    -[Filter section](#filter-section)
 - [Accessibility](#accessibility)
 - [Technologies used](#technologies-used)
 - [Deployment](#deployment--local-development)
@@ -111,13 +114,13 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
  - - -
 
- # Trip Doscoverer Pages
+# Trip Discoverer Pages
 
 ![responsive image](assets/page-image/responsive-image.png)
 
 ## Features
 
-The app is comprised of a Home (trips) page, a sign up page, a sign in page, an add trip page & a users page for admin only.
+The app is comprised of a Home (trips) page, a sign-up page, a sign in page, an add trip page & a users page for admin only.
 
 All Pages on the website are responsive and have:
 
@@ -125,21 +128,43 @@ All Pages on the website are responsive and have:
 
 <img src="/static/images/favicon.png" alt="favicon" width="100"/>
 
-
-* The app's logo is at the top of every page. The logo, is also a link to the home page.
+* The app's logo is at the top of every page. The logo is also a link to the home page.
   ![Trip Discoverer Logo](/static/images/icon.png)
 
 ### The Home (Trips) Page
 
-The home page of Trip iscoverer displays the sites name/logo as a title and then a nav bar shows the links to the other pages, on mobile the links are in the side toggle. Below the navbar is the hero image at he top of the image is the search bar, usesrs can search for a trip using any word from the country to the city to word sfound in description or the reviews of the trips. Below this is a small box of information text, describing what the app does. There is a Sign up button in the information box, the button is only there if no user is in session. The button takes the user to the sign in page. Below the hero image all the trips are displayed in dispaly boxes, the boxes open - revealing all the relavant information for he trip -  when cliced on. On the left of the page is a filter by category section [see below](#filter-section).
+The home page of Trip Discoverer displays the sites name/logo as a title and then a nav bar shows the links to the other pages, on mobile the links are in the side toggle. Below the navbar is the hero image at the top of the image is the search bar, users can search for a trip using any word, related to the trip they may be looking for. The search could be for the country, or the city or even words found in the description or the review of the trips. Below this is a small box of information text, describing what the app does. There is a Sign-up button in the information box, the button is only there if no user is in session. The button takes the user to the sign in page. Below the hero image all the trips are displayed in display boxes, the boxes open - revealing all the relevant information of the trip -  when clicked on. On the left of the page is a filter by category section [see below](#filter-section).
 
 ![image of trips page](/assets/page-images/home-page.png)
 
 #### Filter section
 
-The filter by Category section is designed for users to filter out any trip category they ae not looking for.
+The filter by Category section is designed for users to filter out any trip category they are not looking for. The method I implemented to develop the filter, was not researched. I decided to recreate the search input section, I gave it a value of the specific category to be filtered; by putting the category name on the search button and hiding the display of the search bar, I have created a filter. Repeating this for all the categories created the list of filters shown below.
 
 ![image of filter section](/assets/page-images/filter-image.png)
+
+#### Edit tip and delete trip section
+
+After opening the trip information slide down, there is an option for the user which added that trip to either edit or delete the trip.
+
+![edit and delete buttons](/assets/page-images/edit-delete-buttons.png)
+
+After clicking on the delete bitton a confirmation is displayed.
+
+![delete confirmation buttons](/assets/page-images/delete-confirmation.png)
+
+### Sign up and Sign in pages
+
+The sign up and sign in pages are of the same designboth a simple form asking ht euser to enter username and password,. In the sign-p form the user is asked to include email.
+
+![image of sign-in and sign-up pages](/assets/page-images/sign-up-page.png)
+
+### Add trip and edit trip page
+
+The user, nce signe in can noe head to the ad trip page and fill in the details of the trip he wants to add in. Te rating seciton is a number inout where the user can input number from 1 to 5. This will render the number of solid star displayed on the trips page by each trip. A nk to the website of the trip can also be added. The edit page is the same form with all the details filled in ready to be changed.
+
+![image of add-trip and edit-trip pages](/assets/page-images/add-trip-page.png)
+
 
 ### Accessibility
 
