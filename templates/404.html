@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="small-hero">
+        <div class="small-opaque"></div>
+        <div class="register-login">
+            <h2 class="center-align header-font">404 Error</h2>
+            <h3>Sorry this page does not exist!</h3>
+            <h4>Lets take you home</h4>
+            <a href="{{ url_for('find_trips') }}">
+                <img class="logo"
+                    src="{{ url_for('static', filename='images/icon.png') }}"
+                    alt="trip discoverer">
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
