@@ -13,8 +13,8 @@
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-list"></i>
                                     <select id="category_name" name="category_name"
-                                        pattern=".*\S+.*" class="validate" required>
-                                      <option value="" disabled selected>Choose Category</option>
+                                        class="validate" required>
+                                      <option value="" disabled>Choose Category</option>
                                       {% for category in categories %}
                                             {% if category.category_name == trip.category_name %}
                                             <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
@@ -90,7 +90,7 @@
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-star"></i>
                                     <input type="number" id="trip_rating" 
-                                        value="{{ trip.trip_rating }}" name="trip_rating" min="1" max="5" value="1"/>
+                                        value="{{ trip.trip_rating }}" name="trip_rating" min="1" max="5">
                                     <label for="trip_rating">Rate your trip from 1 - 5</label>
                                 </div>
                             </div>
