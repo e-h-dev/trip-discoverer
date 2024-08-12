@@ -313,7 +313,7 @@ All the pictures through the pages of the website are downloaded with a license,
 
 ### Acknowledgments
 
-I would like to acknowledge the following people:
+I would like to acknowledge the following:
 
 * Jabril Akolade - My Code Institute Mentor.
 
@@ -324,3 +324,5 @@ I would like to acknowledge the following people:
 * Customer support at Heroku - For helping me get back into my Heroku account after I had difficulties verifying my account.
 
 * Dan Adiletta - For his [YouTube tutorial](https://www.youtube.com/watch?v=sIGPwvd-nTk).
+
+* [Online convert](https://www.online-convert.com/) for converting hero image from jpg to webp.

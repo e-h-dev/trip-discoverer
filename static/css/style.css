@@ -750,13 +750,32 @@ input:focus{
     padding:10px;
   }
 
-  .trip-body, .display-block{
+  .trip-body{
     left:5%;
     width:90%;
     font-weight: 700;
     font-size: 28px;
     text-transform: uppercase;
   }
+
+  .display-block{
+  height:50%;
+  padding:0;
+  margin-bottom: 10px;
+  position: relative;
+  left:5%;
+  width:92%;
+  border-radius: 5px;
+  box-shadow:5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.description{
+  font-size: 1rem;
+  font-family: var(--head-text);
+  font-weight: 500;
+  text-align: justify;
+}
+
   
   .filters-section .sub-header{
     font-size: 1.3rem;
@@ -801,6 +820,13 @@ input:focus{
     font-size: 1rem;
   }
 
+  #scroll-btn{
+    width:50px;
+    height:20px;
+    font-size: 0.5rem;
+    padding:0;
+  }
+
   .hero{
     height:30vh;
   }
@@ -818,6 +844,7 @@ input:focus{
   
   .hero-about h2{
     font-size: 1.5rem;
+    color:var(--dark-color)
   }
 
   .display-section{
@@ -851,7 +878,7 @@ input:focus{
     left:85%;
   }
 
-  .trip-body, .display-block{
+  .trip-body{
     left:5%;
     width:90%;
     font-weight: 600;
