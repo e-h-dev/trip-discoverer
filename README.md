@@ -23,7 +23,11 @@
   - [Flowcharts](#flowcharts)
 - [Trip Discoverer Pages](#trip-discoverer-pages)
   - [Home Page](#home-page)
-    -[Filter section](#filter-section)
+    - [Filter section](#filter-section)
+    - [Edit and delete trip section](#edit-tip-and-delete-trip-section)
+  - [Sign up and sign in pages](#sign-up-and-sign-in-pages)
+  - [Add trip and edit trip pages](#add-trip-and-edit-trip-page)
+  - [Users page (admin only)](#users-page-admin-only)
 - [Accessibility](#accessibility)
 - [Technologies used](#technologies-used)
 - [Deployment](#deployment--local-development)
@@ -133,7 +137,7 @@ All Pages on the website are responsive and have:
 
 ### The Home (Trips) Page
 
-The home page of Trip Discoverer displays the sites name/logo as a title and then a nav bar shows the links to the other pages, on mobile the links are in the side toggle. Below the navbar is the hero image at the top of the image is the search bar, users can search for a trip using any word, related to the trip they may be looking for. The search could be for the country, or the city or even words found in the description or the review of the trips. Below this is a small box of information text, describing what the app does. There is a Sign-up button in the information box, the button is only there if no user is in session. The button takes the user to the sign in page. Below the hero image all the trips are displayed in display boxes, the boxes open - revealing all the relevant information of the trip -  when clicked on. On the left of the page is a filter by category section [see below](#filter-section).
+The home page of Trip Discoverer displays the sites name/logo as a title and then a nav bar shows the links to the other pages, on mobile the links are in the side toggle. Below the navbar is the hero image at the top of the image is the search bar, users can search for a trip using any word, related to the trip they may be looking for. The search could be for the country, or the city or even words found in the description or the review of the trips. Below this is a small box of information text, describing what the app does. There is a Sign-up button in the information box, the button is only there if no user is in session. The button takes the user to the sign in page. Below the hero image all the trips are displayed in display boxes, the boxes open - revealing all the relevant information of the trip - when clicked on. On the left of the page is a filter by category section [see below](#filter-section).
 
 ![image of trips page](/assets/page-images/home-page.png)
 
@@ -149,24 +153,31 @@ After opening the trip information slide down, there is an option for the user w
 
 ![edit and delete buttons](/assets/page-images/edit-delete-buttons.png)
 
-After clicking on the delete bitton a confirmation is displayed.
+After clicking on the delete button a confirmation is displayed.
 
 ![delete confirmation buttons](/assets/page-images/delete-confirmation.png)
 
 ### Sign up and Sign in pages
 
-The sign up and sign in pages are of the same designboth a simple form asking ht euser to enter username and password,. In the sign-p form the user is asked to include email.
+The sign up and sign in pages are of the same design, both are a simple form asking the user to enter username and password. In the sign-up form the user is prompted to include email.
 
 ![image of sign-in and sign-up pages](/assets/page-images/sign-up-page.png)
 
 ### Add trip and edit trip page
 
-The user, nce signe in can noe head to the ad trip page and fill in the details of the trip he wants to add in. Te rating seciton is a number inout where the user can input number from 1 to 5. This will render the number of solid star displayed on the trips page by each trip. A nk to the website of the trip can also be added. The edit page is the same form with all the details filled in ready to be changed.
+The user can sign in, head to the add trip page and fill in the details of the trip he wants to add in. The rating section is a number input where the user can input a number from 1 to 5. This will render the number of solid stars displayed on the trips page by each trip. A https link, to the website of the trip can also be added. The edit page is the same form with all the details filled in ready to be edited.
 
 ![image of add-trip and edit-trip pages](/assets/page-images/add-trip-page.png)
 
+### Users page (admin only)
 
-### Accessibility
+The users page is only accessible when the admin has signed in. On the page, the admin can view all signed up users, their email address and the admin can search each user and view the trips added by that user. Admin can delete any user from the database.
+
+![image of users page (admin only)](/assets/page-images/users-page.png)
+
+
+
+# Accessibility
 
 I have been mindful during coding, to ensure that the website is as accessible friendly as possible. This has been achieved by:
 
