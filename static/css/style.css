@@ -486,7 +486,7 @@ nav{
 }
 
 
-.filter-btn{
+.filter-btn, .filter-reset{
   color:var(--dark-color);
   background-color: var(--white-color);
   font-family: var(--head-text);
@@ -500,6 +500,16 @@ nav{
 .filter-btn:hover{
   color:#000;
   text-decoration: underline;
+}
+
+.filter-reset{
+  color:#000;
+}
+
+.filter-reset:hover{
+  background-color: var(--dark-color);
+  color:var(--white-color);
+  font-size: 1rem;
 }
 
 /* overrides materialize default blue button color */
@@ -895,7 +905,7 @@ input:focus{
   
 }
 
-@media (max-width:430px){
+@media (max-width:320px){
   nav{
     position: static;
   }
