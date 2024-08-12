@@ -16,11 +16,11 @@
                         </div>
                         <div class="col s12 m4">
                             <!-- button to activate search -->
-                            <button type="submit" class="search-btn">
+                            <button type="submit" class="search-btn" aria-label="search button">
                                 <i class="fas fa-search left"></i>
                             </button>
                             <!-- resets search -->
-                            <a href="{{ url_for('find_trips') }}" class="reset-btn"><i class="fa-solid fa-xmark"></i></a>
+                            <a href="{{ url_for('find_trips') }}" class="reset-btn"><i class="fa-solid fa-xmark" aria-label="Reset Search"></i></a>
                         </div>
                     </div>
                 </form>
@@ -37,7 +37,7 @@
                     {% else %}
                         Trip Discoverer is an easy-to-use app. 
                         Discover, and search for trip ideas, from any of our categories. 
-                        Why not <em><u><a href="{{ url_for('register') }}" class="par-sign-in"> sign up,</a></u></em>
+                        Why not <em><u><a href="{{ url_for('register') }}" class="par-sign-in" aria-label="Sign Up"> sign up,</a></u></em>
                          then add and edit your own trip ideas 
                         for others to discover.
                     {% endif %}
@@ -54,7 +54,7 @@
                 {% for trip in trips %}
                 <li>
                     <div class="collapsible-header trip-header">
-                        <h4>{{ trip.category_name }}</h4>
+                        <h3>{{ trip.category_name }}</h3>
                         <span>
                             <!-- logic to display relavant icon for category -->
                             {% if trip.category_name == "Parks" %}
@@ -151,7 +151,7 @@
                             </div>
                         </div>
                         {% if trip.website %}
-                            <a href="{{ trip.website }}" class="btn-large web-btn dark" target="_blank">
+                            <a href="{{ trip.website }}" class="btn-large web-btn dark" aria-label="Website of the trip" target="_blank">
                                 Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
                         {% endif %}
@@ -159,7 +159,7 @@
                         {% if session.user|lower == trip.created_by|lower %}
                             <!-- edit trip button -->
                             <a href="{{ url_for('edit_trip', trip_id=trip._id)}}" 
-                                class="btn-large btn">Edit Trip <i class="fa-regular fa-keyboard"></i></a>
+                                class="btn-large btn" aria-label="Edit trip">Edit Trip <i class="fa-regular fa-keyboard"></i></a>
 
 
                                 <!-- button to activate delete confirmation -->
@@ -174,11 +174,11 @@
 
                                 <!-- cancel delete button -->
                                 <a href="{{ url_for('find_trips') }}" 
-                                    class="btn-large cancel-btn">
+                                    class="btn-large cancel-btn" aria-label="Cancel Delete trip">
                                     Cancel <i class="fa-solid fa-rectangle-xmark"></i>
                                 <!-- final delete button -->
                                 <a href="{{ url_for('delete_trip', trip_id=trip._id)}}" 
-                                    class="btn-large cancel-btn">
+                                    class="btn-large cancel-btn" aria-label="Delete trip">
                                     Delete Trip <i class="fa-solid fa-trash"></i>
                                 </a>
                                 
@@ -188,7 +188,7 @@
                         {% elif session.user|lower == "admin"|lower%}
                             <!-- edit trip button -->
                             <a href="{{ url_for('edit_trip', trip_id=trip._id)}}" 
-                                class="btn-large btn">Edit Trip <i class="fa-regular fa-keyboard"></i></a>
+                                class="btn-large btn" aria-label="Admin edit trip">Edit Trip <i class="fa-regular fa-keyboard"></i></a>
 
 
                                 <!-- button to activate delete confirmation -->
@@ -203,11 +203,11 @@
 
                                 <!-- cancel delete button -->
                                 <a href="{{ url_for('find_trips') }}" 
-                                    class="btn-large cancel-btn">
+                                    class="btn-large cancel-btn" aria-label="Admin cancel delete trip">
                                     Cancel <i class="fa-solid fa-rectangle-xmark"></i>
                                 <!-- final delete button -->
                                 <a href="{{ url_for('delete_trip', trip_id=trip._id)}}" 
-                                    class="btn-large cancel-btn">
+                                    class="btn-large cancel-btn" aria-label="Admin delete trip">
                                     Delete Trip <i class="fa-solid fa-trash"></i>
                                 </a>
                                 
@@ -220,51 +220,55 @@
             </ul>
             {% else %}
                 <h3 class="empty-search">
-                    No Trips found! <a href="{{ url_for('find_trips') }}">Search Again</a>
+                    No Trips found! 
+                    <a href="{{ url_for('find_trips') }}"
+                        aria-label="No trips found Search again">
+                        Search Again
+                    </a>
                 </h3>
             {% endif %}
         </div>
         <div class="filters-section">
             <h4 class="sub-header">Filter Categories</h4>
-            <a href="{{ url_for('find_trips') }}" class="btn">Reset</a>
+            <a href="{{ url_for('find_trips') }}" class="btn" aria-label="Reset filter">Reset</a>
             <hr>
             <form action="{{ url_for('search') }}" method="POST">
                 <input type="text" name="query" class="hide" value="beach">
-                <button type="submit" class="filter-btn">
+                <button type="submit" class="filter-btn" aria-label="Beaches filter">
                     Beaches
                 </button>    
             </form>
 
             <form action="{{ url_for('search') }}" method="POST">
                 <input type="text" name="query" class="hide" value="museums">
-                <button type="submit" class="filter-btn" onclick="searchFilter()">
+                <button type="submit" class="filter-btn" aria-label="Museums filter">
                     Museums
                 </button>    
             </form>
 
             <form action="{{ url_for('search') }}" method="POST">
                 <input type="text" name="query" class="hide" value="parks">
-                <button type="submit" class="filter-btn" onclick="searchFilter()">
+                <button type="submit" class="filter-btn" aria-label="Parks filter">
                     Parks
                 </button>    
             </form>
             <form action="{{ url_for('search') }}" method="POST">
                 <input type="text" name="query" class="hide" value="sport">
-                <button type="submit" class="filter-btn" onclick="searchFilter()">
+                <button type="submit" class="filter-btn" aria-label="Sport filter">
                     Sport
                 </button>   
             </form>
 
             <form action="{{ url_for('search') }}" method="POST">
                 <input type="text" name="query" class="hide" value="theme">
-                <button type="submit" class="filter-btn" onclick="searchFilter()">
+                <button type="submit" class="filter-btn" aria-label="Theme Parks filter">
                     Theme parks
                 </button>   
             </form>
 
             <form action="{{ url_for('search') }}" method="POST">
                 <input type="text" name="query" class="hide" value="walks">
-                <button type="submit" class="filter-btn" onclick="searchFilter()">
+                <button type="submit" class="filter-btn" aria-label="Walks filter">
                     Walks
                 </button>   
             </form>

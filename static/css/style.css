@@ -272,7 +272,7 @@ nav{
   background-color: var(--white-color);
   color: var(--dark-color);
   font-family: var(--head-text);
-  height:250px;
+  height:260px;
   text-align: center;
   border:solid var(--white-color) 3px;
   margin-bottom: 12px;
@@ -280,9 +280,11 @@ nav{
   box-shadow: 10px 10px 10px rgba(26, 77, 46, 0.8);
 }
 
-.trip-header h4{
+.trip-header h3{
   font-weight: 800;
   text-transform: uppercase;
+  color:var(--dark-color);
+  font-size: 2rem;
   text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
 }
 
