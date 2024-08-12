@@ -308,7 +308,6 @@ nav{
 
 .trip-content{
   background-color: var(--white-color);
-  color:var(--white-color);
   text-align: center;
   border:solid var(--white-color) 3px;
   margin-bottom: 12px;
@@ -564,7 +563,6 @@ input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: rgb(26, 77, 46);;
-  -webkit-box-shadow: 0 1px 0 0 rgb(26, 77, 46);;
   box-shadow: 0 1px 0 0 rgb(26, 77, 46);
 }
 
