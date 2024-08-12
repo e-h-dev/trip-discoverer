@@ -102,7 +102,7 @@ nav{
 }
 
 .hero{
-    background-image: url("../images/hero-image.jpg");
+    background-image: url("../images/hero-image.webp");
     width:100%;
     height:500px;
     background-size: 100% 100%;
@@ -242,7 +242,7 @@ nav{
   color:var(--dark-color)
 }
 
-/* styles for back to top page researched at w3s */
+/* styles for back to top page researched from w3s */
 
 #scroll-btn {
   display: none;
@@ -512,7 +512,7 @@ button:focus {
 
 /* alternitive styles for sign in and sign up and add trip pages hero and opaque classes */
 .small-hero{
-  background-image: url("../images/hero-image.jpg");
+  background-image: url("../images/hero-image.webp");
   width:100%;
   height:100vh;
   background-size: 100% 100%;
