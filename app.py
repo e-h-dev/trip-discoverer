@@ -69,7 +69,7 @@ def register():
         #put user into session
         session["user"] = request.form.get("username")
         user = register["username"]
-        flash("Welcome " + user + " to Trip Discoverer! You have Successfully Registered")
+        flash("Welcome " + user + " to Trip Discoverer!")
         return redirect(url_for('find_trips'))
     return render_template("register.html")
 
@@ -184,7 +184,13 @@ def delete_trip(trip_id):
 @app.route("/user_list")
 def user_list():
     users = mongo.db.users.find()
-    return render_template("users.html", users=users)
+    if session["user"] != "admin".lower():
+        flash("You have no access to this page")
+    else:
+        return render_template("users.html", users=users)
+
+        
+
 
 
 #function for admin to delete user
