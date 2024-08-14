@@ -216,5 +216,99 @@ Additional testing was taken by friends and family on a variety of devices and s
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
+| Home logo. | Link back to home page. | Clicked on logo. | Home page reloads. | Pass |
+| Home link. | Link back to home page. | Clicked on Home link. | Home page reloads. | Pass |
+| Sign in link. | Link to Sign in page. | Clicked on link. | Sign in page loads. | Pass |
+| Sign up link. | Link to Sign up page. | Clicked on link | Sign up page loads. | Pass |
+| Add trip link. | Link to Add trip page (When user in session). | Clicked on link. | Add trip page loads. | Pass |
+| Users link (Admin only). | Link to Users page (When admin in session). | Clicked on link. | Users page loads | Pass |
+| Mobile nav links hamberger. | Toggles open nav bar on mobile devices. | Clicked on hamberger icon. | Side navs toggle open. | Pass |
+| Search bar. | User can type in search request, the page will only load searched for trips. | Type in search request. | Only searched for trips loaded on trips page. | Pass |
+| Filter. | Click on any of the categories in the filter section, only trips from that category (or have criteria from category) will load. | Click on a filter button. | only that category loads. | Pass |
+| Display boxes | All trips should be displayed on the trips (home) page, in display boxes. | Page loaded. | All the trips are displayed in separate display boxes. | Pass |
+| Rating stars | Number of stars to display on display box, should correspond to rating nujber user puts into input form. | Added trips with varying rating results. | Trips dispalyed corresponding number of filled stars. | Pass |
+| Website link | Weblink button should open trip's website on another tab. | Cliced on web button. | New tab opened with trip's website. | Pass |
+| Edit link | User should be able to edit trip, when clicking on edit trip button. | | Clicked on edit trip, and edit trip form opens. | Pass |
+| Delete request button | When cicking on Delete trip button, a message should show with option to delete or cancel delete. | Clicked on delete button. | Delete message shows. | Pass |
+| Cancel delete button | After clicking on delete button, cancel button should stop delete and reload page. | Clicked on cancel button. | Delete is canceled and page reloads. | Pass |
+| Delete button | Deltes trip. | Clicked on delete button. | Trip Deleted. | Pass |
+| Back to top scrolling button | When scrolling down the page, a button should appear. Clicking on the button, should scroll page back to top. | Scrolled down page, button appeared. Clicked on the button. | Page scrolled back to top. | Pass |
+
+
+
+- - -
+
+### Sign up Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Home logo. | Link back to home page. | Clicked on logo. | Home page reloads. | Pass |
+| Home link. | Link back to home page. | Clicked on Home link. | Home page reloads. | Pass |
+| Sign in link. | Link to Sign in page. | Clicked on link. | Sign in page loads. | Pass |
+| Sign up link. | Link to Sign up page. | Clicked on link | Sign up page loads. | Pass |
+| Mobile nav links hamberger. | Toggles open nav bar on mobile devices. | Clicked on hamberger icon. | Side navs toggle open. | Pass |
+| Sign up form. | When loaded the page should have a form, which user information can be put in. | On page load form appears. | User information can be added. | Pass |
+| Sign up button. | When clicking on sign up button user should be added to data base and be signed in. | Clicked on sign up button. |  User was added to data base and signed in. | Pass |
+| Back to top scrolling button | When scrolling down the page, a button should appear. Clicking on the button, should scroll page back to top. | Scrolled down page, button appeared. Clicked on the button. | Page scrolled back to top. | Pass |
+
+- - -
+
+### Sign in Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Home logo. | Link back to home page. | Clicked on logo. | Home page reloads. | Pass |
+| Home link. | Link back to home page. | Clicked on Home link. | Home page reloads. | Pass |
+| Sign in link. | Link to Sign in page. | Clicked on link. | Sign in page loads. | Pass |
+| Sign up link. | Link to Sign up page. | Clicked on link | Sign up page loads. | Pass |
+| Sign in form. | When loaded the page should have a form, which user information can be put in. | On page load form appears | User information can be added. | Pass |
+| Sign in button. | When clicking on sign in button, user be signed in. | Clicked on sign in button. | User was signed in. | Pass |
+
+ - - -
+
+ ### Add trip Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Home logo. | Link back to home page. | Clicked on logo. | Home page reloads. | Pass |
+| Home link. | Link back to home page. | Clicked on Home link. | Home page reloads. | Pass |
+| Add trip link. | Link to Add trip page (When user in session). | Clicked on link. | Add trip page loads. | Pass |
+| Users link (Admin only). | Link to Users page (When admin in session). | Clicked on link. | Users page loads | Pass |
+| Mobile nav links hamberger. | Toggles open nav bar on mobile devices. | Clicked on hamberger icon. | Side navs toggle open. | Pass |
+| Add trip form. | When loaded the page should have a form, where user can put in trip information. | On page load form appears. | Trip information can be added. | Pass |
+| Submit button. | When clicking on submit button, trip should be added to data base and trips page display. | Clicked on submit button. | Trip was added. | Pass |
+| Back to top scrolling button | When scrolling down the page, a button should appear. Clicking on the button, should scroll page back to top. | Scrolled down page, button appeared. Clicked on the button. | Page scrolled back to top. | Pass |
+
+ - - -
+
+ ### Edit trip Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Home logo. | Link back to home page. | Clicked on logo. | Home page reloads. | Pass |
+| Home link. | Link back to home page. | Clicked on Home link. | Home page reloads. | Pass |
+| Add trip link. | Link to Add trip page (When user in session). | Clicked on link. | Add trip page loads. | Pass |
+| Users link (Admin only). | Link to Users page (When admin in session). | Clicked on link. | Users page loads | Pass |
+| Mobile nav links hamberger. | Toggles open nav bar on mobile devices. | Clicked on hamberger icon. | Side navs toggle open. | Pass |
+| Edit trip form. | When loaded the page should have a form, which user can edit trip information. | On page load edit form appears. | Trip information can be edited. | Pass |
+| Submit button. | When clicking on submmit button, trip should be updated to data base and trips page display. | Clicked on add trip button. | Trip added. | Pass |
+| Cancel Button | When clicking on cancel button, trip edit should cancel and trips page reload. | Clicked on cancel button. | Trip edit canceled and trips page reloaded. | Pass |
+| Back to top scrolling button | When scrolling down the page, a button should appear. Clicking on the button, should scroll page back to top. | Scrolled down page, button appeared. Clicked on the button. | Page scrolled back to top. | Pass |
+
+- - -
+
+### Users Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Home logo. | Link back to home page. | Clicked on logo. | Home page reloads. | Pass |
+| Home link. | Link back to home page. | Clicked on Home link. | Home page reloads. | Pass |
+| Add trip link. | Link to Add trip page (When user in session). | Clicked on link. | Add trip page loads. | Pass |
+| Users link (Admin only). | Link to Users page (When admin in session). | Clicked on link. | Users page loads | Pass |
+| Mobile nav links hamberger. | Toggles open nav bar on mobile devices. | Clicked on hamberger icon. | Side navs toggle open. | Pass |
+| Users display boxes | When users page loads all registered users should dispaly in boxes. | Opened users page. | All registered users displayed. | Pass |
+| Search user button | On user display box search button should load all trips added by the user. | Clicked on search user button. | All user's trips displayed. | Pass |
+| Delete user button | Delete user button on dispaly box should delete user from database. | Clicked on delete user button. | User deleted from database. | Pass |
+| Back to top scrolling button | When scrolling down the page, a button should appear. Clicking on the button, should scroll page back to top. | Scrolled down page, button appeared. Clicked on the button. | Page scrolled back to top. | Pass |
 
 
