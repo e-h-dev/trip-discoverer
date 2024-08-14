@@ -143,7 +143,8 @@ def add_trip():
         return redirect(url_for("find_trips"))
     #variable to render list of categories in database on add trip temaplte form
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("add-trip.html", categories=categories)
+    if session:
+        return render_template("add-trip.html", categories=categories)
 
 
 #edit function
@@ -184,12 +185,8 @@ def delete_trip(trip_id):
 @app.route("/user_list")
 def user_list():
     users = mongo.db.users.find()
-    if session["user"] != "admin".lower():
-        flash("You have no access to this page")
-    else:
+    if session["user"] == "admin".lower():
         return render_template("users.html", users=users)
-
-        
 
 
 
