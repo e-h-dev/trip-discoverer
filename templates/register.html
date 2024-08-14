@@ -4,6 +4,7 @@
         <div class="small-hero">
             <div class="small-opaque"></div>
             <div class="register-login">
+                <!-- page header -->
                 <h3 class="center-align header-font">Sign Up</h3>
                 <div class="row">
                     <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
@@ -47,7 +48,7 @@
         </div>
     </div>
 
-
+    <!-- link to sign in page if already registered -->
     <div class="row account-confirm">
         <div class="col s12">
             <p class="center-align">
@@ -60,6 +61,7 @@
 {% endblock %}
 
 {% block activeScript %}
+<!-- logic for active class on open page only -->
 <script>
     $('#home_page').removeClass('active');
     $('#sign_in').removeClass('active');

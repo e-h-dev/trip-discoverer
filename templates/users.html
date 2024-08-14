@@ -1,15 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row push">
+    <!-- logic to iterate through all current users -->
     {% for user in users %}
         <div class="col s12 m6 l4">
+        <!-- user display box -->
         <div class="card users-card-style">
             <div class="card-content white-text">
                 <span class="card-title">{{ user.username }}</span>
                 <p>{{ user.email }}</p>
             </div>
+            <!-- date stamp displays date user registered -->
                 <div class="date-stamp-user light"><em>Joined: {{ user.joined }}</em></div>
             <div class="card-action">
+                <!-- form for admin to search trips aded by user -->
                 <form action="{{ url_for('search') }}" method="POST">
                     <input type="text" name="query" class="hide" value="{{ user.username }}">
                     <button type="submit" class="btn card-btn user-search">
@@ -17,6 +21,7 @@
                     </button>
                     <span class="tick"></span>
                 </form>
+                <!-- button for admin to delete user -->
                 <a href="{{ url_for('delete_user', user_id=user._id)}}" class=" btn cancel-btn card-btn">Delete User</a>
             </div>
         </div>
@@ -26,6 +31,7 @@
 {% endblock %}
 
 {% block activeScript %}
+<!-- logic for active class on open page only -->
 <script>
     $('#home_page').removeClass('active');
     $('#add_trip').removeClass('active');

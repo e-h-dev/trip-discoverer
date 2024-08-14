@@ -4,11 +4,13 @@
         <div class="small-hero">
             <div class="small-opaque"></div>
             <div class="register-login">
+                <!-- page header -->
                 <h3 class="center-align header-font">Add Trip</h3>
                 <div class="row">
                     <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('add_trip') }}">
                         <div class="card-panel card-style">
                             <div class="row">
+                                <!-- category select dropdown -->
                                 <div class="input-field col s12">
                                     <i class="fa-solid fa-list"></i>
                                     <select id="category_name" name="category_name" class="validate" required>
@@ -118,6 +120,7 @@
 {% endblock %}
 
 {% block activeScript %}
+<!-- logic for active class on open page only -->
 <script>
     $('#home_page').removeClass('active');
     $('#user_list').removeClass('active');

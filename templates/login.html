@@ -5,7 +5,7 @@
         <div class="small-hero">
             <div class="small-opaque"></div>
             <div class="register-login">
-
+                <!-- page header -->
                 <h3 class="center-align header-font align">Sign In</h3>
 
                 <div class="row align">
@@ -41,6 +41,7 @@
             </div>
         </div>
     </div>
+    <!-- link to sign up page if not yet registered -->
     <div class="row account-confirm">
         <div class="col s12">
             <p class="center-align">
@@ -53,6 +54,7 @@
 {% endblock %}
 
 {% block activeScript %}
+<!-- logic for active class on open page only -->
 <script>
     $('#home_page').removeClass('active');
     $('#sign_up').removeClass('active');
