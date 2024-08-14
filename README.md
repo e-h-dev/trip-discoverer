@@ -83,16 +83,16 @@ I designed my colour scheme, based on the Trip Discoverer logo. For the logo des
 - I have used plain white `#fff` for the white text in the dark background sections of the web pages.
 - I have used plain white `#fff` for the white background for many sections of the web pages.
 
-![Trip Discoverer colur scheme image](/assets/readme-images/color-scheme.jpg)
+![Trip Discoverer colour scheme image](/assets/readme-images/color-scheme.jpg)
 
 ### Typography
 
-The font used in this app is Poppins, this font was suggested for the logo by [Canva](https://www.canva.com/). This font gives a strong presense which makes reading the information very clear. The font is available in a wide range of weights.
+The font used in this app is Poppins, this font was suggested for the logo by [Canva](https://www.canva.com/). This font gives a strong presence which makes reading the information very clear. The font is available in a wide range of weights.
 The fonts are imported from google fonts [Poppins](https://fonts.google.com/?query=poppins) it is used via the import link at the head of the [stylesheet](assets/css/style.css), this links all the text across the pages of the website to the appropriate style and font.
 
 ### Imagery
 
-I have used a beautiful image of a car speeding off on a trip, for the hero image. This image, is downloaded with a full license from [piaxabay](https://pixabay.com/photos/car-transportation-travel-road-trip-6603726/).
+I have used a beautiful image of a car speeding off on a trip, for the hero image. This image is downloaded with a full license from [piaxabay](https://pixabay.com/photos/car-transportation-travel-road-trip-6603726/).
 
 ## Wireframes
 
@@ -184,14 +184,13 @@ The users page is only accessible when the admin has signed in. On the page, the
 ![image of users page (admin only)](/assets/page-images/users-page.png)
 
 
-
 # Accessibility
 
 I have been mindful during coding, to ensure that the website is as accessible friendly as possible. This has been achieved by:
 
 * Using semantic HTML.
 * Using a hover state on all buttons on the site, to make it clear to the user that they are hovering over a button.
-* Using an active class to show the user which page is currently being used,, by a highlighted nav link.
+* Using an active class to show the user which page is currently being used, by a highlighted nav link.
 * Ensuring that there is a sufficient colour contrasts throughout the site.
 
 - - -
@@ -212,7 +211,7 @@ HTML, CSS, JavaScript, Python, Jinja
 
 * [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - Used to connect all pages to the template and to write python logic in html pages
 
-* [JQUERY](https://jquery.com/) - 1. To create sliding navbar for mobile. 2. to open and close collapsible displays. 3. To validate user input for categories. 4. To assgn active class to open page.
+* [JQUERY](https://jquery.com/) - 1. To create sliding navbar for mobile. 2. to open and close collapsible displays. 3. To validate user input for categories. 4. To assign active class to open page.
 
 * [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
@@ -241,14 +240,14 @@ HTML, CSS, JavaScript, Python, Jinja
 
 ### Deployment
 
-### Github Deployment
+### GitHub Deployment
 
-The website was stored using GitHub for storage of data and version control. To do this I did the following;
+The website was stored using GitHub for storage of data and version control. To do this I did the following.
 
 After each addition, change or removal of code, in the terminal within your IDE (I used gitpod for this project) type:
 
 - git add .
-- git commit -m "meaningful commit message"
+- git commit -m "meaningful commit message”.
 - git push
 
 The files are now available to view within your github repository.
@@ -276,7 +275,7 @@ To clone the repository:
 ### Repository deployment via Heroku
 
 - On the [Heroku Dashboard](https://dashboard.heroku.com) page, click New and then select Create New App from the drop-down menu.
-- When the next page loads insert the App name and Choose a region. Then click 'Create app'
+- When the next page loads insert the App name and choose a region. Then click 'Create app'
 - In the settings tab click on Reveal Config Vars and add the key IP and the value 0.0.0.0. The key Port and the value 5000. The credentials for this app were:
 
 1. IP (0.0.0.0)
@@ -285,7 +284,7 @@ To clone the repository:
 
 ### Deployment of the app
 
-- Click on the Deploy tab and select Github-Connect to Github.
+- Click on the Deploy tab and select GitHub-Connect to GitHub.
 - Enter the repository name and click Search.
 - Choose the repository that holds the correct files and click Connect.
 - A choice is offered between manual or automatic deployment whereby the app is updated when changes are pushed to GitHub.
@@ -305,15 +304,14 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 | Number | Bug | Failed Attempt to fix | How I fixed the bug |
 | :--- | :--- | :--- | :--- |
-| 1 | When updating font-size in the navbar the size would not update from the generic materialize font. | N/A | Looking in devtools, I saw font-size in style.css was not working, since the original font-size was on the materalize css as 15px. I updated the class 'fonts' on each of the nav list items rendering the larger font. |
-| 2 | The register form was not working; rendering a flask error. | N/A | I had put the wrong name attribute for the password input. |
-| 3 | To create a delete confirmation message, I tried to create a button which activates a JavaScript function creating a new button to the DOM with a `href` link to the python delete function. This did not work. | I realised, since the python route which the delete function activates is a backend function connecting the app to the mongo data base. However, the JavaScript function will only speak to the DOM as a front-end html builder rendering the `url_for` to the python function useless. To fix this issue I checked the `href` in devtools, where an id number was rendered by the python function via the `url_for`. I copied this id based link, and updated the `href` which JavaScript was creating for the DOM, this fixed the bug, and the delete button created by JavaScript deleted the trip. The fix failed, because it only worked for the trip with that id, no other trip could be deleted. | To fix this bug I wrote the html for the confirmation and hid it with display none in css. The JavaScript function changes the display properties of both buttons hiding the first delete button and revealing the confirmation button. This fixed the main problem, but it created another bug. (see bug 4) |
+| 1 | When updating font-size in the navbar the size would not update from the generic materialize font. | N/A | Looking in devtools, I saw font-size in style.css was not working, since the original font-size was on the materialize css as 15px. I updated the class 'fonts' on each of the nav list items rendering the larger font. |
+| 2 | The register form was not working, rendering a flask error. | N/A | I had put the wrong name attribute for the password input. |
+| 3 | To create a delete confirmation message, I tried to create a button which activates a JavaScript function creating a new button to the DOM with a `href` link to the python delete function. This did not work. | I realised, since the python route which the delete function activates is a backend function connecting the app to the mongo data base. However, the JavaScript function will only speak to the DOM as a front-end html builder rendering the `url_for` to the python function useless. To fix this issue I checked the `href` in devtools, where an id number was rendered by the python function via the `url_for`. I copied this id based link and updated the `href` which JavaScript was creating for the DOM, this fixed the bug, and the delete button created by JavaScript deleted the trip. The fix failed, because it only worked for the trip with that id, no other trip could be deleted. | To fix this bug I wrote the html for the confirmation and hid it with display none in css. The JavaScript function changes the display properties of both buttons hiding the first delete button and revealing the confirmation button. This fixed the main problem, but it created another bug. (see bug 4) |
 | 4 | The fix in bug 3 caused a second bug. The JavaScript function only worked on the first trip of the list, for the rest of the items on display the delete button was inactive. | N/A | The reason for this bug was, I targeted the HTML elements with JavaScript via the ids. In JavaScript only one identical id could be used. I changed the JavaScript function to target the HTML `class`, then created a for loop to iterate over all instances of the class, this way the delete confirmation is active on all trips displayed. |
 | 5 | When logging into the admin account, the page layout was distorted and most of the trip displays would not open. | N/A | After studying the code I realised the classes to connect the JavaScript were not in the correct place in the admin section of the jinja `if` statement. By resetting the classes in html the page loads correctly. |
 | 6 | Date stamp format was not clear it included even the milliseconds. | I created three python variables for the day, month, and year. I then created another variable to concatenate all the variables (day, month, and year). This came as a rounded number, since python date function is an integer. I then wrote the code as `date_stamp = day, month, year` this became an array (list in python terms) and displayed as an array on the app Added on: [7, 8, 2024] and in MongoDB. This format was not appealing. | To fix this bug I converted the day, month and year variables into strings and then concatenated them with a hyphen like this `date_stamp = str(day)+"-"+str(month)+"-"+str(year)`, resulting in a better format (Added on: 8-8-2024). |
 | 7 | In the form sections of the app even the required inputs accepted white space. | The Pattern attribute I originally used to determine there can be no white space, caused another bug since the input will not accept two words with a space between, this cannot work for the add trip page. | After some research I found busing the pattern attribute `pattern=".*\S+.*"` this allows white spaces, but only after a letter, number or character. |
 | 8 | Active nav link would not work like my previous projects since the app's html pages were built with the flask templates. I wanted the nav bar to remain in the base template. | N/A | After some research I found a [YouTube tutorial](https://www.youtube.com/watch?v=sIGPwvd-nTk) dealing with this exact problem. I did not follow it entirely, but the main idea was to use jQuery, by creating a new block at the bottom of each template just before the body end. The code removes the active class from every other `id` beside for the current page this ensures that only on the open page the active class highlights its link" | 
-
 
 ### Known bugs
 
@@ -340,3 +338,4 @@ I would like to acknowledge the following:
 * Dan Adiletta - For his [YouTube tutorial](https://www.youtube.com/watch?v=sIGPwvd-nTk).
 
 * [Online convert](https://www.online-convert.com/) for converting hero image from jpg to webp.
+
