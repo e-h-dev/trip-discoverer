@@ -13,6 +13,18 @@
 
 - - -
 
+### Add trip Page
+
+![Add trip page](/assets/validation-images/responsive-images/add-trip-responsive.png)
+
+- - -
+
+### Users Page
+
+![Users page](/assets/validation-images/responsive-images/users-page-responsive.png)
+
+- - -
+
 ## CONTENTS
 * [App responsivness](#trip-discoverer-app-is-responsive-to-all-devices)
 * [AUTOMATED TESTING](#automated-testing)
@@ -103,63 +115,44 @@ The css check came back with no errors, there are however some warnings the vali
 
  - All pages have been tested by lighthouse and have passed all the criteria with a score above 90.
 
- ### Home page desktop
+ ### Home page 
 
- ![Home page desktop](/assets/validation-images/lighthouse/trips-page-lighthouse.png)
+ ![Home page](/assets/validation-images/lighthouse/trips-page-lighthouse.png)
 
- ### Home page mobile
-
- ![Home page mobile]()
 
  - - -
 
- ### Sign up page desktop
+ ### Sign up page 
 
- ![Sign up page desktop](/assets/validation-images/lighthouse/sign-up-page.png)
+ ![Sign up page](/assets/validation-images/lighthouse/sign-up-page.png)
 
- ### Sign up page mobile
-
- ![Sign up page mobile]()
 
  - - -
 
- ### Sign in page desktop
+ ### Sign in page 
 
- ![Sign in desktop](/assets/validation-images/lighthouse/sign-in-page.png)
+ ![Sign in](/assets/validation-images/lighthouse/sign-in-page.png)
 
- ### Sign in page mobile
-
- ![Sign in page mobile]()
 
  - - -
 
- ### Add trip page desktop
+ ### Add trip page 
 
- ![Add trip page desktop](/assets/validation-images/lighthouse/add-trip-page.png)
-
- ### Add trip page mobile
-
- ![Add trip page mobile]()
+ ![Add trip page](/assets/validation-images/lighthouse/add-trip-page.png)
 
  - - -
 
- ### Edit trip page desktop
+ ### Edit trip page 
 
- ![Edit trip page desktop](/assets/validation-images/lighthouse/edit-trips-page.png)
+ ![Edit trip page](/assets/validation-images/lighthouse/edit-trips-page.png)
 
- ### Edit trip page mobile
-
- ![Edit trip page mobile]()
 
  - - -
 
- ### Users page desktop
+ ### Users page 
 
- ![Users page desktop](/assets/validation-images/lighthouse/users-page.png)
+ ![Users page](/assets/validation-images/lighthouse/users-page.png)
 
- ### Users page mobile
-
- ![Users page mobile](/assets/validation-images/lighthouse/users-page-mobile.png)
 
  - - -
 
