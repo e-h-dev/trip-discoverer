@@ -35,23 +35,23 @@ $(document).ready(function(){
 
 
 
-let deleteBtn = document.getElementsByClassName("delete-confirm")
-let confirmBtn = document.getElementsByClassName("confirm-btn")
+let deleteBtn = document.getElementsByClassName("delete-confirm");
+let confirmBtn = document.getElementsByClassName("confirm-btn");
 
 function myDelete(){
     for (let del =0; del < confirmBtn.length; del++){
-        confirmBtn[del].style.display='none'
-    };
+        confirmBtn[del].style.display='none';
+    }
     for (let con=0; con < deleteBtn.length; con++){
-        deleteBtn[con].style.display='block'
-    };
+        deleteBtn[con].style.display='block';
+    }
 
-};
+}
 
 const flashOut = setTimeout(removeFlash, 5000);
 
 function removeFlash(){
-    document.getElementById("flashes").innerHTML = ""
+    document.getElementById("flashes").innerHTML = "";
 }
 
 
@@ -61,7 +61,7 @@ function removeFlash(){
 let mybutton = document.getElementById("scroll-btn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
