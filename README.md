@@ -4,6 +4,14 @@
 
 # Trip Discoverer
 
+![Trip Discoverer responsive image](/assets/validation-images/responsive-images/home-page-responsive.png)
+
+## Link to live website
+
+[Trip Discoverer](https://trip-discoverer-efed3b671fae.herokuapp.com/)
+
+## Hero Image
+
 ![Trip Discoverer Theme Image](/static/images/hero-image.jpg)
 
 ## Table of Contents
