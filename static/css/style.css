@@ -818,6 +818,13 @@ input:focus{
     height:50vh;
   }
   
+  .account-confirm{
+    position: absolute;
+    top:750px;
+    width:80%;
+    left:10%;
+    height:60px;
+  }
   
 }
 
@@ -899,9 +906,12 @@ input:focus{
   /* sign up and sign in pages */
 
   .account-confirm{
-    bottom:-250px;
-    right:10px;
-  }
+    top:750px;
+    width:90%;
+    height:60px;
+    left:5%;
+  } 
+  
   
 }
 
