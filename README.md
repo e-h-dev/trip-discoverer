@@ -29,6 +29,7 @@
   - [Imagery](#imagery)
   - [Wireframes](#wireframes)
   - [Flowcharts](#flowcharts)
+  - [Data Schema](#data-schema)
 - [Trip Discoverer Pages](#trip-discoverer-pages)
   - [Home Page](#home-page)
     - [Filter section](#filter-section)
@@ -123,6 +124,12 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 ### User flowchart
 
 ![User flowchart](/assets/flowcharts/user-flowchart.jpg)
+
+ - - -
+
+ ## Data Schema
+
+ ![Data Schema](/assets/readme-images/data-schema.png)
 
  - - -
 
