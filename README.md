@@ -206,6 +206,12 @@ HTML, CSS, JavaScript, Python, Jinja
 
 * [MongoDB](https://www.mongodb.com/products/platform/cloud) - Used to save, read, update, and delete all the app's data
 
+* [Python](https://www.python.org/) - Used to create routes to render web app pages and connect to backend server
+
+* [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Used to connect web app to back end with python
+
+* [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) - Used to connect all pages to the template and to write python logic in html pages
+
 * [JQUERY](https://jquery.com/) - 1. To create sliding navbar for mobile. 2. to open and close collapsible displays. 3. To validate user input for categories. 4. To assgn active class to open page.
 
 * [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
