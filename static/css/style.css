@@ -32,16 +32,16 @@ i{
 
 /* -------------------------------------------main buttons styling */
 .btn{
-  color:var(--dark-color);
-  background-color: var(--white-color);
+  color:var(--white-color);
+  background-color: var(--dark-color);
   font-family: var(--head-text);
   font-size: 1.3rem;
   font-weight: 800;
 }
 
 .btn:hover{
-  color: var(--white-color);
-  background-color: var(--dark-color);
+  color: var(--dark-color);
+  background-color: var(--white-color);
 }
 
 .cancel-btn{
@@ -602,6 +602,10 @@ input:focus{
   font-family: var(--head-text);
   font-weight: 800;
   font-size: 1.2rem;
+}
+
+.submit-btn{
+  color:var(--light-color)
 }
 
 
