@@ -71,7 +71,7 @@ def register():
         user = register["username"]
         flash("Welcome " + user + " to Trip Discoverer!")
         return redirect(url_for('find_trips'))
-    
+    # if statement preventing the load of register page if user in session
     if not session:
         return render_template("register.html")
     else:
@@ -102,7 +102,7 @@ def login():
             # username does not exist
             flash("Username and/or Password is incorrect")
             return redirect(url_for("login"))
-
+    # if statement preventing the load of login page if user in session
     if not session:
         return render_template("login.html")
     else:
@@ -153,6 +153,7 @@ def add_trip():
         on add trip temaplate form
         """
     categories = mongo.db.categories.find().sort("category_name", 1)
+    # if statement preventing the load of add trip page if no user in session
     if session:
          return render_template(
              "add-trip.html", categories=categories)
@@ -199,6 +200,8 @@ def delete_trip(trip_id):
 @app.route("/user_list")
 def user_list():
     users = mongo.db.users.find()
+
+    # if statement preventing the load of users page if admin not in session
     if session["user"] == "admin".lower():
         return render_template("users.html", users=users)
     else:
