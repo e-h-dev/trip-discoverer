@@ -160,25 +160,70 @@ The css check came back with no errors, there are however some warnings the vali
 
 ## Website Owner Goals
 
+* Note the refrence in the left column corresponds to the [Goals images](#goals-images) below.
+
 | REF | Goals | How are they achieved? |
 | :--- | :--- | :--- |
-| 1 | We want the website to attract a new and wide range of users. | With a clear and easy to use interface, with clear instructions and nav links. Users will be interested and attracted to using the web app. |
-| 2 | We want an attractive website, where the information is clear, and easy to access. | Using a range of technologies the app is extremely easy to use and store data. |
-| 3 | We want the users to have the ability of signing in, to add their own trip ideas. | A simple sign-up page which takes user information and posts it to the data base, allows for easy access for any registered user, where they can add their own trip ideas. |
-| 4 | We want to be able to collect data from all users, to find their preferential category of trips, and places they visit. | With good search functionality the site owner can easily find all information about any user, using the admin inly users page. |
-| 5 | We want to be able to provide consumer habit information, to small local businesses, to promote their business to our users. | The site owner can easily collect all the relevant information from all the users. |
-| 6 | We want the app to be responsive to all devices. | BY using materialize and custom media queries the app is responsive to all devices. |
+| A | We want the website to attract a new and wide range of users. | With a clear and easy to use interface, with clear instructions and nav links. Users will be interested and attracted to using the web app. |
+| B | We want an attractive website, where the information is clear, and easy to access. | Using a range of technologies the app is extremely easy to use and store data. |
+| C | We want the users to have the ability of signing in, to add their own trip ideas. | A simple sign-up page which takes user information and posts it to the data base, allows for easy access for any registered user, where they can add their own trip ideas. |
+| D | We want to be able to collect data from all users, to find their preferential category of trips, and places they visit. | With good search functionality the site owner can easily find all information about any user, using the admin only users page. |
+| E | We want to be able to provide consumer habit information, to small local businesses, to promote their business to our users. | The site owner can easily collect all the relevant information from all the users. |
+| F | We want the app to be responsive to all devices. | BY using materialize and custom media queries the app is responsive to all devices. |
 
 ## Site Visitor Goals
 
  REF | Goals | How are they achieved? |
 | :--- | :--- | :--- |
-| 1 | I want to have access to clear details regarding all the trips detailed by the website. | Each trip is displayed clearly on the trip page, the main information is first displayed and when clicked on the display box toggles down, to reveal a large array of information about the trip. |
-| 2 | I want to be able to easily search for my preferred trip, by location and category. | A simple search bar allows the user to search for anything wanted, from region to city to reviews and much more. The filter will also filter down the categories narrowing down the user's search.  |
-| 3 | I want to add my own trip ideas to the website's database. | Once signed in the user can easily click on the add trip nav link and add a trip by filling in and submitting the form. |
-| 4 | I want to be able to edit my trip ideas on the website's database. | When signed in the user can look at their trips, there is an option to both edit and delete their trips. |
-| 5 | I want the site to be responsive to my device. | By using materialize and custom media queries the app is responsive to all devices. |
-| 6 | I want the app to be easy to navigate. | Clear nav links with hover status and active class makes the app simple and intuitive to navigate. |
+| G | I want to have access to clear details regarding all the trips detailed by the website. | Each trip is displayed clearly on the trip page, the main information is first displayed and when clicked on the display box toggles down, to reveal a large array of information about the trip. |
+| H | I want to be able to easily search for my preferred trip, by location and category. | A simple search bar allows the user to search for anything wanted, from region to city to reviews and much more. The filter will also filter down the categories narrowing down the user's search.  |
+| I | I want to add my own trip ideas to the website's database. | Once signed in the user can easily click on the add trip nav link and add a trip by filling in and submitting the form. |
+| J | I want to be able to edit my trip ideas on the website's database. | When signed in the user can look at their trips, there is an option to both edit and delete their trips. |
+| K | I want the site to be responsive to my device. | By using materialize and custom media queries the app is responsive to all devices. |
+| L | I want the app to be easy to navigate. | Clear nav links with hover status and active class makes the app simple and intuitive to navigate. |
+
+### Goal images
+
+## A.
+
+![image of clear navigation](/assets/page-images/home-page.png)
+
+## B.
+
+![gif showing trip informaiton scroll down](/assets/testing-gifs/goal-b.gif)
+
+## C.
+
+![gif for sign in](/assets/testing-gifs/goal-c.gif)
+
+## D.
+![gif for search users](/assets/testing-gifs/goal-d.gif)
+
+## F.
+
+![Responsive Pages](/assets/validation-images/responsive-images/home-page-responsive.png)
+
+## G.
+
+![gif showing trip informaiton scroll down](/assets/testing-gifs/goal-b.gif)
+
+## H.
+
+![Search for trip](/assets/testing-gifs/goal-h.gif)
+
+## I.
+
+![Add trip gif](/assets/testing-gifs/goal-i.gif)
+
+## j.
+
+![Edit trip gif](/assets/testing-gifs/goal-j-1.gif)
+
+
+![Delete trip giff](/assets/testing-gifs/goal-j-2.gif)
+
+
+
 
 - - -
 
