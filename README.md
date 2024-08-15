@@ -46,7 +46,7 @@
 
 # Project Rationale
 
-* Trip Discoverer is web app, its primary objective is to provide a convenient and simple platform for people to share and discover trip ideas.
+* Trip Discoverer is a web app its primary objective is to provide a convenient and simple platform for people to share and discover trip ideas.
 * I always find it hard to create a simple and efficient system to collect records of the many searched for and experienced trip locations and their information. Being able to store this information saves time in the future and allows one to rediscover old trips they enjoyed in the past. This simple to use app will transform this experience, making it simple, efficient and enjoyable to keep records and discover new ideas.
 * The functionality of the app which anyone can use to add trips and search for trips, will eliminate the need for difficult record keeping and lengthy trip searching.
 * The app has a smaller and clearer, than most trip locating websites range of information is more concise and less confusing, the trips are added by those who have experienced the location making it easier for users to find a trip they want.
