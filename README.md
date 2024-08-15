@@ -87,7 +87,7 @@ clear information, for anyone looking for a nice day out. The options range from
 
 ### Colour Scheme
 
-I designed my colour scheme, based on the Trip Discoverer logo. For the logo design I used the website [Canva](https://www.canva.com/). Based on the colour of the logo I have designed the website.
+I designed my colour scheme, based on the Trip Discoverer logo. For the logo design I used the website [Canva](https://www.canva.com/). Based on the colour of the logo I have designed the website. The dark and green colurs give the user a feel of holiday trips and freedom, this will provide the user with a positive and engaging experiance.
 
 - I have used `#1a4d2e` for the dark text in the light background sections of the web pages.
 - I have used `#1a4d2e` for the dark backgrounds of the web pages.
@@ -100,12 +100,15 @@ I designed my colour scheme, based on the Trip Discoverer logo. For the logo des
 
 ### Typography
 
-The font used in this app is Poppins, this font was suggested for the logo by [Canva](https://www.canva.com/). This font gives a strong presence which makes reading the information very clear. The font is available in a wide range of weights.
-The fonts are imported from google fonts [Poppins](https://fonts.google.com/?query=poppins) it is used via the import link at the head of the [stylesheet](assets/css/style.css), this links all the text across the pages of the website to the appropriate style and font.
+* The font used in this app is Poppins, this font was suggested for the logo by [Canva](https://www.canva.com/). This font gives a strong presence which makes reading the information very clear. The font is available in a wide range of weights. The font is clear and easy to read across the entire app, the user will never have to strain to read any section.
+
+- - -
+
+* The font is imported from google fonts [Poppins](https://fonts.google.com/?query=poppins) it is used via the import link at the head of the [stylesheet](assets/css/style.css), this links all the text across the pages of the website to the appropriate style and font.
 
 ### Imagery
 
-I have used a beautiful image of a car speeding off on a trip, for the hero image. This image is downloaded with a full license from [piaxabay](https://pixabay.com/photos/car-transportation-travel-road-trip-6603726/).
+I have used a beautiful image of a car speeding off on a trip, for the hero image. Thhe image gives the user a positive feel of freedom to discover and experiance nw trips. This image is downloaded with a full license from [piaxabay](https://pixabay.com/photos/car-transportation-travel-road-trip-6603726/).
 
 ## Wireframes
 
