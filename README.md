@@ -147,7 +147,7 @@ Wireframes were created for mobile, tablet and desktop using balsamiq.
 
 # Trip Discoverer Pages
 
-![responsive image](assets/page-image/responsive-image.png)
+![responsive image](/assets/validation-images/responsive-images/home-page-responsive.png)
 
 ## Features
 
