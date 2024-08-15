@@ -160,7 +160,7 @@ The css check came back with no errors, there are however some warnings the vali
 
 ## Website Owner Goals
 
-* Note the refrence in the left column corresponds to the [Goals images](#goals-images) below.
+* Note the refrence in the left column corresponds to the [Goals images](#goal-images) below.
 
 | REF | Goals | How are they achieved? |
 | :--- | :--- | :--- |
