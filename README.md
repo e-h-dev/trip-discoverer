@@ -19,7 +19,7 @@
 - [Third Milestone Project](#third-milestone-project)
 - [Trip Discoverer](#trip-discoverer)
 - [Table of Contents](#table-of-contents)
-- [Project Rationale](#project-retionale)
+- [Project Rationale](#project-rationale)
 - [About](#about)
 - [User Experience (UX)](#user-experience-ux)
   - [User stories](#user-stories)
