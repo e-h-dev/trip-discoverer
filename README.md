@@ -87,7 +87,7 @@ clear information, for anyone looking for a nice day out. The options range from
 
 ### Colour Scheme
 
-I designed my colour scheme, based on the Trip Discoverer logo. For the logo design I used the website [Canva](https://www.canva.com/). Based on the colour of the logo I have designed the website. The dark and green colurs give the user a feel of holiday trips and freedom, this will provide the user with a positive and engaging experiance.
+I designed my colour scheme, based on the Trip Discoverer logo. For the logo design I used the website [Canva](https://www.canva.com/). Based on the colour of the logo I have designed the website. The dark and green colours give the user a feel of holiday trips and freedom, this will provide the user with a positive and engaging experiance.
 
 - I have used `#1a4d2e` for the dark text in the light background sections of the web pages.
 - I have used `#1a4d2e` for the dark backgrounds of the web pages.
@@ -108,11 +108,11 @@ I designed my colour scheme, based on the Trip Discoverer logo. For the logo des
 
 ### Imagery
 
-I have used a beautiful image of a car speeding off on a trip, for the hero image. Thhe image gives the user a positive feel of freedom to discover and experiance nw trips. This image is downloaded with a full license from [piaxabay](https://pixabay.com/photos/car-transportation-travel-road-trip-6603726/).
+I have used a beautiful image of a car speeding off on a trip, for the hero image. The image gives the user a positive feel of freedom to discover and experiance nw trips. This image is downloaded with a full license from [piaxabay](https://pixabay.com/photos/car-transportation-travel-road-trip-6603726/).
 
 ## Wireframes
 
-Wireframes were created for mobile, tablet and desktop using balsamiq.
+Wireframes were created for mobile, tablet and desktop using [balsamiq.](https://balsamiq.com/)
 
 ### Home Page
 
