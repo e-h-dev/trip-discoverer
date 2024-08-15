@@ -334,10 +334,16 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 | 6 | Date stamp format was not clear it included even the milliseconds. | I created three python variables for the day, month, and year. I then created another variable to concatenate all the variables (day, month, and year). This came as a rounded number, since python date function is an integer. I then wrote the code as `date_stamp = day, month, year` this became an array (list in python terms) and displayed as an array on the app Added on: [7, 8, 2024] and in MongoDB. This format was not appealing. | To fix this bug I converted the day, month and year variables into strings and then concatenated them with a hyphen like this `date_stamp = str(day)+"-"+str(month)+"-"+str(year)`, resulting in a better format (Added on: 8-8-2024). |
 | 7 | In the form sections of the app even the required inputs accepted white space. | The Pattern attribute I originally used to determine there can be no white space, caused another bug since the input will not accept two words with a space between, this cannot work for the add trip page. | After some research I found busing the pattern attribute `pattern=".*\S+.*"` this allows white spaces, but only after a letter, number or character. |
 | 8 | Active nav link would not work like my previous projects since the app's html pages were built with the flask templates. I wanted the nav bar to remain in the base template. | N/A | After some research I found a [YouTube tutorial](https://www.youtube.com/watch?v=sIGPwvd-nTk) dealing with this exact problem. I did not follow it entirely, but the main idea was to use jQuery, by creating a new block at the bottom of each template just before the body end. The code removes the active class from every other `id` beside for the current page this ensures that only on the open page the active class highlights its link" | 
+| 9 | Even when no user is signed in, the add trip and users pages will load, when typed into the browser address bar. | N/A | I create an if statement in the app.py file on the relevant function. The logic is `if` user in session render page `else` return to home page and flash "You must be logged in". For the users page `if` admin logged in render page `else` return to home page with a flash message of "You have no access to this page. |
+| 10 | When user is signed in, the sign in and sign-up pages will load, when typed into the browser address bar. | N/A | I create an if statement in the app.py file on the relevant function. The logic is `if` no user session render page `else` return to home page and flash already logged in message. |
+
+- - -
 
 ### Known bugs
 
 - I had tried to create a search bar on the users page for admin to search users by name, I created a new python `@route` and connected the search to the template. When searching for users the search came up empty. I am still trying to resolve this issue, and in the future, I would like to add this feature to the app.
+
+- - -
 
 ## Credits
 
