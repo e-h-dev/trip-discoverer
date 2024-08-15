@@ -71,7 +71,12 @@ def register():
         user = register["username"]
         flash("Welcome " + user + " to Trip Discoverer!")
         return redirect(url_for('find_trips'))
-    return render_template("register.html")
+    
+    if not session:
+        return render_template("register.html")
+    else:
+        flash("You are already logged in!")
+        return redirect(url_for('find_trips'))
 
 
 # sign in function
@@ -98,8 +103,11 @@ def login():
             flash("Username and/or Password is incorrect")
             return redirect(url_for("login"))
 
-    return render_template("login.html")
-
+    if not session:
+        return render_template("login.html")
+    else:
+        flash("You are already logged in!")
+        return redirect(url_for('find_trips'))
 
 # Sign out function
 @app.route("/logout")
@@ -145,10 +153,12 @@ def add_trip():
         on add trip temaplate form
         """
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template(
-        "add-trip.html", categories=categories)
-    # if session:
-    # return render_template("add-trip.html", categories=categories)
+    if session:
+         return render_template(
+             "add-trip.html", categories=categories)
+    else:
+        flash("You must be logged in to add trips")
+        return redirect(url_for("find_trips"))
 
 
 # edit function
@@ -189,9 +199,11 @@ def delete_trip(trip_id):
 @app.route("/user_list")
 def user_list():
     users = mongo.db.users.find()
-    return render_template("users.html", users=users)
-    # if session["user"] == "admin".lower():
-    # return render_template("users.html", users=users)
+    if session["user"] == "admin".lower():
+        return render_template("users.html", users=users)
+    else:
+        flash("You have no access to this page!")
+        return redirect(url_for("find_trips"))
 
 
 # function for admin to delete user
