@@ -205,7 +205,7 @@ The css check came back with no errors, there are however some warnings the vali
 
 ## G.
 
-![gif showing trip informaiton scroll down](/assets/testing-gifs/goal-b.gif)
+![gif showing trip information scroll down](/assets/testing-gifs/goal-b.gif)
 
 ## H.
 
