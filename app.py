@@ -216,6 +216,11 @@ def delete_user(user_id):
     return redirect(url_for("user_list"))
 
 
+@app.errorhandler(404)
+@app.errorhandler(500)
+def handle_error(err):
+    return render_template("error.html"), err.code
+
 # runs app
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

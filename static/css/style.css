@@ -717,6 +717,24 @@ input:focus{
   top:35px;
 }
 
+/*------------------------------------- styles for error page-------------------------- */
+
+.error-background{
+  position: relative;
+  left: 10%;
+  background-color: var(--light-opaque);
+  width:80%;
+  border-radius: 5px;
+}
+
+.error-home-link{
+  position: relative;
+  left:40%;
+  width:20%;
+  height:20%;
+  border-radius: 10px;
+}
+
 /* --------------------------------------------------------media queries -------------------------------------*/
 
 /* media queries for trips page tablet */
@@ -829,6 +847,22 @@ input:focus{
     left:10%;
     height:60px;
   }
+
+  /*------------------------ error-page-styles */
+
+  .error-background{
+    position: relative;
+    left: 10%;
+    background-color: var(--light-opaque);
+    width:80%;
+    border-radius: 5px;
+    font-size: 1.3rem;
+  }
+  
+  .error-home-link{
+    width:18%;
+    height:18%;
+  }
   
 }
 
@@ -915,6 +949,23 @@ input:focus{
     height:60px;
     left:5%;
   } 
+
+
+  /*------------------------ error-page-styles */
+
+  .error-background{
+    position: relative;
+    left: 10%;
+    background-color: var(--light-opaque);
+    width:80%;
+    border-radius: 2px;
+    font-size: 1rem;
+  }
+  
+  .error-home-link{
+    width:12%;
+    height:12%;
+  }
   
   
 }
