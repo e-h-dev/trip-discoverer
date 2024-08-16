@@ -160,7 +160,7 @@ The css check came back with no errors, there are however some warnings the vali
 
 ## Website Owner Goals
 
-* Note the refrence in the left column corresponds to the [Goals images](#goal-images) below.
+* Note the reference in the left column corresponds to the [Goals images](#goal-images) below.
 
 | REF | Goals | How are they achieved? |
 | :--- | :--- | :--- |
@@ -190,7 +190,7 @@ The css check came back with no errors, there are however some warnings the vali
 
 ## B.
 
-![gif showing trip informaiton scroll down](/assets/testing-gifs/goal-b.gif)
+![gif showing trip information scroll down](/assets/testing-gifs/goal-b.gif)
 
 ## C.
 
