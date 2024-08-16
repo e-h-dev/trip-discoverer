@@ -215,6 +215,12 @@ def delete_user(user_id):
     flash("User Successfully Deleted")
     return redirect(url_for("user_list"))
 
+@application.errorhandler(404)
+@application.errorhandler(401)
+@application.errorhandler(500)
+def http_error_handler(error):
+    return render_template('error.html', error=error), error.code
+
 
 # runs app
 if __name__ == "__main__":
