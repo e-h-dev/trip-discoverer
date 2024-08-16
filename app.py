@@ -211,9 +211,12 @@ def user_list():
 # function for admin to delete user
 @app.route("/delete_user/<user_id>")
 def delete_user(user_id):
-    mongo.db.users.delete_one({"_id": ObjectId(user_id)})
-    flash("User Successfully Deleted")
-    return redirect(url_for("user_list"))
+    if session["user"] == "admin".lower():
+        mongo.db.users.delete_one({"_id": ObjectId(user_id)})
+        flash("User Successfully Deleted")
+        return redirect(url_for("user_list"))
+    else:
+        return redirect(url_for("find_trips"))
 
 
 @app.errorhandler(404)
