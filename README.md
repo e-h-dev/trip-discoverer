@@ -144,6 +144,10 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
  ## Data Schema
 
+ - Although Trip Discoverer, uses MongoDB since it is a non-relational data base, were all the data can be stored in one document. I have designed the data base with three documents. 1. Categories 2. Users 3. Trips. The reason for this is, user sign up and sign in deals exclusively with the users document were all the data for users is stored, name, email and password. This will make signing up and signing in more efficient. The reason for a separate categories document is, in the add trip form the first input option is choose a category the options are filled with data from the categories document only, this is a simpler system, compared to taking one section of each document to fill the options.
+
+ - Below is a diagram of the data schema for Trip Discoverer. 
+
  ![Data Schema](/assets/readme-images/data-schema.png)
 
  - - -
