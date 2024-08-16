@@ -59,7 +59,7 @@
 # About
 
 Trip Discoverer is an easy to use website, designed for anyone to access. The website provides up to date and 
-clear information, for anyone looking for a nice day out. The options range from family to adult to kid friendly places. Users can also sign in and add their own Trips for the benefit of others.
+clear information, for anyone looking for a nice day out. The options range from family, to adult, to kid friendly places. Users can also sign in and add their own Trips for the benefit of others.
 
 ## User Experience (UX)
 
@@ -100,15 +100,15 @@ I designed my colour scheme, based on the Trip Discoverer logo. For the logo des
 
 ### Typography
 
-* The font used in this app is Poppins, this font was suggested for the logo by [Canva](https://www.canva.com/). This font gives a strong presence which makes reading the information very clear. The font is available in a wide range of weights. The font is clear and easy to read across the entire app, the user will never have to strain to read any section.
+* The font used in this app is Poppins, this font was suggested for the logo by [Canva](https://www.canva.com/). This font gives a strong presence which makes reading the information noticeably clear. The font is available in a wide range of weights. The font is clear and easy to read across the entire app, the user will never have to strain to read any section.
 
 - - -
 
-* The font is imported from google fonts [Poppins](https://fonts.google.com/?query=poppins) it is used via the import link at the head of the [stylesheet](assets/css/style.css), this links all the text across the pages of the website to the appropriate style and font.
+* The font is imported from google fonts. [Poppins](https://fonts.google.com/?query=poppins) It is used via the import link at the head of the [stylesheet](assets/css/style.css). This links all the text across the pages of the website to the appropriate style and font.
 
 ### Imagery
 
-I have used a beautiful image of a car speeding off on a trip, for the hero image. The image gives the user a positive feel of freedom to discover and experiance nw trips. This image is downloaded with a full license from [piaxabay](https://pixabay.com/photos/car-transportation-travel-road-trip-6603726/).
+I have used a beautiful image of a car speeding off on a trip, for the hero image. The image gives the user a positive feel of freedom to discover and experiance nw trips. This image is downloaded with a full license from: [piaxabay](https://pixabay.com/photos/car-transportation-travel-road-trip-6603726/).
 
 ## Wireframes
 
@@ -130,7 +130,7 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
 
 ## Flowcharts
 
-- The flowcharts below, show how the app is designed, to allow users easy navigation across all sections, and functions of the app. I have also colour coded the for functions CRUD (create, read, update, and delete), each of the functions are coloured in the flowchart showing how the app follows these four criteria.
+- The flowcharts below, show how the app is designed, to allow users easy navigation across all sections, and functions of the app. I have also colour coded the four functions CRUD (create, read, update, and delete). Each of the functions are coloured in the flowchart showing how the app follows these four criteria.
 
 ### Admin flowchart
 
@@ -171,13 +171,13 @@ All Pages on the website are responsive and have:
 
 ### The Home (Trips) Page
 
-The home page of Trip Discoverer displays the sites name/logo as a title and then a nav bar shows the links to the other pages, on mobile the links are in the side toggle. Below the navbar is the hero image at the top of the image is the search bar, users can search for a trip using any word, related to the trip they may be looking for. The search could be for the country, or the city or even words found in the description or the review of the trips. Below this is a small box of information text, describing what the app does. There is a Sign-up button in the information box, the button is only there if no user is in session. The button takes the user to the sign in page. Below the hero image all the trips are displayed in display boxes, the boxes open - revealing all the relevant information of the trip - when clicked on. On the left of the page is a filter by category section [see below](#filter-section).
+The home page of Trip Discoverer displays the sites name/logo as a title and then a nav bar shows the links to the other pages, on mobile the links are in the side toggle. Below the navbar is the hero image at the top of the image is the search bar, users can search for a trip using any word, related to the trip they may be looking for. The search could be for the country, or the city or even words found in the description or the review of the trips. Below this is a small box of information text, describing what the app does. There is a Sign-up button in the information box, the button is only there if no user is in session. The button takes the user to the sign in page. Below the hero image, all the trips are displayed in display boxes, the boxes open - revealing all the relevant information of the trip - when clicked on. On the left of the page is a filter by category section [see below](#filter-section).
 
 ![image of trips page](/assets/page-images/home-page.png)
 
 #### Filter section
 
-The filter by Category section is designed for users to filter out any trip category they are not looking for. The method I implemented to develop the filter, was not researched. I decided to recreate the search input section, I gave it a value of the specific category to be filtered; by putting the category name on the search button and hiding the display of the search bar, I have created a filter. Repeating this for all the categories created the list of filters shown below.
+The filter by Category section, is designed for users to filter out any trip category they are not looking for. The method I implemented to develop the filter, was not researched. I decided to recreate the search input section, I gave it a value of the specific category to be filtered; by putting the category name on the search button and hiding the display of the search bar, I have created a filter. Repeating this for all the categories created the list of filters shown below.
 
 ![image of filter section](/assets/page-images/filter-image.png)
 
@@ -187,13 +187,13 @@ After opening the trip information slide down, there is an option for the user w
 
 ![edit and delete buttons](/assets/page-images/edit-delete-buttons.png)
 
-After clicking on the delete button a confirmation is displayed.
+After clicking on the delete button, a confirmation is displayed.
 
 ![delete confirmation buttons](/assets/page-images/delete-confirmation.png)
 
 ### Sign up and Sign in pages
 
-The sign up and sign in pages are of the same design, both are a simple form asking the user to enter username and password. In the sign-up form the user is prompted to include email.
+The sign up and sign in pages are of the same design; both are a simple form, asking the user to enter username and password. In the sign-up form the user is prompted to include an email address.
 
 ![image of sign-in and sign-up pages](/assets/page-images/sign-up-page.png)
 
