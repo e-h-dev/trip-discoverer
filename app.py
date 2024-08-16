@@ -95,7 +95,7 @@ def login():
                 return redirect(url_for('find_trips'))
             else:
                 # invalid password
-                flash("Username and/or Password is incorrect")
+                flash("Username and/or Password are incorrect")
                 return redirect(url_for("login"))
 
         else:
@@ -106,7 +106,6 @@ def login():
     if not session:
         return render_template("login.html")
     else:
-        flash("You are already logged in!")
         return redirect(url_for('find_trips'))
 
 # Sign out function
