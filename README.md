@@ -30,6 +30,8 @@
   - [Wireframes](#wireframes)
   - [Flowcharts](#flowcharts)
   - [Data Schema](#data-schema)
+- [Styles](#styles)
+  - [CSS](#css)
 - [Trip Discoverer Pages](#trip-discoverer-pages)
   - [Home Page](#home-page)
     - [Filter section](#filter-section)
@@ -46,11 +48,11 @@
 
 # Project Rationale
 
-* Trip Discoverer is a web app, its primary objective is to provide a convenient and simple platform for people to share and discover trip ideas.
+* Trip Discoverer's primary objective is to provide a convenient and simple platform for people to share and discover trip ideas.
 * I always find it hard to create a simple and efficient system to collect records of the many searched for and experienced trip locations and their information. Being able to store this information saves time in the future and allows one to rediscover old trips they enjoyed in the past. This simple to use app will transform this experience, making it simple, efficient and enjoyable to keep records and discover new ideas.
 * The functionality of the app provides a platform to anyone, who wishes to add trips and search for trips. It will eliminate the need for difficult record keeping and lengthy trip searching.
 * The app, is smaller and clearer than most trip locating websites, it's range of information is more concise and less confusing. The trips are added by those who have experienced the location, making it easier for users to find the trip they want.
-* The app is currently limited to focusing on the most vital information about each trip, it does not offer image uploads or map views of the location, this is a limit in its functionality. The user however can add a link to the trip’s website this will be easy to connect to via the web button on each trip display, this ensures users will have easy access to more information on the trip.
+* The app is currently limited to focusing on the most vital information about each trip, it does not offer image uploads or map views of the location, this is a limit in its functionality. The user can however, add a link to the trip’s website this will be easy to connect to via the web button on each trip display, this ensures users will have easy access to more information on the trip.
 * In the future I will want to add maps and image uploading capability to the app.
 * In summary the Trip Discoverer is a unique app which works with the philosophy of less is more, the smaller scope of the app makes it easier for users to navigate and find the trip they are looking for.
 
@@ -58,7 +60,7 @@
 
 # About
 
-Trip Discoverer is an easy to use website, designed for anyone to access. The website provides up to date and 
+Trip Discoverer is an easy to use web app, designed for anyone to access. The website provides up to date and 
 clear information, for anyone looking for a nice day out. The options range from family, to adult, to kid friendly places. Users can also sign in and add their own Trips for the benefit of others.
 
 ## User Experience (UX)
@@ -76,8 +78,8 @@ clear information, for anyone looking for a nice day out. The options range from
 
 #### Site Visitor Goals
 
-- I want to have access to clear details regarding all the trips detailed by the website.
-- I want to be able to easily search for my preferred trip, by location and category.
+- I want to have access to clear details regarding all the trips detailed in the app.
+- I want to be able to search for my preferred trip, by location and category.
 - I want to add my own trip ideas to the website's database.
 - I want to be able to edit my trip ideas on the website's database.
 - I want the site to be responsive to my device.
@@ -87,7 +89,7 @@ clear information, for anyone looking for a nice day out. The options range from
 
 ### Colour Scheme
 
-I designed my colour scheme, based on the Trip Discoverer logo. For the logo design I used the website [Canva](https://www.canva.com/). Based on the colour of the logo I have designed the website. The dark and green colours give the user a feel of holiday trips and freedom, this will provide the user with a positive and engaging experiance.
+I designed my colour scheme, based on the Trip Discoverer logo. For the logo design, I used the website [Canva](https://www.canva.com/). Based on the colour of the logo I have designed the website. The dark and green colours give the user a feel of holiday trips and freedom, this will provide the user with a positive and engaging experiance.
 
 - I have used `#1a4d2e` for the dark text in the light background sections of the web pages.
 - I have used `#1a4d2e` for the dark backgrounds of the web pages.
@@ -151,6 +153,14 @@ Wireframes were created for mobile, tablet and desktop using [balsamiq.](https:/
  ![Data Schema](/assets/readme-images/data-schema.png)
 
  - - -
+
+ # Styles
+
+ ## CSS
+
+ * A considerable proportion of the styles in Trip Discoverer, are built on the available styles in [Materialize](https://materializecss.com/). I have written my code, to override much of the generic materialize styles, to fit in with the theme of trip discoverer. The way I have done this was by targeting the specific elements of the html which have materialize styles. I then checked the element in devtools. On the side bar in devtools there is an option to select styles, I selected the styles and clicked on the materialize css link, opening the relevant section of the materialize css file. I then copied the block of code and pasted it in styles.css in the static folder of trip discoverer repository, I then update the code changing the styles of the selected classes. Most of this is found in style.css between line 569 and 600. Below I have attached a gif of how to find the materialize code in devtools.
+
+![Materialize css](/static/images/css-materialize.gif)
 
 # Trip Discoverer Pages
 
@@ -359,7 +369,7 @@ All the pictures through the pages of the website are downloaded with a license,
 
 I would like to acknowledge the following:
 
-* Jabril Akolade - My Code Institute Mentor.
+* Jubril Akolade - My Code Institute Mentor.
 
 * Jessica Bessey - Of Newcastle College for helping in facilitating the course.
 
