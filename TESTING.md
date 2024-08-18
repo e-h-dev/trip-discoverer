@@ -35,7 +35,7 @@
   * [Testing User Stories](#testing-user-stories)
   * [MANUAL TESTING](#manual-testing)
 
-Testing was ongoing throughout the entire build. I utilised Chrome developer tools whilst building to pinpoint and troubleshoot any issues as I went along.
+Testing was ongoing throughout the entire build. I utilised Chrome developer tools whilst building, to pinpoint and troubleshoot any issues as I went along.
 
 During development I made use of google developer tools to ensure everything was working correctly and to assist with troubleshooting when things were not working as expected.
 
@@ -160,27 +160,27 @@ The css check came back with no errors, there are however some warnings the vali
 
 ## Website Owner Goals
 
-* Note the reference in the left column corresponds to the [Goals images](#goal-images) below.
+* Note the reference in the left column, corresponds to the [Goals images](#goal-images) below.
 
 | REF | Goals | How are they achieved? |
 | :--- | :--- | :--- |
-| A | We want the website to attract a new and wide range of users. | With a clear and easy to use interface, with clear instructions and nav links. Users will be interested and attracted to using the web app. |
+| A | We want the website to attract a new and wide range of users. | With a clear and easy to use interface, with clear instructions and nav links. Users will be interested in using the web app and will find it attractive. |
 | B | We want an attractive website, where the information is clear, and easy to access. | Using a range of technologies the app is extremely easy to use and store data. |
 | C | We want the users to have the ability of signing in, to add their own trip ideas. | A simple sign-up page which takes user information and posts it to the data base, allows for easy access for any registered user, where they can add their own trip ideas. |
-| D | We want to be able to collect data from all users, to find their preferential category of trips, and places they visit. | With good search functionality the site owner can easily find all information about any user, using the admin only users page. |
-| E | We want to be able to provide consumer habit information, to small local businesses, to promote their business to our users. | The site owner can easily collect all the relevant information from all the users. |
-| F | We want the app to be responsive to all devices. | BY using materialize and custom media queries the app is responsive to all devices. |
+| D | We want to be able to collect data from all users, to find their preferential category of trips, and places they visit. | With good search functionality, the site owner can easily find all information about any user, using the admin only users page. |
+| E | We want to be able to provide consumer habit information, to small local businesses, to promote their business to our users. | The site owner can easily collect all the relevant information from all users. |
+| F | We want the app to be responsive to all devices. | By using materialize, and custom media queries the app is responsive to all devices. |
 
 ## Site Visitor Goals
 
  REF | Goals | How are they achieved? |
 | :--- | :--- | :--- |
 | G | I want to have access to clear details regarding all the trips detailed by the website. | Each trip is displayed clearly on the trip page, the main information is first displayed and when clicked on the display box toggles down, to reveal a large array of information about the trip. |
-| H | I want to be able to easily search for my preferred trip, by location and category. | A simple search bar allows the user to search for anything wanted, from region to city to reviews and much more. The filter will also filter down the categories narrowing down the user's search.  |
-| I | I want to add my own trip ideas to the website's database. | Once signed in the user can easily click on the add trip nav link and add a trip by filling in and submitting the form. |
+| H | I want to be able to easily search for my preferred trip, by location and category. | A simple search bar allows the user to search for anything wanted, from region, to city, to reviews, and much more. The filter will also filter down the categories narrowing down the user's search.  |
+| I | I want to add my own trip ideas to the website's database. | Once signed in, the user can select the add trip nav link and add a trip by filling in and submitting the form. |
 | J | I want to be able to edit my trip ideas on the website's database. | When signed in the user can look at their trips, there is an option to both edit and delete their trips. |
 | K | I want the site to be responsive to my device. | By using materialize and custom media queries the app is responsive to all devices. |
-| L | I want the app to be easy to navigate. | Clear nav links with hover status and active class makes the app simple and intuitive to navigate. |
+| L | I want the app to be easy to navigate. | Clear nav links with hover status and an active class, makes the app simple and intuitive to navigate. |
 
 ### Goal images
 
@@ -243,7 +243,7 @@ Each device assessed the site using the following browsers:
 * Microsoft Edge
 * Opera
 
-Additional testing was taken by friends and family on a variety of devices and screen sizes. They reported no issues whilst using the app.
+Additional testing was taken by friends and family, on a variety of devices and screen sizes. They reported no issues whilst using the app.
 
 - - -
 
@@ -261,15 +261,16 @@ Additional testing was taken by friends and family on a variety of devices and s
 | Users link (Admin only). | Link to Users page (When admin in session). | Clicked on link. | Users page loads | Pass |
 | Mobile nav links hamburger. | Toggles open nav bar on mobile devices. | Clicked on hamburger icon. | Side nav bar toggles open. | Pass |
 | Search bar. | User can type in search request, the page will only load searched for trips. | Type in search request. | Only searched for trips loaded on trips page. | Pass |
-| Filter. | Click on any of the categories in the filter section, only trips from that category (or have criteria from category) will load. | Click on a filter button. | only that category loads. | Pass |
+| Filter. | Click on any of the categories in the filter section, only trips from that category (or have criteria from category) will load. | Click on a filter button. | Only that category loads. | Pass |
 | Display boxes | All trips should be displayed on the trips (home) page, in display boxes. | Page loaded. | All the trips are displayed in separate display boxes. | Pass |
-| Rating stars | Number of stars to display on display box, should correspond to rating number user puts into input form. | Added trips with varying rating results. | Trips displayed corresponding number of filled stars. | Pass |
+| Rating stars | Number of stars to show on display box, should correspond to rating number user puts into the input form. | Added trips with varying rating results. | Rating displayed, corresponds the number user put in the form. | Pass |
 | Website link | Weblink button should open trip's website on another tab. | Clicked on web button. | New tab opened with trip's website. | Pass |
 | Edit link | User should be able to edit trip, when clicking on edit trip button. | | Clicked on edit trip and edit trip form opens. | Pass |
 | Delete request button | When clicking on Delete trip button, a message should show with option to delete or cancel delete. | Clicked on delete button. | Delete message shows. | Pass |
 | Cancel delete button | After clicking on delete button, cancel button should stop delete and reload page. | Clicked on cancel button. | Delete is cancelled, and page reloads. | Pass |
 | Delete button | Deletes trip. | Clicked on delete button. | Trip Deleted. | Pass |
-| Back to top scrolling button | When scrolling down the page, a button should appear. Clicking on the button, should scroll page back to top. | Scrolled down page, button appeared. Clicked on the button. | Page scrolled back to top. | Pass |
+| Back to top scrolling button | When scrolling down the page, a button should appear. | Scrolled down page, button appeared. | Pass |
+| Back up button | Clicking on the button, should scroll page back to top. | Clicked on the button. | Page scrolled back to top. | Pass |
 
 
 - - -
@@ -298,7 +299,7 @@ Additional testing was taken by friends and family on a variety of devices and s
 | Sign in link. | Link to Sign in page. | Clicked on link. | Sign in page loads. | Pass |
 | Sign up link. | Link to Sign up page. | Clicked on link | Sign up page loads. | Pass |
 | Sign in form. | When loaded the page should have a form, which user information can be put in. | On page load form appears | User information can be added. | Pass |
-| Sign in button. | When clicking on sign in button, user be signed in. | Clicked on sign in button. | User was signed in. | Pass |
+| Sign in button. | When clicking on sign in button, user should be signed in. | Clicked on sign in button. | User was signed in. | Pass |
 
  - - -
 
